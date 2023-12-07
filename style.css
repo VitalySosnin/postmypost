@@ -992,6 +992,7 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
   box-shadow: 0 15px 20px -8px var(--post-form-user-chat-shadow-color);
   gap: 14px;
   transition: box-shadow .2s ease-in-out;
+  position: relative;
 }
 
 .post-form-user-chat__text {
@@ -1315,6 +1316,12 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
     --size: 24px;
   }
 
+  .post-form__primary-line path,
+  .post-form__secondary-line path {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+
   .section-possibilities__grid {
     display: flex;
     scroll-snap-type: x mandatory;
@@ -1379,10 +1386,6 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
     display: none;
   }
 
-  .section-advantages__col {
-    flex-basis: 100%;
-  }
-
   .section-advantages .arc {
     --size: 100px;
     --border-width: 8px;
@@ -1390,6 +1393,10 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
 }
 
 @media (max-width: 37.5rem) {
+  .section-advantages__col {
+    flex-basis: 100%;
+  }
+
   .section-prices__flex {
     display: block;
     margin: 0;
