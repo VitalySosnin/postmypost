@@ -642,11 +642,13 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
 
 
 .section-possibilities__grid {
+  --gap: clamp(1.5rem, 3.6vw + 0.6rem, 3.75rem);
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-auto-flow: row;
-  gap: clamp(1.5rem, 3.6vw + 0.6rem, 3.75rem);
+  gap: var(--gap);
 }
 
 .section-possibilities__name {
@@ -1323,12 +1325,15 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
   }
 
   .section-possibilities__grid {
+    --padding-left: calc(1rem + var(--content-layout-padding));
+    --offset: calc(var(--gap) + var(--padding-left) + 1.5rem);
+
     display: flex;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
-    margin-left: 1rem;
-    padding-right: calc(100vw - (100vw - 53px));
+    padding-right: var(--offset);
+    margin: 0 calc(var(--content-layout-padding) * -1);
   }
 
   .section-possibilities__name:not(.mobile-hide) {
@@ -1369,9 +1374,11 @@ html.show-mobile-menu .header__menu-toggler div:nth-child(3) {
   }
 
   .possibilities-item {
-    width: calc(100vw - 85px);
+    width: calc(100vw - var(--offset));
     flex-shrink: 0;
     scroll-snap-align: start;
+    padding-left: var(--padding-left);
+    padding-bottom: 1rem;
   }
 
   .possibilities-item .arc {
