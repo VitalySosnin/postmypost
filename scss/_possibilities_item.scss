@@ -1,0 +1,87 @@
+.possibilities-item {
+  .arc {
+    --rotate-angle: -45deg;
+
+    position: absolute;
+    left: calc(56% - var(--size) / 2);
+    bottom: 45%;
+  }
+
+  &-icon {
+    --size: clamp(5rem, 7.8vw + 3.05rem, 9.875rem);
+    --border-radius: clamp(1rem, 1.6vw + 0.6rem, 2rem);
+
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: var(--possibilities-item-icon-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: clamp(0.5625rem, 0.7vw + 0.3875rem, 1rem);
+    transition: background-color .2s ease-in-out;
+
+    &:before {
+      --size: clamp(5.25rem, 8.2vw + 3.2rem, 10.375rem);
+      --border-radius: clamp(1.5rem, 2.1vw + 0.975rem, 2.8125rem);
+      --offset: clamp(0.25rem, 0.4vw + 0.15rem, 0.5rem);
+
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: -1;
+      width: var(--size);
+      height: var(--size);
+      top: var(--offset);
+      right: var(--offset);
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 0 2px var(--color-line) inset;
+    }
+
+    &__icon {
+      --size: clamp(3.125rem, 4.8vw + 1.925rem, 6.125rem);
+
+      width: var(--size);
+      height: var(--size);
+    }
+
+    &__wrap {
+      position: relative;
+    }
+  }
+
+  &__title {
+    margin-top: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+    margin-bottom: clamp(0.5rem, 1vw + 0.25rem, 1.125rem);
+  }
+
+  &__line {
+    position: absolute;
+    height: 16px;
+    width: 45%;
+    right: 0;
+    bottom: 45%;
+    background-color: var(--color-line);
+
+    &--short {
+      width: 25%;
+      right: 13%;
+    }
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .possibilities-item {
+    flex-shrink: 0;
+    padding: 0 calc(1rem + var(--content-layout-padding));
+
+    .arc {
+      display: none;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.button {
+  --button-padding: 1.5rem 2rem;
+  --button-text-size: 1.5rem;
+  --button-text-color: #fff;
+  --button-background-color: #588eff;
+  --button-background-color-active: #225cd3;
+  --button-shadow: 0 19px 12px -14px;
+  --button-shadow-border: 0 0 0 2px inset;
+  --button-shadow-color: #1c66ff;
+  --button-shadow-color-hover: #6797fb;
+  --button-transition: .2s ease-in-out;
+
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: transparent;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 1;
+  padding: var(--button-padding);
+  font-size: var(--button-text-size);
+  color: var(--text-color);
+  font-family: var(--font-family-primary);
+  transition: color var(--button-transition),
+  background-color var(--button-transition),
+  border-color var(--button-transition),
+  box-shadow var(--button-transition) !important;
+
+  &:hover:not(:active) {
+    color: var(--text-color);
+  }
+
+  &--filled {
+    background-color: var(--color-primary);
+    color: var(--button-text-color);
+    box-shadow: var(--button-shadow) var(--button-shadow-color);
+
+    &:hover:not(:active) {
+      background-color: var(--button-background-color);
+      color: var(--button-text-color);
+      box-shadow: var(--button-shadow) var(--button-shadow-color-hover);
+    }
+
+    &:active {
+      background-color: var(--button-background-color-active);
+      color: var(--button-text-color);
+    }
+  }
+
+  &--bordered {
+    box-shadow: var(--button-shadow-border) var(--color-primary);
+
+    &:hover:not(:active) {
+      background-color: var(--color-primary);
+      box-shadow: var(--button-shadow-border) var(--color-primary);
+      color: var(--button-text-color);
+    }
+
+    &:active:hover {
+      background-color: var(--button-background-color-active);
+      box-shadow: var(--button-shadow-border) var(--button-background-color-active);
+      color: var(--button-text-color);
+    }
+  }
+
+  &--small {
+    --button-padding: 1rem 1.25rem;
+    --button-text-size: 1.25rem;
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .button {
+    --button-padding: 0.875rem 1.125rem;
+    --button-text-size: 0.875rem;
+  }
+}

@@ -1,0 +1,71 @@
+:root {
+  --color-primary: #1a64ff;
+  --color-secondary: #f0f4f9;
+  --color-secondary-dark: #25252f;
+  --color-line: #52d3c1;
+
+  --text-color: #1b1b20;
+  --text-color-dark: #fff;
+  --background-color: #fff;
+  --background-color-dark: #101010;
+  --background-color-rgb: 255, 255, 255;
+  --background-color-rgb-dark: 16, 16, 16;
+
+  --font-family-primary: "Montserrat", sans-serif;
+
+  --header-background-opacity: .8;
+  --header-background-color: rgba(var(--background-color-rgb), var(--header-background-opacity));
+  --header-backdrop-filter: saturate(3) blur(20px);
+  --header-height: 110px;
+  --header-height-mobile: 64px;
+
+  --footer-background-color: #f7f9fc;
+  --footer-border-color: #d1d4d8;
+  --footer-border-color-dark: #989dab;
+  --footer-logo-filter: brightness(72%) sepia(35%) hue-rotate(176deg);
+
+  --content-layout-padding: 1.25rem;
+  --content-layout-padding-mobile: .5rem;
+  --content-layout-max-width: 88.75rem;
+
+  --logo-size: 64px;
+  --logo-size-mobile: 48px;
+  --logo-gp-filter: none;
+  --logo-gp-filter-dark: invert() brightness(3);
+
+  --post-form-background-color: var(--color-secondary);
+  --post-form-box-shadow-color: #bbcbe0;
+  --post-form-box-shadow-color-dark: #272c43;
+  --post-form-box-shadow-outset: 0 70px 57px -50px var(--post-form-box-shadow-color);
+  --post-form-box-shadow-inset: 0 0 0 1px rgba(255, 255, 255, .3) inset;
+  --post-form-box-shadow: var(--post-form-box-shadow-outset);
+  --post-form-backdrop-filter: none;
+  --post-form-tab-color: #b7c6d9;
+  --post-form-tab-color-dark: #88a1b6;
+  --post-form-ai-chat-background-color: #3a496a;
+  --post-form-ai-chat-background-color-dark: var(--color-line);
+  --post-form-ai-chat-shadow-color: #aec0d6;
+  --post-form-ai-chat-shadow-color-dark: #000;
+  --post-form-ai-chat-text-background-color: radial-gradient(circle at 5% 250%, #7aa3f8 0%, #3778ff 50%);
+  --post-form-ai-chat-text-background-color-dark: #000;
+  --post-form-user-chat-shadow-color: rgba(174, 192, 214, 70%);
+  --post-form-user-chat-shadow-color-dark: #000;
+
+  --possibilities-item-icon-background-color: var(--color-secondary);
+
+  --section-how-num-background-color: #fff;
+  --section-how-num-background-color-mobile: var(--color-secondary);
+
+  --section-advantages-col-background-color: var(--color-secondary);
+
+  --swiper-bullet-color: var(--color-secondary);
+
+  color-scheme: light dark;
+}
+
+@media (max-width: 63.9375rem) {
+  :root {
+    --header-height: var(--header-height-mobile);
+    --content-layout-padding: var(--content-layout-padding-mobile);
+  }
+}
