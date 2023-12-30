@@ -16,7 +16,7 @@
 
 <header class="header">
   <div class="content-layout">
-    <div class="header__grid">
+    <div class="header__flex">
       <a class="header__logo" href="#">
         <picture>
           <source srcset="img/logo_symbol_white.svg" media="(prefers-color-scheme: dark)">
@@ -25,22 +25,198 @@
       </a>
 
       <div class="header-menu">
+        <div class="header-menu__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
         <nav class="header-menu__nav">
           <ul>
-            <li>
-              <a href="#possibilities">Возможности</a>
+            <li class="header-menu__sub">
+              <span class="header-menu__sub-toggler" data-main_submenu_show="tools">
+                Инструменты
+                <svg class="header-menu__chevron">
+                  <use href="img/icons.svg#chevron" />
+                </svg>
+              </span>
+              <div class="header-submenu">
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#autopost" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Автопостинг</div>
+                    <div class="header-submenu__text">
+                      Позволяет планировать публикацию постов по&nbsp;расписанию во&nbsp;все социальные сети, экономя ваше время.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#analytics" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Аналитика</div>
+                    <div class="header-submenu__text">
+                      Предоставляет подробную аналитику постов, что помогает оптимизировать ваш контент и&nbsp;увеличить вовлеченность аудитории.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#message" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Мониторинг комментариев</div>
+                    <div class="header-submenu__text">
+                      Отслеживает новые комментарии во&nbsp;всех социальных сетях, помогая вам оперативно реагировать на&nbsp;отзывы пользователей.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#messenger" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Единый месенджер</div>
+                    <div class="header-submenu__text">
+                      Дает возможность отвечать на&nbsp;сообщения со&nbsp;всех социальных сетей из&nbsp;одного окна, упрощая взаимодействие с&nbsp;подписчиками.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#rss" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Публикация из RSS</div>
+                    <div class="header-submenu__text">
+                      Позволяет автоматически публиковать новости с&nbsp;вашего сайта в&nbsp;социальные сети через RSS, увеличивая охват аудитории.
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="header-submenu__item">
+                  <svg class="header-submenu__icon">
+                    <use href="img/icons.svg#hexagon" />
+                  </svg>
+                  <div class="header-submenu__body">
+                    <div class="header-submenu__title">Postmypost AI</div>
+                    <div class="header-submenu__text">
+                      Нейросеть, который помогает маркетологам справиться с&nbsp;рутинными задачами от&nbsp;генерации идей и&nbsp;сотсавление конткнт плана до&nbsp;напсиия тесстов и&nbsp;аналиаза данных.
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="header-menu__sub">
+              <span class="header-menu__sub-toggler" data-main_submenu_show="channels">
+                Каналы
+                <svg class="header-menu__chevron">
+                  <use href="img/icons.svg#chevron" />
+                </svg>
+              </span>
+              <div class="header-channels">
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#vk" />
+                  </svg>
+                  <div class="header-channels__title">VKontakte</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#tg" />
+                  </svg>
+                  <div class="header-channels__title">Telegram</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#inst" />
+                  </svg>
+                  <div class="header-channels__title">Instagram</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#tt" />
+                  </svg>
+                  <div class="header-channels__title">TikTok</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#pinterest" />
+                  </svg>
+                  <div class="header-channels__title">Pinterest</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#reddit" />
+                  </svg>
+                  <div class="header-channels__title">Reddit</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#ok" />
+                  </svg>
+                  <div class="header-channels__title">Odnoklassniki</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#medium" />
+                  </svg>
+                  <div class="header-channels__title">Medium</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#fb" />
+                  </svg>
+                  <div class="header-channels__title">Facebook</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#yt" />
+                  </svg>
+                  <div class="header-channels__title">YouTube</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#tw" />
+                  </svg>
+                  <div class="header-channels__title">Twitter</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#bitrix" />
+                  </svg>
+                  <div class="header-channels__title">Bitrix</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#linkedin" />
+                  </svg>
+                  <div class="header-channels__title">Linkedin</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#discord" />
+                  </svg>
+                  <div class="header-channels__title">Discord</div>
+                </a>
+                <a href="#" class="header-channels__item">
+                  <svg class="header-channels__icon">
+                    <use href="img/icons.svg#webhook" />
+                  </svg>
+                  <div class="header-channels__title">Webhook</div>
+                </a>
+              </div>
             </li>
             <li>
-              <a href="#advantages">Преимущества</a>
+              <a href="tarifs.html">Тарифы</a>
             </li>
             <li>
-              <a href="#how_it_works">Как это работает</a>
-            </li>
-            <li>
-              <a href="#prices">Тарифы</a>
+              <a href="blog.html">Блог</a>
             </li>
           </ul>
         </nav>
+
+        <div class="header-menu__buttons">
+          <a href="#" class="button button--filled button--small">Войти</a>
+          <a href="#" class="button button--small button--no-padding">Зарегистрироваться</a>
+        </div>
 
         <nav class="header-menu__links">
           <ul>
@@ -67,16 +243,23 @@
         </a>
       </div>
 
-      <div class="header__button">
+      <div class="header__buttons">
         <a href="#" class="button button--bordered button--small">Попробовать бесплатно</a>
+        <a href="#" class="button button--filled button--small">Войти</a>
       </div>
     </div>
   </div>
 
-  <div class="header__menu-toggler" data-main_menu_toggle>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="header-toggler" data-main_menu_toggle data-main_submenu_hide>
+    <svg class="header-toggler__burger">
+      <use href="img/icons.svg#burger" />
+    </svg>
+    <svg class="header-toggler__cross">
+      <use href="img/icons.svg#cross" />
+    </svg>
+    <svg class="header-toggler__arrow">
+      <use href="img/icons.svg#arrow" />
+    </svg>
   </div>
 </header>
 
@@ -403,6 +586,7 @@
 </section>
 
 <footer class="footer">
+  <div class="footer__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
   <div class="content-layout">
     <a class="footer__logo" href="#">
       <img src="img/logo_symbol_white.svg" alt="Postmypost">
@@ -521,10 +705,10 @@
     <nav class="footer__menu-mobile">
       <ul>
         <li>
-          <span>Инструменты</span>
+          <span data-main_menu_toggle data-main_submenu_show="tools">Инструменты</span>
         </li>
         <li>
-          <span>Каналы</span>
+          <span data-main_menu_toggle data-main_submenu_show="channels">Каналы</span>
         </li>
         <li>
           <a href="tarifs.html">Тарифы</a>

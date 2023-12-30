@@ -73,6 +73,10 @@
     --button-padding: 1rem 1.25rem;
     --button-text-size: 1.25rem;
   }
+
+  &--no-padding {
+    padding: 0;
+  }
 }
 
 @media (max-width: 63.9375rem) {

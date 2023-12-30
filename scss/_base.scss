@@ -18,7 +18,7 @@ body {
   background-color: var(--background-color);
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% auto;
   color: var(--text-color);
   transition: color .2s ease-in-out,
   background-color .2s ease-in-out;

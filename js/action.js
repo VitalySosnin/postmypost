@@ -8,9 +8,33 @@
   const elHtml = document.querySelector('html');
 
   function initMainMenu() {
+    const targetMenuClass = 'show-mobile-menu';
+    const targetSubMenuClass = 'show-mobile-submenu';
+
+    document.querySelectorAll('[data-main_submenu_hide]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        const classList = [];
+
+        elHtml?.classList.forEach((item) => {
+          item.includes(targetSubMenuClass) && classList.push(item);
+        });
+
+        if (classList.length) {
+          elHtml?.classList.remove(...classList);
+          e.stopImmediatePropagation();
+        }
+      });
+    });
+
     document.querySelectorAll('[data-main_menu_toggle]').forEach((el) => {
       el.addEventListener('click', () => {
-        elHtml?.classList.toggle('show-mobile-menu');
+        elHtml?.classList.toggle(targetMenuClass);
+      });
+    });
+
+    document.querySelectorAll('[data-main_submenu_show]').forEach((el) => {
+      el.addEventListener('click', () => {
+        elHtml?.classList.add(targetSubMenuClass, `${targetSubMenuClass}--${el.getAttribute('data-main_submenu_show')}`);
       });
     });
   }
@@ -38,7 +62,7 @@
       },
       breakpoints: {
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 0,
           spaceBetween: 0
         }
       }
