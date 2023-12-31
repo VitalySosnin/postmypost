@@ -5,37 +5,6 @@
   width: 85vw;
   pointer-events: none;
 
-  &__primary-line,
-  &__secondary-line {
-    position: absolute;
-    bottom: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: -1;
-    width: 100vw;
-    min-width: 1920px;
-  }
-
-  &__primary-line {
-    path {
-      stroke-dasharray: 3000;
-      stroke-dashoffset: 3000;
-      animation: dash 3s ease-out forwards;
-    }
-  }
-
-  &__secondary-line {
-    bottom: 57%;
-    z-index: -2;
-
-    path {
-      stroke-dasharray: 4000;
-      stroke-dashoffset: 4000;
-      animation: dash 4s .2s ease-out forwards;
-    }
-  }
-
   &__body {
     --border-radius: 40px;
 
@@ -229,12 +198,6 @@
       &__icon {
         --size: 24px;
       }
-    }
-
-    &__primary-line path,
-    &__secondary-line path {
-      stroke-dasharray: 0;
-      stroke-dashoffset: 0;
     }
   }
 }

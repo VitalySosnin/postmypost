@@ -1,30 +1,40 @@
-.h1 {
+.h1 { // 68-28
   font-size: clamp(1.75rem, 4vw + 0.75rem, 4.25rem);
   font-weight: 800;
   line-height: 1.1;
 }
 
-.h2 {
+.h2 { // 54-28
   font-size: clamp(1.75rem, 2.6vw + 1.1rem, 3.375rem);
   font-weight: 800;
   line-height: 1.1;
 }
 
-.h3 {
+.h3 { // 28-18
   font-size: clamp(1.125rem, 1vw + 0.875rem, 1.75rem);
   font-weight: 800;
   line-height: 1.2;
 }
 
-.h4 {
+.h4 { // 26-18
   font-size: clamp(1.125rem, 0.8vw + 0.925rem, 1.625rem);
   font-weight: 800;
   line-height: 1.2;
 }
 
-.h5 {
+.h5 { // 24-14
   font-size: clamp(0.875rem, 1vw + 0.625rem, 1.5rem);
   font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-46-24 {
+  font-size: clamp(1.5rem, 2.2vw + 0.95rem, 2.875rem);
+  line-height: 1.2;
+}
+
+.text-28-24 {
+  font-size: clamp(1.5rem, 0.4vw + 1.4rem, 1.75rem);
   line-height: 1.2;
 }
 
@@ -38,8 +48,23 @@
   line-height: 1.5;
 }
 
+.text-22-16 {
+  font-size: clamp(1rem, 0.6vw + 0.85rem, 1.375rem);
+  line-height: 1.4;
+}
+
 .text-22-14 {
   font-size: clamp(0.875rem, 0.8vw + 0.675rem, 1.375rem);
+  line-height: 1.4;
+}
+
+.text-20-18 {
+  font-size: clamp(1.125rem, 0.2vw + 1.075rem, 1.25rem);
+  line-height: 1.2;
+}
+
+.text-17-16 {
+  font-size: clamp(1rem, 0.1vw + 0.975rem, 1.0625rem);
   line-height: 1.4;
 }
 
@@ -51,4 +76,9 @@
 .text-17-12 {
   font-size: clamp(0.75rem, 0.5vw + 0.625rem, 1.0625rem);
   line-height: 1.4;
+}
+
+.text-15-14 {
+  font-size: clamp(0.875rem, 0.1vw + 0.85rem, 0.9375rem);
+  line-height: 1.3;
 }

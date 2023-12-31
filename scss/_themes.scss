@@ -1,30 +1,55 @@
+@mixin dark-theme {
+  --text-color: var(--text-color-dark);
+  --background-color: var(--background-color-dark);
+  --background-color-rgb: var(--background-color-rgb-dark);
+
+  --header-submenu-shadow-color: var(--background-color-dark);
+  --header-submenu-item-color: var(--color-secondary-dark);
+  --header-submenu-item-title-color: #fff;
+
+  --footer-background-color: var(--color-secondary-dark);
+  --footer-border-color: var(--footer-border-color-dark);
+  --footer-logo-filter: none;
+  --footer-pattern-opacity: .02;
+
+  --logo-gp-filter: var(--logo-gp-filter-dark);
+
+  --post-form-background-color: rgba(23, 23, 30, .4);
+  --post-form-box-shadow-color: var(--post-form-box-shadow-color-dark);
+  --post-form-box-shadow: var(--post-form-box-shadow-inset), var(--post-form-box-shadow-outset);
+  --post-form-backdrop-filter: saturate(1) blur(18px);
+  --post-form-tab-color: var(--post-form-tab-color-dark);
+  --post-form-ai-chat-background-color: var(--post-form-ai-chat-background-color-dark);
+  --post-form-ai-chat-shadow-color: var(--post-form-ai-chat-shadow-color-dark);
+  --post-form-ai-chat-text-background-color: var(--post-form-ai-chat-text-background-color-dark);
+  --post-form-user-chat-shadow-color: var(--post-form-user-chat-shadow-color-dark);
+
+  --possibilities-item-icon-background-color: var(--color-secondary-dark);
+
+  --section-advantages-col-background-color: var(--color-secondary-dark);
+
+  --section-how-num-background-color: var(--color-secondary-dark);
+  --section-how-num-background-color-mobile: var(--color-secondary-dark);
+
+  --swiper-bullet-color: var(--color-secondary-dark);
+
+  --section-intro-img-shadow-color: var(--section-intro-img-shadow-color-dark);
+  --section-intro-img-shadow-color-mobile: var(--section-intro-img-shadow-color-dark);
+}
+
+.dark-theme {
+  @include dark-theme;
+}
+
+.light-theme {
+  body {
+    background-image: none !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
-  :root:not(.dark-mode) {
-    --background-color: var(--background-color-dark);
-    --background-color-rgb: var(--background-color-rgb-dark);
-    --text-color: var(--text-color-dark);
-    --header-submenu-shadow-color: var(--background-color-dark);
-    --header-submenu-item-color: var(--color-secondary-dark);
-    --header-submenu-item-title-color: #fff;
-    --footer-background-color: var(--color-secondary-dark);
-    --footer-border-color: var(--footer-border-color-dark);
-    --footer-logo-filter: none;
-    --footer-pattern-opacity: .02;
-    --logo-gp-filter: var(--logo-gp-filter-dark);
-    --post-form-background-color: rgba(23, 23, 30, .4);
-    --post-form-box-shadow-color: var(--post-form-box-shadow-color-dark);
-    --post-form-box-shadow: var(--post-form-box-shadow-inset), var(--post-form-box-shadow-outset);
-    --post-form-backdrop-filter: saturate(1) blur(18px);
-    --post-form-tab-color: var(--post-form-tab-color-dark);
-    --post-form-ai-chat-background-color: var(--post-form-ai-chat-background-color-dark);
-    --post-form-ai-chat-shadow-color: var(--post-form-ai-chat-shadow-color-dark);
-    --post-form-ai-chat-text-background-color: var(--post-form-ai-chat-text-background-color-dark);
-    --post-form-user-chat-shadow-color: var(--post-form-user-chat-shadow-color-dark);
-    --possibilities-item-icon-background-color: var(--color-secondary-dark);
-    --section-advantages-col-background-color: var(--color-secondary-dark);
-    --section-how-num-background-color: var(--color-secondary-dark);
-    --section-how-num-background-color-mobile: var(--color-secondary-dark);
-    --swiper-bullet-color: var(--color-secondary-dark);
+  :root:not(.dark-theme, .light-theme) {
+    @include dark-theme;
   }
 }
 
