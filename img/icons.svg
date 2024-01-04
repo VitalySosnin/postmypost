@@ -481,5 +481,37 @@
             <path d="M12.75 24.0833L5.66667 16.9999L12.75 9.91658" stroke-width="2" stroke-linecap="round"/>
             <path d="M5.66683 17L28.3335 17" stroke-width="2" stroke-linecap="round"/>
         </symbol>
+        <symbol id="letter" viewBox="0 0 28 28" stroke="currentColor" fill="none">
+            <path d="M7 22.1667L14.0019 5.83337L21 22.1667" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M9.54541 16.3334H18.4545" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M4.6665 22.1666H9.33317" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M23.3332 22.1666H18.6665" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="hashtag" viewBox="0 0 28 28" stroke="currentColor" fill="none">
+            <path d="M11.0832 5.83337L9.9165 22.1667" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M18.0832 5.83337L16.9165 22.1667" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M5.25 17.5H21.5833" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M6.4165 10.5H22.7498" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="smile" viewBox="0 0 28 28" stroke="currentColor" fill="none">
+            <path d="M3.5 14C3.5 8.2005 8.2005 3.5 14 3.5C19.7995 3.5 24.5 8.2005 24.5 14"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.5 14C24.5 19.7995 19.7995 24.5 14 24.5C8.2005 24.5 3.5 19.7995 3.5 14"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.9165 10.5V11.6667" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M18.0835 10.5V11.6667" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M18.0832 17.136C18.0832 17.136 16.5513 18.6667 13.9998 18.6667C11.4472 18.6667 9.9165 17.136 9.9165 17.136"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
     </defs>
 </svg>

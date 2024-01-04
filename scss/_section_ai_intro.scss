@@ -1,6 +1,12 @@
 .section-ai-intro {
   padding-top: clamp(1.5rem, 2.6vw + 0.85rem, 3.125rem);
 
+  .post-form {
+    max-width: 69.0625rem;
+    margin: clamp(2.25rem, 1.8vw + 1.8rem, 3.375rem) auto;
+    width: 85vw;
+  }
+
   &__title {
     margin: 0 auto clamp(0.5rem, 3.8vw - 0.45rem, 2.875rem);
     max-width: 61.25rem;
@@ -40,6 +46,16 @@
         stroke-dashoffset: 3000;
         animation: dash 3s ease-out forwards;
       }
+    }
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-ai-intro {
+    .post-form {
+      max-width: 39.3125rem;
+      width: 100%;
+      padding: 0 10px;
     }
   }
 }

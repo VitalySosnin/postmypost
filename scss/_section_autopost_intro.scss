@@ -1,4 +1,4 @@
-.section-intro {
+.section-autopost-intro {
   padding-top: clamp(1.5rem, 10.6vw + -1.15rem, 8.125rem);
 
   &__wrap {
@@ -17,7 +17,7 @@
     pointer-events: none;
     width: 50%;
     border-radius: 20px;
-    box-shadow: 0 6px 24px var(--section-intro-img-shadow-color);
+    box-shadow: 0 6px 24px var(--section-autopost-intro-img-shadow-color);
   }
 
   &__text {
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 63.9375rem) {
-  .section-intro {
+  .section-autopost-intro {
     &__wrap {
       padding: 0;
       text-align: center;
@@ -51,7 +51,7 @@
       width: 100%;
       display: block;
       border-radius: 8px;
-      box-shadow: 0 2px 8px var(--section-intro-img-shadow-color-mobile);
+      box-shadow: 0 2px 8px var(--section-autopost-intro-img-shadow-color-mobile);
       margin: 0.875rem auto 0;
       max-width: 720px;
     }

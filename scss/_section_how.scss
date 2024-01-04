@@ -43,7 +43,7 @@
   }
 
   &__col {
-    flex-grow: 1;
+    width: 33.33%;
   }
 
   &__num {
@@ -129,6 +129,7 @@
     &__col {
       flex-shrink: 0;
       padding: 0 calc(1.375rem + var(--content-layout-padding));
+      width: auto;
     }
 
     &__num {

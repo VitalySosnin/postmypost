@@ -18,19 +18,19 @@
   src="header.html"
   onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-<section class="section section-intro">
+<section class="section section-autopost-intro">
   <div class="content-layout">
-    <div class="section-intro__wrap">
-      <svg class="section-intro__lines mobile-hide" viewBox="0 0 1920 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="section-autopost-intro__wrap">
+      <svg class="section-autopost-intro__lines mobile-hide" viewBox="0 0 1920 526" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2041.5 24.8508C1729.38 -76.1479 1447.77 170.9 1343.74 257.746C1239.7 344.592 876.5 557.5 529 460.5C307.328 398.623 150.5 227 -6 266.5" stroke="#D4DEEB" stroke-width="1.5" />
         <path d="M465.5 479.5C867 607.5 1176.2 363.592 1280.24 276.746C1384.27 189.9 1665.88 -57.1479 1978 43.8508" stroke="#52D3C1" stroke-width="20" />
         <path d="M199 337.5C170.5 312.5 69.5 248 -54.5 279" stroke="#52D3C1" stroke-width="20" />
       </svg>
-      <h1 class="h1 text-46-24 section-intro__title">
+      <h1 class="h1 text-46-24 section-autopost-intro__title">
         Расширяйте аудиторию и&nbsp;развивайте ваш бренд в&nbsp;социальных сетях
       </h1>
-      <img class="section-intro__img" src="img/img_section_intro.jpg" alt="">
-      <div class="text-22-16 section-intro__text">
+      <img class="section-autopost-intro__img" src="img/img_section_intro.jpg" alt="">
+      <div class="text-22-16 section-autopost-intro__text">
         Не&nbsp;тратите время на&nbsp;публикацию контента в&nbsp;каждую социальную сеть отдельно. Вместо этого, публикуйте во&nbsp;все социальные сети из&nbsp;одного окна.
       </div>
       <a href="#" class="button button--filled button--small">Попробовать бесплатно</a>
@@ -59,8 +59,82 @@
 </section>
 
 <section class="section section-ai">
-  <div class="content-layout swiper swiper-ai">
+  <div class="content-layout swiper swiper-common">
     <div class="section-ai__flex">
+      <div class="section-ai__col">
+        <div class="post-form post-form--extended">
+          <div class="post-form__body">
+            <div class="post-form__wrap">
+              <div class="post-form-tabs">
+                <div class="post-form-tabs__tab post-form-tabs__tab--active">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#post" />
+                  </svg>
+                  Пост
+                </div>
+                <div class="post-form-tabs__tab">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#stories" />
+                  </svg>
+                  История
+                </div>
+                <div class="post-form-tabs__tab">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#reels" />
+                  </svg>
+                  Reels
+                </div>
+              </div>
+              <div class="post-form__question">Что нового?</div>
+              <div class="post-form-ai-chat">
+                <svg class="post-form-ai-chat__icon">
+                  <use href="img/icons.svg#ai-chat" />
+                </svg>
+                <div class="post-form-ai-chat__text">Привет! как я могу помочь вам сегодня?</div>
+                <div class="arc"></div>
+              </div>
+              <div class="post-form-tools">
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#hexagon" />
+                </svg>
+                <div class="post-form-menu">
+                  <div class="post-form-menu__item">Напиши пост...</div>
+                  <div class="post-form-menu__item">Напиши креативную историю...</div>
+                  <div class="post-form-menu__item">Предложи идеи...</div>
+                  <div class="post-form-menu__item">Составь контент-план...</div>
+                </div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#letter" />
+                </svg>
+                <div class="post-form-tools__text">0</div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#hashtag" />
+                </svg>
+                <div class="post-form-tools__text">0</div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#smile" />
+                </svg>
+              </div>
+              <div class="post-form-user-chat">
+                <div class="post-form-user-chat__text">Привет! Напиши пост на тему...</div>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#slash" />
+                </svg>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#mic" />
+                </svg>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#arrow-up" />
+                </svg>
+              </div>
+            </div>
+            <div class="post-form-badges">
+              <div class="post-form-badges__item">Версия поста</div>
+              <div class="post-form-badges__item">Выбрать рубрику</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="section-ai__body">
         <h3 class="h3 text-28-24 section-ai__title">Создавайте больше контента с&nbsp;помощью Postmypost&nbsp;AI</h3>
         <div class="text-17-16 section-ai__text">
@@ -71,8 +145,8 @@
     </div>
     <div class="section-ai__items swiper-wrapper">
       <div class="section-ai__item swiper-slide">
-        <div class="section-ai__icon squared-icon">
-          <svg class="squared-icon__icon">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
             <use href="img/icons.svg#idea" />
           </svg>
         </div>
@@ -80,8 +154,8 @@
         <div class="text-15-14">Используйте возможность нейросети, чтобы генерировать идеи на&nbsp;любые темы.</div>
       </div>
       <div class="section-ai__item swiper-slide">
-        <div class="section-ai__icon squared-icon">
-          <svg class="squared-icon__icon">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
             <use href="img/icons.svg#pen" />
           </svg>
         </div>
@@ -89,8 +163,8 @@
         <div class="text-15-14">Генерируйте потрясающий контент с&nbsp;помощью нейросети, способной выполнять это быстро и&nbsp;с&nbsp;высоким качеством.</div>
       </div>
       <div class="section-ai__item swiper-slide">
-        <div class="section-ai__icon squared-icon">
-          <svg class="squared-icon__icon">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
             <use href="img/icons.svg#plan" />
           </svg>
         </div>
@@ -98,8 +172,8 @@
         <div class="text-15-14">Получите потрясающий результат с&nbsp;помощью нейросети, которая предложит вам рабочие идеи для вашего бизнеса.</div>
       </div>
       <div class="section-ai__item swiper-slide">
-        <div class="section-ai__icon squared-icon">
-          <svg class="squared-icon__icon">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
             <use href="img/icons.svg#click" />
           </svg>
         </div>
@@ -107,6 +181,8 @@
         <div class="text-15-14">Формируйте стратегию. Воспользуйтесь всеми преимуществами нейросети, чтобы разработать готовую стратегию развития вашего бизнеса в&nbsp;социальных сетях.</div>
       </div>
     </div>
+
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 

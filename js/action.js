@@ -15,7 +15,20 @@
     const targetSubMenuClass = 'show-mobile-submenu';
 
     elBody.addEventListener('click', (e) => {
-      let elTarget = e.target.closest('[data-main_submenu_hide]');
+      let elTarget = e.target.closest('[data-main_menu_hide]');
+
+      if (elTarget) {
+        const classList = [targetMenuClass];
+
+        elHtml.classList.forEach((item) => {
+          item.includes(targetSubMenuClass) && classList.push(item);
+        });
+
+        elHtml.classList.remove(...classList);
+        return;
+      }
+
+      elTarget = e.target.closest('[data-main_submenu_hide]');
 
       if (elTarget) {
         const classList = [];
@@ -60,7 +73,7 @@
   }
 
   function initSwiper() {
-    new Swiper('.swiper-possibilities, .swiper-how', {
+    new Swiper('.swiper-common', {
       slidesPerView: 1,
       spaceBetween: -24,
       pagination: {

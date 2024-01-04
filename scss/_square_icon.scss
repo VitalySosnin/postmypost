@@ -1,0 +1,36 @@
+.square-icon {
+  --size: 5.25rem;
+  --border-radius: 1.25rem;
+  --icon-size: 3.375rem;
+  --line-size: 100%;
+  --line-border-radius: 1.625rem;
+  --line-inset: -0.5rem -0.5rem auto auto;
+
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  border-radius: var(--border-radius);
+  background-color: var(--possibilities-item-icon-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .2s ease-in-out;
+  pointer-events: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    width: var(--line-size);
+    height: var(--line-size);
+    inset: var(--line-inset);
+    border-radius: var(--line-border-radius);
+    box-shadow: 0 0 0 2px var(--color-line) inset;
+  }
+
+  &__icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+}

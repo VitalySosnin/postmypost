@@ -54,6 +54,10 @@
   --post-form-ai-chat-text-background-color-dark: #000;
   --post-form-user-chat-shadow-color: rgba(174, 192, 214, 70%);
   --post-form-user-chat-shadow-color-dark: #000;
+  --post-form-wrap-background-color: #fff;
+  --post-form-wrap-shadow-color-rgb: 157, 172, 191;
+  --post-form-wrap-shadow-color-rgb-dark: 0, 0, 0;
+  --post-form-menu-item-color: var(--color-secondary);
 
   --possibilities-item-icon-background-color: var(--color-secondary);
 
@@ -64,9 +68,9 @@
 
   --swiper-bullet-color: var(--color-secondary);
 
-  --section-intro-img-shadow-color: #aec0d6;
-  --section-intro-img-shadow-color-mobile: rgba(173, 188, 206, .7);
-  --section-intro-img-shadow-color-dark: #000;
+  --section-autopost-intro-img-shadow-color: #aec0d6;
+  --section-autopost-intro-img-shadow-color-mobile: rgba(173, 188, 206, .7);
+  --section-autopost-intro-img-shadow-color-dark: #000;
 
   color-scheme: light dark;
 }

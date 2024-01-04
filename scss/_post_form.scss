@@ -1,8 +1,5 @@
 .post-form {
-  max-width: 69.0625rem;
-  margin: clamp(2.25rem, 1.8vw + 1.8rem, 3.375rem) auto;
   position: relative;
-  width: 85vw;
   pointer-events: none;
 
   &__body {
@@ -124,14 +121,162 @@
       color: #b7c6d9;
     }
   }
+
+  &__question,
+  &-tools,
+  &-menu,
+  &-badges {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .post-form--extended {
+    .post-form__body {
+      --border-radius: 20px;
+
+      padding: 0 16px 26px;
+    }
+
+    .post-form__wrap {
+      border-radius: 17px;
+      background-color: var(--post-form-wrap-background-color);
+      box-shadow: 0 0 5px rgba(var(--post-form-wrap-shadow-color-rgb), .3);
+      top: -26px;
+      position: relative;
+      padding: 56px 14px 20px;
+    }
+
+    .post-form__question {
+      font-weight: 500;
+      margin-top: 26px;
+      display: block;
+    }
+
+    .post-form-tabs {
+      gap: 5px;
+
+      &__tab {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      &__icon {
+        --size: 21px;
+
+        margin-right: 7px;
+      }
+    }
+
+    .post-form-ai-chat {
+      margin: 18px auto 46px -54px;
+      padding: 15px 16px 15px 21px;
+      border-radius: 25px;
+      display: inline-flex;
+      width: auto;
+      box-shadow: none;
+
+      .arc {
+        display: none;
+      }
+
+      &__icon {
+        width: 35px;
+        height: 38px;
+        margin-right: 16px;
+      }
+
+      &__text {
+        font-size: 16px;
+        padding: 17px 18px 17px 20px;
+        border-radius: 17px 17px 17px 9px;
+      }
+    }
+
+    .post-form-user-chat {
+      display: none;
+    }
+
+    .post-form-tools {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &__icon {
+        flex-shrink: 0;
+        margin-left: 10px;
+        width: 28px;
+        height: 28px;
+        color: #dbe2ec;
+
+        &:first-child {
+          margin-right: auto;
+          margin-left: 0;
+        }
+      }
+
+      &__text {
+        margin-left: 2px;
+        font-weight: 500;
+        color: #dbe2ec;
+        font-family: "Arial", sans-serif;
+      }
+    }
+
+    .post-form-menu {
+      position: absolute;
+      border-radius: 20px;
+      white-space: nowrap;
+      box-shadow: 0 28px 15px -25px var(--post-form-box-shadow-color),
+      0 0 5px rgba(var(--post-form-wrap-shadow-color-rgb), .3);
+      padding: 11px;
+      background-color: var(--post-form-wrap-background-color);
+      top: -30px;
+      left: 38px;
+      font-family: "Arial", sans-serif;
+      display: block;
+
+      &__item {
+        padding: 10px 15px;
+        font-size: 22px;
+        border-radius: 10px;
+        letter-spacing: .3px;
+
+        &:first-child {
+          background-color: var(--post-form-menu-item-color);
+          padding: 13px 15px;
+        }
+      }
+    }
+
+    .post-form-badges {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+
+      &__item {
+        padding: 10px 16px;
+        background-color: #d4deeb;
+        color: #343434;
+        font-family: "Arial", sans-serif;
+        border-radius: 50px;
+        letter-spacing: .3px;
+      }
+    }
+  }
+
+  @media not (prefers-color-scheme: dark) {
+    :root:not(.dark-theme, .light-theme) {
+      .post-form--extended .post-form__body {
+        box-shadow: 0 29px 15px -25px var(--post-form-ai-chat-shadow-color);
+      }
+    }
+  }
 }
 
 @media (max-width: 63.9375rem) {
   .post-form {
-    max-width: none;
-    width: 100%;
-    padding: 0 10px;
-
     &__body {
       --border-radius: 23px;
 
