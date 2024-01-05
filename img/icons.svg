@@ -513,5 +513,16 @@
             <path d="M18.0832 17.136C18.0832 17.136 16.5513 18.6667 13.9998 18.6667C11.4472 18.6667 9.9165 17.136 9.9165 17.136"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
+        <symbol id="pause" viewBox="0 0 24 24" stroke="none" fill="currentColor">
+            <rect x="6.37646" y="5.37671" width="3.77922" height="13.8571"/>
+            <rect x="13.9351" y="5.37671" width="3.77922" height="13.8571"/>
+        </symbol>
+        <symbol id="volume" viewBox="0 0 24 24" stroke="none" fill="none">
+            <path d="M14.8442 16.0843V8.52588C14.8442 8.52588 17.3637 9.06574 17.3637 12.3051C17.3637 15.5445 14.8442 16.0843 14.8442 16.0843Z"
+                  fill="white"/>
+            <path d="M15.4741 5.37671C15.4741 5.37671 19.8832 6.36645 19.8832 12.3053C19.8832 18.2441 15.4741 19.2339 15.4741 19.2339"
+                  stroke="white" stroke-width="1.25974" stroke-linecap="round"/>
+            <path d="M3.50635 15.6769V8.9336H8.54531L13.5843 4.11694V20.4936L8.54531 15.6769H3.50635Z" fill="white"/>
+        </symbol>
     </defs>
 </svg>

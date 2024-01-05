@@ -1,0 +1,177 @@
+.section-involvement {
+  .content-layout {
+    max-width: 97.375rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 18% 15% 360px 18% 12%;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row dense;
+    gap: clamp(1.5rem, 6.382978723404255vw - 2.5851063829787235rem, 3rem);
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__col {
+    position: relative;
+
+    .arc {
+      --size: 144px;
+      --border-width: 16px;
+
+      position: absolute;
+    }
+
+    &--1 {
+      top: 35px;
+
+      .arc {
+        --rotate-angle: 45deg;
+
+        bottom: -42px;
+        left: -42px;
+      }
+    }
+
+    &--2 {
+      top: 150px;
+    }
+
+    &--3 {
+      .arc {
+        --size: 218px;
+        --rotate-angle: 135deg;
+
+        top: 60px;
+        left: -70px;
+      }
+    }
+
+    &--4 {
+      top: 100px;
+
+      .arc {
+        --rotate-angle: -45deg;
+
+        bottom: -42px;
+        right: -42px;
+      }
+    }
+
+    &--5 {
+      top: -55px;
+    }
+  }
+
+  &__body {
+    border-radius: clamp(1.25rem, 2vw + 0.75rem, 2.5rem);
+    background-color: var(--color-secondary-swap);
+    padding: 110px 38px 90px;
+  }
+
+  &__title {
+    margin: 0 0 0.75rem;
+  }
+
+  &__text {
+    p {
+      margin: 0;
+
+      & + p {
+        margin-top: clamp(1.5rem, 0.8vw + 1.3rem, 2rem);
+      }
+    }
+  }
+
+  &-item {
+    position: relative;
+    border-radius: clamp(0.5rem, 1.2vw + 0.2rem, 1.25rem);
+    overflow: hidden;
+    pointer-events: none;
+
+    &__img {
+      display: block;
+      width: 100%;
+    }
+
+    &__icon {
+      position: absolute;
+      width: 9%;
+      top: 2%;
+      color: #fff;
+      aspect-ratio: 1;
+
+      &--pause {
+        left: 4%;
+      }
+
+      &--volume {
+        right: 4%;
+      }
+    }
+
+    &__text {
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.7cqw;
+      position: absolute;
+      bottom: 3%;
+      left: 6%;
+    }
+  }
+}
+
+@media (max-width: 50rem) {
+  .section-involvement {
+    &__grid {
+      grid-template-columns: 1.1fr 1fr 1fr 1fr 1.6fr;
+      gap: 12px;
+      min-width: 400px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__col {
+      .arc {
+        display: none;
+      }
+
+      &--1 {
+        grid-column: span 2;
+        top: 0;
+      }
+
+      &--2 {
+        display: none;
+      }
+
+      &--3 {
+        grid-column: span 5;
+        z-index: -1;
+      }
+
+      &--4 {
+        grid-column: span 2;
+        top: 25%;
+      }
+
+      &--5 {
+        top: 0;
+      }
+    }
+
+    &__body {
+      width: calc(100vw - 2 * var(--content-layout-padding));
+      margin: calc(clamp(2.5rem, -15vw + 10rem, 6.25rem) * -1) auto 0;
+      padding: 170px 14px 18px;
+    }
+
+    &-item {
+      &__text {
+        font-size: 2cqw;
+      }
+    }
+  }
+}
