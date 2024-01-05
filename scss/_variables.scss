@@ -60,8 +60,6 @@
   --post-form-wrap-shadow-color-rgb-dark: 0, 0, 0;
   --post-form-menu-item-color: var(--color-secondary);
 
-  --possibilities-item-icon-background-color: var(--color-secondary);
-
   --section-how-num-background-color: #fff;
   --section-how-num-background-color-mobile: var(--color-secondary);
 
@@ -72,6 +70,8 @@
   --section-autopost-intro-img-shadow-color: #aec0d6;
   --section-autopost-intro-img-shadow-color-mobile: rgba(173, 188, 206, .7);
   --section-autopost-intro-img-shadow-color-dark: #000;
+
+  --section-numbers-pattern-opacity: 1;
 
   color-scheme: light dark;
 }

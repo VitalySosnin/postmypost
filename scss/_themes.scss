@@ -28,8 +28,6 @@
   --post-form-wrap-shadow-color-rgb: var(--post-form-wrap-shadow-color-rgb-dark);
   --post-form-menu-item-color: #16161d;
 
-  --possibilities-item-icon-background-color: var(--color-secondary-dark);
-
   --section-advantages-col-background-color: var(--color-secondary-dark);
 
   --section-how-num-background-color: var(--color-secondary-dark);
@@ -39,6 +37,8 @@
 
   --section-autopost-intro-img-shadow-color: var(--section-autopost-intro-img-shadow-color-dark);
   --section-autopost-intro-img-shadow-color-mobile: var(--section-autopost-intro-img-shadow-color-dark);
+
+  --section-numbers-pattern-opacity: .1;
 }
 
 .dark-theme {
