@@ -86,5 +86,17 @@
         }
       }
     });
+
+    new Swiper('.swiper-reviews', {
+      slidesPerView: 1,
+      autoHeight: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   }
 })();
