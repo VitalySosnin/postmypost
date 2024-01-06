@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   opacity: 0.03;
   z-index: -1;
 }
-.header-submenu, .header-channels {
+.header-popover {
   position: absolute;
   top: 100%;
   left: 0;
@@ -600,16 +600,16 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: -1rem;
   transition: opacity 0.2s ease-in-out, margin-top 0.2s ease-in-out;
 }
-.header-submenu__item, .header-channels__item {
+.header-submenu__item, .header-channels__item, .header-blog__item {
   border-radius: 16px;
   transition: background-color 0.2s ease-in-out;
   text-decoration: none;
   display: flex;
 }
-.header-submenu__item:hover, .header-channels__item:hover {
+.header-submenu__item:hover, .header-channels__item:hover, .header-blog__item:hover {
   background-color: var(--header-submenu-item-color);
 }
-.header-submenu__icon, .header-channels__icon {
+.header-submenu__icon, .header-channels__icon, .header-blog__icon {
   flex-shrink: 0;
   color: #94a2b4;
 }
@@ -660,6 +660,15 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
   white-space: nowrap;
 }
+.header-blog {
+  width: 188px;
+}
+.header-blog__item {
+  padding: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
 .header-toggler {
   --size: 48px;
   display: none;
@@ -692,8 +701,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   .header-menu__sub {
     position: relative;
   }
-  .header-menu__sub:hover .header-submenu,
-  .header-menu__sub:hover .header-channels {
+  .header-menu__sub:hover .header-popover {
     opacity: 1;
     pointer-events: auto;
     margin-top: 0;
@@ -750,7 +758,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   .header-menu__buttons {
     display: flex;
   }
-  .header-submenu, .header-channels {
+  .header-popover {
     top: 4rem;
     bottom: 0;
     border-radius: 0;
@@ -761,14 +769,14 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
     z-index: 10;
     width: 100%;
   }
-  .header-submenu__item, .header-channels__item {
+  .header-submenu__item, .header-channels__item, .header-blog__item {
     border-radius: 0;
     align-items: center;
   }
-  .header-submenu__item:hover, .header-channels__item:hover {
+  .header-submenu__item:hover, .header-channels__item:hover, .header-blog__item:hover {
     background-color: transparent;
   }
-  .header-submenu__icon, .header-channels__icon {
+  .header-submenu__icon, .header-channels__icon, .header-blog__icon {
     color: #52d3c1;
   }
   .header-submenu {
@@ -796,6 +804,13 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 0.8125rem;
   }
   .header-channels__title {
+    font-size: 0.9375rem;
+  }
+  .header-blog {
+    padding: 1.75rem;
+  }
+  .header-blog__item {
+    padding: 0.8125rem;
     font-size: 0.9375rem;
   }
   .header__buttons {
@@ -830,6 +845,10 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
     pointer-events: auto !important;
   }
   html.show-mobile-submenu--channels .header-channels {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  html.show-mobile-submenu--blog .header-blog {
     opacity: 1 !important;
     pointer-events: auto !important;
   }
@@ -1542,7 +1561,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   justify-content: space-between;
   gap: 0.5rem;
   margin-bottom: 0;
-  transition: margin-bottom 0.2s 0.1s var(--transition-easing);
+  transition: margin-bottom var(--transition-duration) var(--transition-easing);
   cursor: pointer;
 }
 .accordion-item__title {
@@ -1558,7 +1577,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .accordion-item__body {
   max-height: 0;
-  transition: max-height var(--transition-duration) var(--transition-easing);
+  transition: max-height 0.2s var(--transition-easing);
   overflow: hidden;
 }
 .accordion-item__body p {
@@ -1582,6 +1601,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
 .accordion-item input:checked ~ .accordion-item__body {
   max-height: 100vh;
   overflow: auto;
+  transition-duration: 1s;
 }
 
 .section-ai-intro {
@@ -2654,8 +2674,6 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
   .section-teamwork__lines {
     width: 120%;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: -190;
     transform: rotate(10deg);
   }
   .section-teamwork__avatar--1 {
