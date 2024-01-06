@@ -226,7 +226,8 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .section {
-  padding: clamp(2.5rem, 8vw + 0.5rem, 7.5rem) 0;
+  --section-padding: clamp(2.5rem, 8vw + 0.5rem, 7.5rem);
+  padding: var(--section-padding) 0;
   position: relative;
   overflow: hidden;
 }
@@ -2719,7 +2720,7 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 @media (min-width: 64rem) and (prefers-color-scheme: dark) {
-  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  :root:not(.dark-theme, .light-theme) .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
     background: #dbe2ec;
     opacity: 0.2;
   }
@@ -2753,6 +2754,78 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+.section-planning .swiper-pagination {
+  display: none;
+  margin-top: 1.5rem;
+}
+.section-planning__lines {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  bottom: var(--section-padding);
+  right: 0;
+  width: 35%;
+}
+.section-planning__body {
+  width: 49%;
+  margin-bottom: clamp(3rem, 3.8vw + 2.05rem, 5.375rem);
+}
+.section-planning__title {
+  margin: 0;
+}
+.section-planning__text {
+  margin-top: 0.75rem;
+}
+.section-planning__items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 6.2vw - 0.05rem, 5.375rem) clamp(1.5rem, 9.6vw - 0.9rem, 7.5rem);
+}
+.section-planning__item {
+  width: 27%;
+}
+.section-planning__item .h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.section-planning__icon {
+  --size: clamp(6rem, 4.2vw + 4.95rem, 8.625rem);
+  --icon-size: clamp(3.375rem, 2vw + 2.875rem, 4.625rem);
+  --line-border-radius: 1.75rem;
+  --offset: clamp(0.875rem, 0.6vw + 0.725rem, 1.25rem);
+  --line-inset: auto auto var(--offset) var(--offset);
+  margin-bottom: clamp(1.375rem, 1vw + 1.125rem, 2rem);
+}
+
+@media (max-width: 63.9375rem) {
+  .section-planning .swiper-pagination {
+    display: flex;
+  }
+  .section-planning__lines {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 90%;
+    margin-left: calc(var(--content-layout-padding) * -1);
+    margin-bottom: 1.5rem;
+    transform: scaleX(-1);
+    max-width: 500px;
+  }
+  .section-planning__body {
+    width: auto;
+  }
+  .section-planning__items {
+    gap: 0;
+    margin: 0 calc(var(--content-layout-padding) * -1);
+    width: auto;
+    flex-wrap: nowrap;
+  }
+  .section-planning__item {
+    flex-shrink: 0;
+    padding: 0 calc(1rem + var(--content-layout-padding));
   }
 }
 

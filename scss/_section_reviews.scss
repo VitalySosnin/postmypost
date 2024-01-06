@@ -125,9 +125,11 @@
 }
 
 @media (min-width: 64rem) and (prefers-color-scheme: dark) {
-  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-    background: #dbe2ec;
-    opacity: .2;
+  :root:not(.dark-theme, .light-theme) {
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+      background: #dbe2ec;
+      opacity: .2;
+    }
   }
 }
 
