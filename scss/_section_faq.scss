@@ -1,0 +1,36 @@
+.section-faq {
+  &__flex {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 3.2vw + 0.7rem, 3.5rem);
+  }
+
+  &__title {
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  &__accordion {
+    width: 100%;
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-faq {
+    &__flex {
+      display: block;
+    }
+
+    &__title {
+      white-space: normal;
+      margin-bottom: 1.5rem;
+    }
+
+    &__accordion {
+      width: auto;
+      padding: 0;
+    }
+  }
+}
