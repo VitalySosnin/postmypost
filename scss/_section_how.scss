@@ -44,6 +44,10 @@
 
   &__col {
     width: 33.33%;
+
+    .h5 {
+      margin: 0;
+    }
   }
 
   &__num {
@@ -82,11 +86,13 @@
 }
 
 @media (min-width: 64rem) {
-  .section-how__col {
-    --transition-duration: 800ms;
-    --transition-delay: 600ms;
+  .delayed-animation {
+    .section-how__col {
+      --transition-duration: 800ms;
+      --transition-delay: 600ms;
 
-    opacity: 0;
+      opacity: 0;
+    }
   }
 
   .delayed-animation-start {
@@ -109,10 +115,6 @@
   .section-how {
     .swiper-pagination {
       display: flex;
-    }
-
-    &__title-wrap {
-      margin-left: 3.75rem;
     }
 
     &__flex {
