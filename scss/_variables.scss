@@ -67,9 +67,9 @@
 
   --swiper-bullet-color: var(--color-secondary);
 
-  --section-autopost-intro-img-shadow-color: #aec0d6;
-  --section-autopost-intro-img-shadow-color-mobile: rgba(173, 188, 206, .7);
-  --section-autopost-intro-img-shadow-color-dark: #000;
+  --section-intro-img-shadow-color: #aec0d6;
+  --section-intro-img-shadow-color-mobile: rgba(173, 188, 206, .7);
+  --section-intro-img-shadow-color-dark: #000;
 
   --section-numbers-pattern-opacity: 1;
 
@@ -77,6 +77,11 @@
   --section-reviews-body-border-color: #d4deeb;
 
   --accordion-border-color: #d4deeb;
+
+  --section-rating-background-color: var(--color-secondary);
+  --section-rating-background-color-dark: #17171d;
+  --section-rating-border-color: #d4deeb;
+  --section-rating-border-color-dark: #3c3c4e;
 
   color-scheme: light dark;
 }

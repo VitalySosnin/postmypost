@@ -35,8 +35,8 @@
 
   --swiper-bullet-color: var(--color-secondary-dark);
 
-  --section-autopost-intro-img-shadow-color: var(--section-autopost-intro-img-shadow-color-dark);
-  --section-autopost-intro-img-shadow-color-mobile: var(--section-autopost-intro-img-shadow-color-dark);
+  --section-intro-img-shadow-color: var(--section-intro-img-shadow-color-dark);
+  --section-intro-img-shadow-color-mobile: var(--section-intro-img-shadow-color-dark);
 
   --section-numbers-pattern-opacity: .1;
 
@@ -44,9 +44,12 @@
   --section-reviews-body-border-color: transparent;
 
   --accordion-border-color: var(--color-secondary-dark);
+
+  --section-rating-background-color: var(--section-rating-background-color-dark);
+  --section-rating-border-color: var(--section-rating-border-color-dark);
 }
 
-.dark-theme {
+/*.dark-theme {
   @include dark-theme;
 }
 
@@ -54,7 +57,7 @@
   body {
     background-image: none !important;
   }
-}
+}*/
 
 @media (prefers-color-scheme: dark) {
   :root:not(.dark-theme, .light-theme) {

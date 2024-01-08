@@ -128,7 +128,7 @@
 
 @media (min-width: 64rem) and (prefers-color-scheme: dark) {
   :root:not(.dark-theme, .light-theme) {
-    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    .section-reviews .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
       background: #dbe2ec;
       opacity: .2;
     }

@@ -52,6 +52,20 @@
   &__icon {
     margin-bottom: 1.875rem;
   }
+
+  &--v2 {
+    .section-ai__col {
+      order: 0;
+      padding-left: 24px;
+      width: 54%;
+    }
+
+    .section-ai__body {
+      padding-left: 80px;
+      padding-right: 0 !important;
+      width: 46%;
+    }
+  }
 }
 
 @media (max-width: 63.9375rem) {
@@ -92,6 +106,18 @@
     &__item {
       flex-shrink: 0;
       padding: 0 calc(1rem + var(--content-layout-padding));
+    }
+
+    &--v2 {
+      .section-ai__col {
+        width: auto;
+        padding: 0;
+      }
+
+      .section-ai__body {
+        width: auto;
+        padding: 0;
+      }
     }
   }
 }

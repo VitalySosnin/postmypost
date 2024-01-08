@@ -1,0 +1,21 @@
+.section-main-intro {
+  .section-intro {
+    &__wrap {
+      padding-bottom: 7.5rem;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-main-intro {
+    .section-intro {
+      &__wrap {
+        padding: 0;
+      }
+    }
+  }
+}

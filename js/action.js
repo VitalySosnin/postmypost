@@ -101,6 +101,24 @@
       }
     });
 
+    new Swiper('.swiper-rating', {
+      slidesPerView: 'auto',
+      spaceBetween: 26,
+      slidesOffsetBefore: 14,
+      slidesOffsetAfter: 14,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 0,
+          spaceBetween: 0,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0
+        }
+      }
+    });
+
     new Swiper('.swiper-reviews', {
       slidesPerView: 1,
       autoHeight: true,
