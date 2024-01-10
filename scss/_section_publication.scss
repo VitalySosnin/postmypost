@@ -52,6 +52,11 @@
       --img-bg-width: 54%;
       --img-bg-border-radius: clamp(0.875rem, 0.6vw + 0.725rem, 1.25rem);
     }
+
+    &--v4 {
+      --img-bg-width: 51%;
+      --img-bg-border-radius: clamp(0.875rem, 0.6vw + 0.725rem, 1.25rem);
+    }
   }
 
   &__body {
