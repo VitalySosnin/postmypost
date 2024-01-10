@@ -69,6 +69,8 @@
     &__lines {
       width: 120%;
       transform: rotate(10deg);
+      stroke-dasharray: 1300;
+      stroke-dashoffset: 260;
     }
 
     &__avatar {

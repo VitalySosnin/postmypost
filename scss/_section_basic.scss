@@ -2,6 +2,7 @@
   .section-ai {
     &__flex {
       gap: clamp(1.5rem, 9.574468085106384vw - 4.627659574468085rem, 3.75rem);
+      position: relative;
     }
 
     &__col {
@@ -22,6 +23,14 @@
     display: block;
     width: 100%;
     border-radius: clamp(1.25rem, 2vw + 0.75rem, 2.5rem);
+  }
+
+  &__lines {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    left: 50%;
+    top: -62px;
   }
 }
 
