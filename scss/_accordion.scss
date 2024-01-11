@@ -38,14 +38,6 @@
       max-height: 0;
       transition: max-height .2s var(--transition-easing);
       overflow: hidden;
-
-      p {
-        margin: 0;
-
-        & + p {
-          margin-top: 0.5rem;
-        }
-      }
     }
 
     input {

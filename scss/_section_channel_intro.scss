@@ -1,0 +1,47 @@
+.section-channel-intro {
+  padding-top: clamp(2.5rem, 6vw + 1rem, 6.25rem);
+
+  &__wrap {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 110px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    margin: clamp(1rem, 0.2vw + 0.95rem, 1.125rem) 0 clamp(1.125rem, 5.4vw - 0.225rem, 4.5rem);
+  }
+
+  &__icon {
+    width: clamp(5.25rem, 5.8vw + 3.8rem, 8.875rem);
+    margin: 0 auto clamp(1.125rem, 2.4vw + 0.525rem, 2.625rem);
+    pointer-events: none;
+  }
+
+  &__lines {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: -1;
+    width: 100vw;
+    min-width: 1920px;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 3s ease-out forwards;
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-channel-intro {
+    &__wrap {
+      padding: 0;
+    }
+  }
+}

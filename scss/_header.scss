@@ -271,7 +271,6 @@
     right: 0.5rem;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, .5);
 
     &__burger,
     &__cross,
@@ -462,8 +461,6 @@
       }
 
       &-toggler {
-        background-color: transparent;
-
         &__burger,
         &__arrow {
           opacity: 0;
@@ -479,8 +476,6 @@
   html.show-mobile-submenu {
     .header {
       &-toggler {
-        background-color: transparent;
-
         &__burger,
         &__cross {
           opacity: 0;

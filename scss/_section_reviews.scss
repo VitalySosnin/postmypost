@@ -83,16 +83,6 @@
     }
   }
 
-  &__text {
-    p {
-      margin: 0;
-
-      & + p {
-        margin-top: 1rem;
-      }
-    }
-  }
-
   &__name {
     margin-top: clamp(1.125rem, 3vw + 0.375rem, 3rem);
   }
