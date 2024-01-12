@@ -119,6 +119,20 @@
       }
     });
 
+    new Swiper('.swiper-blog', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 0,
+          spaceBetween: 0,
+        }
+      }
+    });
+
     new Swiper('.swiper-reviews', {
       slidesPerView: 1,
       autoHeight: true,

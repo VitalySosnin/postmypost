@@ -68,6 +68,11 @@
   line-height: 1.2;
 }
 
+.text-24-17 {
+  font-size: clamp(1.0625rem, 0.7vw + 0.8875rem, 1.5rem);
+  line-height: 1.5;
+}
+
 .text-24-16 {
   font-size: clamp(1rem, 0.8vw + 0.8rem, 1.5rem);
   line-height: 1.5;
