@@ -136,6 +136,52 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__button {
+    flex-shrink: 0;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--section-rating-border-color);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+    &:first-child {
+      .rate__icon {
+        transform: rotate(-180deg);
+      }
+
+      &:hover {
+        background-color: #e60023;
+      }
+    }
+
+    &:last-child {
+      &:hover {
+        background-color: var(--color-line);
+      }
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 63.9375rem) {
   .mobile-hide {
     display: none !important;

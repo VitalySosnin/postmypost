@@ -1,0 +1,127 @@
+.section-education {
+  .arc {
+    --size: 152px;
+
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+  }
+
+  &__wrap {
+    --border-radius: clamp(1.25rem, 2vw + 0.75rem, 2.5rem);
+
+    position: relative;
+    min-height: 328px;
+    padding-top: 3.125rem;
+    padding-left: 29%;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    border-radius: var(--border-radius);
+
+    &-wrap {
+      width: 38%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
+  &__title {
+    --offset: clamp(1rem, 1.4vw + 0.65rem, 1.875rem);
+
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: var(--offset);
+    left: var(--offset);
+  }
+
+  &__body {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--section-rating-border-color);
+    padding-left: 13%;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(1.5rem, 13.03191489361702vw - 6.840425531914893rem, 4.5625rem);
+    padding: clamp(2rem, 7.9787234042553195vw - 3.106382978723404rem, 3.875rem) clamp(1.875rem, 7.9787234042553195vw - 3.231382978723404rem, 3.75rem) 2.125rem;
+  }
+
+  &__col {
+    width: 50%;
+  }
+
+  &__name {
+    margin-bottom: clamp(0.25rem, 0.8vw + 0.05rem, 0.75rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    a:hover {
+      color: var(--text-color);
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    text-align: right;
+    padding-bottom: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 0.9375rem;
+
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--text-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-education {
+    &__wrap {
+      min-height: 0;
+      padding: 0;
+    }
+
+    &__img-wrap {
+      max-width: 540px;
+      width: 100%;
+      position: relative;
+      top: auto;
+      left: auto;
+      margin: 0 auto 4px;
+    }
+
+    &__body {
+      padding: 1rem;
+    }
+
+    &__flex {
+      display: block;
+      padding: 0;
+    }
+
+    &__col {
+      width: auto;
+
+      & + .section-education__col {
+        margin-top: 2.5rem;
+      }
+    }
+
+    &__link {
+      margin-top: 1.125rem;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.section-support {
+  .support-block {
+    width: 32%;
+  }
+
+  &__flex {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  &__col {
+    width: 68%;
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-support {
+    &__flex {
+      display: block;
+    }
+
+    .support-block,
+    &__col {
+      width: auto;
+    }
+
+    .support-block {
+      margin-top: 1rem;
+    }
+  }
+}

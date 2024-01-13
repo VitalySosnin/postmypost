@@ -124,6 +124,12 @@
       color: #7a828e;
     }
   }
+
+  &--wide2 {
+    .button--back {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 @media (max-width: 63.9375rem) {
@@ -219,6 +225,10 @@
   }
 
   .blog-item--wide2 {
+    .button--back {
+      display: none;
+    }
+
     .blog-item {
       &__img-wrap {
         order: 1;
