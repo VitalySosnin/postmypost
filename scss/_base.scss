@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-wrap: balance;
 }
 
+input {
+  outline: 0;
+}
+
 .content-layout {
   width: calc(100% - 2 * var(--content-layout-padding));
   margin: 0 auto;
@@ -179,6 +183,93 @@ h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
 
   &--disabled {
     pointer-events: none;
+  }
+}
+
+.tabs {
+  display: flex;
+  white-space: nowrap;
+  gap: clamp(0.25rem, 0.8vw + 0.05rem, 0.75rem);
+
+  &__item {
+    background-color: var(--color-secondary-swap);
+    transition: background-color .2s ease-in-out,
+    color .2s ease-in-out;
+    padding: clamp(0.5rem, 0.6vw + 0.35rem, 0.875rem) clamp(0.5rem, 1.2vw + 0.2rem, 1.25rem);
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.2vw + 0.825rem, 1rem);
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 50px;
+
+    &--active,
+    &:hover {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+
+    &--active {
+      cursor: default;
+    }
+  }
+}
+
+.counter {
+  display: flex;
+
+  &__button {
+    --size: clamp(2.125rem, 0.8vw + 1.925rem, 2.625rem);
+
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    flex-shrink: 0;
+    background-color: #d4deeb;
+    cursor: pointer;
+    color: #1b1b20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+    transition: background-color .2s ease-in-out,
+    color .2s ease-in-out;
+
+    &:not(:disabled):hover {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      opacity: .5;
+    }
+  }
+
+  &__icon {
+    --size: clamp(1.1875rem, 0.5vw + 1.0625rem, 1.5rem);
+
+    width: var(--size);
+    height: var(--size);
+    pointer-events: none;
+  }
+
+  &__value {
+    flex-shrink: 0;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    font-family: var(--font-family-primary);
+    font-weight: 800;
+    font-size: clamp(1.125rem, 1vw + 0.875rem, 1.75rem);
+    width: clamp(3rem, 1.8vw + 2.55rem, 4.125rem);
+    padding: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .desktop-hide {
+    display: none !important;
   }
 }
 

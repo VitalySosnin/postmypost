@@ -1,0 +1,123 @@
+.section-tarifs-intro {
+  padding-top: clamp(1.5rem, 10.6vw - 1.15rem, 8.125rem);
+
+  &__lines {
+    position: absolute;
+    width: 22vw;
+
+    &-wrap {
+      z-index: -1;
+      pointer-events: none;
+      position: absolute;
+      width: 100vw;
+      min-width: 1920px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--1 {
+      left: 0;
+      min-width: 401px;
+    }
+
+    &--2 {
+      right: 0;
+      min-width: 424px;
+    }
+  }
+
+  &__wrap {
+    margin: 0 auto clamp(3rem, 3.2vw + 2.2rem, 5rem);
+    max-width: 940px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 clamp(0.5rem, 1vw + 0.25rem, 1.125rem);
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 2.125rem;
+    justify-content: center;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.5rem, 1vw + 0.25rem, 1.125rem);
+    flex-shrink: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: clamp(0.125rem, 0.2vw + 0.075rem, 0.25rem);
+    padding-left: clamp(0.75rem, 0.6vw + 0.6rem, 1.125rem);
+    background-color: var(--color-secondary-swap);
+    transition: background-color .2s ease-in-out;
+    border-radius: 50px;
+    box-shadow: 0 0 0 1px var(--section-tarifs-intro-counter-border-color) inset;
+  }
+
+  &__tabs {
+    flex-shrink: 0;
+
+    sup {
+      line-height: 0;
+      font-size: 60%;
+    }
+  }
+
+  &__tarifs {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1.25rem, 11.170212765957446vw - 5.898936170212766rem, 3.875rem);
+    margin-top: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+    flex-wrap: wrap;
+
+    .tarif-item {
+      max-width: 388px;
+      min-width: 304px;
+      flex-grow: 1;
+      flex-basis: 30%;
+    }
+  }
+
+  &__subtext {
+    text-align: center;
+    margin-top: clamp(1.125rem, 2vw + 0.625rem, 2.375rem);
+    font-size: clamp(0.875rem, 0.3vw + 0.8rem, 1.0625rem);
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 63.9375rem) {
+  .section-tarifs-intro {
+    &__flex {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    &__subtext {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 40.1875rem) {
+  .section-tarifs-intro {
+    &__tarifs {
+      display: block;
+
+      .tarif-item {
+        max-width: none;
+        min-width: 0;
+
+        & + .tarif-item {
+          margin-top: 0.375rem;
+        }
+      }
+    }
+  }
+}

@@ -63,14 +63,6 @@
 
   &__input {
     position: relative;
-    font-family: var(--font-family-primary);
-    font-size: 1.0625rem;
-    border-radius: 14px;
-    border: 1px solid var(--section-rating-border-color);
-    background: var(--background-color);
-    padding: 0 clamp(0.75rem, 0.6vw + 0.6rem, 1.125rem);
-    height: 52px;
-    outline: 0;
     width: 41%;
     flex-shrink: 0;
   }
