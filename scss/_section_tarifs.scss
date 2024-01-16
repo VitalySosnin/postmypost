@@ -21,12 +21,16 @@
   &__sticky {
     padding-top: 0.75rem;
     padding-bottom: 1.25rem;
+    position: sticky;
+    top: var(--header-height);
+    background-color: var(--background-color);
+    z-index: 5;
   }
 
   &-choice {
     display: flex;
     gap: var(--column-gap);
-    margin-top: clamp(1rem, 3.8vw + 0.05rem, 3.375rem);
+    margin-top: 1rem;
 
     &__col {
       width: 25%;
@@ -110,7 +114,9 @@
       font-weight: 800;
       font-size: clamp(1.125rem, 0.6vw + 0.975rem, 1.5rem);
       background-color: var(--section-tarifs-options-title-background-color);
-      margin: 1.125rem 0 clamp(0.5rem, 1vw + 0.25rem, 1.125rem);
+      margin-top: 1.125rem;
+      position: sticky;
+      top: calc(var(--header-height) + clamp(18.4375rem, 1.4550264550264551vw + 17.85185185185185rem, 19.125rem));
 
       .input-checkbox {
         flex-shrink: 0;
@@ -119,6 +125,8 @@
     }
 
     &-list {
+      margin-top: clamp(0.5rem, 1vw + 0.25rem, 1.125rem);
+
       &__row {
         display: flex;
         gap: 0 var(--column-gap);
@@ -248,12 +256,8 @@
     }
 
     &__sticky {
-      position: sticky;
-      top: var(--header-height);
-      background-color: var(--background-color);
       padding-bottom: 0;
       margin: 0 calc(var(--content-layout-padding) * -1);
-      z-index: 5;
     }
 
     &-choice {
@@ -301,6 +305,10 @@
     }
 
     &-options {
+      &__title {
+        top: calc(var(--header-height) + clamp(12.8125rem, 1.8575851393188854vw + 12.440982972136222rem, 13.1875rem));
+      }
+
       &-list {
         border-radius: var(--border-radius);
         overflow: hidden;
