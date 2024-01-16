@@ -22,8 +22,7 @@
   }
 
   &__logo {
-    --size: var(--logo-size);
-    width: var(--size);
+    width: clamp(12.5rem, 3.723404255319149vw + 10.117021276595745rem, 13.375rem);
     flex-shrink: 0;
 
     img {
@@ -36,11 +35,13 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    gap: 0.875rem;
+    gap: clamp(0.5rem, 1.5957446808510638vw - 0.5212765957446809rem, 0.875rem);
 
     .button {
+      --button-padding: 1rem clamp(1rem, 0.5319148936170213vw + 0.6595744680851063rem, 1.125rem);
+      --button-text-size: clamp(0.875rem, 1.0638297872340425vw + 0.19414893617021275rem, 1.125rem);
+
       flex-shrink: 0;
-      font-size: 1.125rem;
 
       &--filled {
         box-shadow: none !important;
@@ -315,10 +316,11 @@
 
     &__flex {
       position: relative;
+      justify-content: flex-start;
     }
 
     &__logo {
-      --size: var(--logo-size-mobile);
+      width: var(--logo-size-mobile);
     }
 
     &-menu {
