@@ -19,8 +19,9 @@
   }
 
   &__sticky {
+    margin-top: clamp(0.5rem, 3.4vw - 0.35rem, 2.625rem);
     padding-top: 0.75rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
     position: sticky;
     top: var(--header-height);
     background-color: var(--background-color);
@@ -30,13 +31,16 @@
   &-choice {
     display: flex;
     gap: var(--column-gap);
-    margin-top: 1rem;
 
     &__col {
       width: 25%;
       display: flex;
       gap: 0.875rem;
       flex-direction: column;
+
+      &:first-child .section-tarifs-choice__body {
+        padding: 0 var(--column-gap);
+      }
     }
 
     &__body {
@@ -47,21 +51,37 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      min-height: 155px;
+      min-height: 182px;
       text-align: center;
-      padding: 0 var(--column-gap);
       position: relative;
       transition: background-color .2s ease-in-out,
       color .2s ease-in-out;
 
-      .tarif-item__price {
-        font-weight: 700;
-        font-size: clamp(1rem, 0.8vw + 0.8rem, 1.5rem);
+      .tarif-item {
+        &__price {
+          font-weight: 700;
+          font-size: clamp(1rem, 0.4vw + 0.9rem, 1.25rem);
 
-        &-text {
-          font-size: clamp(0.75rem, 0.1vw + 0.725rem, 0.8125rem);
-          margin-top: 0.125rem;
+          &-text {
+            font-size: 0.6875rem;
+          }
         }
+
+        &__discount {
+          font-size: 1rem;
+
+          &-text {
+            margin-top: 0;
+            font-size: 0.6875rem;
+          }
+        }
+      }
+
+      .button {
+        box-shadow: none !important;
+        font-size: 0.875rem;
+        padding: 0.625rem 1.25rem;
+        height: 2.625rem;
       }
     }
 
@@ -74,21 +94,6 @@
     &__title {
       font-size: clamp(0.75rem, 0.2vw + 0.7rem, 0.875rem);
       font-weight: 700;
-    }
-
-    &__footer {
-      --height: 2.625rem;
-
-      text-align: center;
-      height: var(--height);
-      flex-shrink: 0;
-
-      .button {
-        box-shadow: none !important;
-        font-size: 0.875rem;
-        padding: 0.625rem 1.25rem;
-        height: var(--height);
-      }
     }
 
     &__label {
@@ -116,7 +121,7 @@
       background-color: var(--section-tarifs-options-title-background-color);
       margin-top: 1.125rem;
       position: sticky;
-      top: calc(var(--header-height) + clamp(18.4375rem, 1.4550264550264551vw + 17.85185185185185rem, 19.125rem));
+      top: calc(var(--header-height) + 210px);
 
       .input-checkbox {
         flex-shrink: 0;
@@ -209,7 +214,7 @@
 }
 
 @media (min-width: 40.25rem) {
-  .section-tarifs__sticky .section-tarifs-intro__counter {
+  .section-tarifs .section-tarifs-intro__counter {
     display: none !important;
   }
 }
@@ -256,8 +261,9 @@
     }
 
     &__sticky {
+      padding-top: 0.5rem;
       padding-bottom: 0;
-      margin: 0 calc(var(--content-layout-padding) * -1);
+      margin: 0.5rem calc(var(--content-layout-padding) * -1) 0;
     }
 
     &-choice {
@@ -284,6 +290,10 @@
         justify-content: center;
         min-height: 94px;
         padding: 8px;
+
+        .button {
+          display: none;
+        }
       }
 
       &__price {
@@ -295,10 +305,6 @@
         display: none;
       }
 
-      &__footer {
-        display: none;
-      }
-
       &__label {
         pointer-events: auto;
       }
@@ -306,7 +312,7 @@
 
     &-options {
       &__title {
-        top: calc(var(--header-height) + clamp(12.8125rem, 1.8575851393188854vw + 12.440982972136222rem, 13.1875rem));
+        top: calc(var(--header-height) + 102px);
       }
 
       &-list {
