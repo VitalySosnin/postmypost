@@ -1,13 +1,11 @@
 .section-main-publication {
   &__lines {
     position: absolute;
-    top: 55px;
+    top: calc(clamp(0.625rem, -31.914893617021278vw + 28.550531914893618rem, 8.125rem) * -1);
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
     z-index: -1;
-    width: 100vw;
-    min-width: clamp(93.75rem, 111.70212765957447vw + 22.26063829787234rem, 120rem);
   }
 
   &__flex {
@@ -98,7 +96,7 @@
   &--v2 {
     .section-main-publication {
       &__lines {
-        top: -90px;
+        top: calc(clamp(8.75rem, 7.9787234042553195vw + 3.643617021276596rem, 10.625rem) * -1);
       }
 
       &__flex {

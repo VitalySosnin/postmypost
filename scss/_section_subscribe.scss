@@ -27,8 +27,8 @@
     z-index: -1;
     pointer-events: none;
     top: 50%;
-    right: 50%;
-    transform: translate(50vw, -50%);
+    left: 50%;
+    transform: translate(-270px, -50%);
   }
 
   &__pattern {

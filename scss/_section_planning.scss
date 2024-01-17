@@ -9,8 +9,8 @@
     pointer-events: none;
     z-index: -1;
     bottom: var(--section-padding);
-    right: 0;
-    width: 35%;
+    left: 50%;
+    transform: translateX(clamp(12.5rem, 23.93617021276596vw - 2.8191489361702127rem, 18.125rem));
   }
 
   &__body {
@@ -60,12 +60,10 @@
     }
 
     &__lines {
-      position: relative;
-      bottom: auto;
-      right: auto;
+      position: static;
       width: 90%;
       margin-left: calc(var(--content-layout-padding) * -1);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       transform: scaleX(-1);
       max-width: 500px;
     }

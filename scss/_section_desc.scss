@@ -24,10 +24,8 @@
   &__lines {
     margin-top: clamp(2.5rem, 10.638297872340425vw - 4.308510638297872rem, 5rem);
     position: absolute;
-    width: 50vw;
-    max-width: 674px;
-    left: 50%;
-    transform: translateX(calc(clamp(720px, 63.829787234042556vw + 66.382978723px, 960px) * -1));
+    right: 50%;
+    transform: translateX(calc(clamp(14.375rem, 18.617021276595743vw + 2.4601063829787235rem, 18.75rem) * -1));
     pointer-events: none;
     z-index: -1;
   }
@@ -50,10 +48,11 @@
 
     &__lines {
       margin-top: 1.125rem;
+      right: auto;
       left: 0;
-      width: 100vw;
-      max-width: 350px;
-      transform: translateX(-20%);
+      width: 150vw;
+      max-width: 550px;
+      transform: translateX(-45%);
     }
   }
 }

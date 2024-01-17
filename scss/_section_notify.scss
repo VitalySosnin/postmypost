@@ -6,9 +6,9 @@
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translateX(-960px);
-      width: 1454px;
-      height: 309px;
+      transform: translateX(-1260px);
+      width: 1754px;
+      height: 311px;
       z-index: -1;
       pointer-events: none;
     }
@@ -35,7 +35,7 @@
 
     path {
       &:nth-child(1) {
-        stroke-dasharray: 1600;
+        stroke-dasharray: 1980;
         stroke-dashoffset: clamp(60px, -39.88603988603989vw + 608.433048433px, 200px);
       }
 
