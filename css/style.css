@@ -193,8 +193,8 @@ body {
   padding: var(--header-height) 0 0;
   font-family: var(--font-family-primary);
   background-color: var(--background-color);
-  background-position: 50% 0;
-  background-repeat: no-repeat;
+  background-position: 0 0, 0 100vw;
+  background-repeat: no-repeat, repeat-y;
   background-size: 100% auto;
   color: var(--text-color);
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -728,7 +728,6 @@ input {
   gap: var(--flex-gap);
   height: var(--header-height);
   align-items: center;
-  justify-content: center;
 }
 .header__logo {
   width: clamp(12.5rem, 3.7234042553vw + 10.1170212766rem, 13.375rem);
@@ -962,7 +961,6 @@ input {
   }
   .header__flex {
     position: relative;
-    justify-content: flex-start;
   }
   .header__logo {
     width: var(--logo-size-mobile);

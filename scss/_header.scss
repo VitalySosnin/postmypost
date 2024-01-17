@@ -18,7 +18,6 @@
     gap: var(--flex-gap);
     height: var(--header-height);
     align-items: center;
-    justify-content: center;
   }
 
   &__logo {
@@ -316,7 +315,6 @@
 
     &__flex {
       position: relative;
-      justify-content: flex-start;
     }
 
     &__logo {
