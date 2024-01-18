@@ -62,7 +62,7 @@
     &__lines {
       position: static;
       width: 90%;
-      margin-left: calc(var(--content-layout-padding) * -1);
+      margin-left: calc(var(--content-layout-padding) * -2);
       margin-bottom: 1rem;
       transform: scaleX(-1);
       max-width: 500px;

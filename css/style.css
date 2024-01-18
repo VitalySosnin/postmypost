@@ -2619,20 +2619,20 @@ input {
 }
 .section-ai-intro__lines {
   position: absolute;
-  bottom: 50%;
+  bottom: 45%;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
   z-index: -1;
 }
 .section-ai-intro__lines path:first-child {
-  stroke-dasharray: 4000;
-  stroke-dashoffset: 4000;
+  stroke-dasharray: 2550;
+  stroke-dashoffset: 2550;
   animation: dash 4s 0.2s ease-out forwards;
 }
 .section-ai-intro__lines path:last-child {
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
+  stroke-dasharray: 3150;
+  stroke-dashoffset: 3150;
   animation: dash 3s ease-out forwards;
 }
 
@@ -4162,7 +4162,7 @@ input {
   .section-planning__lines {
     position: static;
     width: 90%;
-    margin-left: calc(var(--content-layout-padding) * -1);
+    margin-left: calc(var(--content-layout-padding) * -2);
     margin-bottom: 1rem;
     transform: scaleX(-1);
     max-width: 500px;
@@ -4420,8 +4420,8 @@ input {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-1260px);
-  width: 1754px;
+  transform: translateX(-1285px);
+  width: 1779px;
   height: 311px;
   z-index: -1;
   pointer-events: none;
