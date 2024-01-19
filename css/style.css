@@ -105,6 +105,11 @@
     background-image: none !important;
   }
 }*/
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: none !important;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root:not(.dark-theme, .light-theme) {
     --color-secondary-swap: var(--color-secondary-dark);
@@ -153,11 +158,6 @@
     --section-tarifs-options-list-val-color: var(--section-tarifs-options-list-val-color-dark);
     --section-tarifs-options-list-val-border-color: var(--section-tarifs-options-list-val-border-color-dark);
     --section-tarifs-options-list-val-border-color2: var(--section-tarifs-options-list-val-border-color2-dark);
-  }
-}
-@media not (prefers-color-scheme: dark) {
-  body {
-    background-image: none !important;
   }
 }
 @keyframes show-mobile-menu {

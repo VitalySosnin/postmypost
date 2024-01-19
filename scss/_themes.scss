@@ -72,14 +72,14 @@
   }
 }*/
 
-@media (prefers-color-scheme: dark) {
-  :root:not(.dark-theme, .light-theme) {
-    @include dark-theme;
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: none !important;
   }
 }
 
-@media not (prefers-color-scheme: dark) {
-  body {
-    background-image: none !important;
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark-theme, .light-theme) {
+    @include dark-theme;
   }
 }
