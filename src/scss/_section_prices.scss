@@ -1,0 +1,131 @@
+.section-prices {
+  overflow: hidden;
+
+  &__flex {
+    --border-radius: clamp(1.25rem, 2vw + 0.75rem, 2.5rem);
+
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(0.5rem, 3.4vw - 0.35rem, 2.625rem);
+    max-width: 70.875rem;
+    margin: 0 auto;
+  }
+
+  &__col {
+    width: 100%;
+  }
+
+  &__body {
+    background-color: var(--section-advantages-col-background-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: background-color .2s ease-in-out;
+    padding: clamp(1rem, 5.2vw - 0.3rem, 4.25rem);
+
+    & > * {
+      position: relative;
+    }
+
+    .text-22 {
+      max-width: 33.125rem;
+    }
+
+    .text-16 {
+      margin-top: 1rem;
+      max-width: 33.125rem;
+    }
+  }
+
+  &__title {
+    max-width: 37.5rem;
+    margin-left: clamp(1rem, 5.2vw - 0.3rem, 4.25rem);
+    margin-top: 0;
+    margin-bottom: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+  }
+
+  &__photo {
+    width: 34%;
+    flex-shrink: 0;
+    display: block;
+    border-radius: var(--border-radius);
+  }
+
+  &__price {
+    font-weight: 800;
+    font-size: clamp(1.5rem, 2.1vw + 0.975rem, 2.8125rem);
+    margin: clamp(2.25rem, 1.2vw + 1.95rem, 3rem) 0;
+
+    span {
+      font-size: clamp(3.375rem, 1.6vw + 2.975rem, 4.375rem);
+    }
+  }
+
+  &__lines {
+    position: absolute;
+    pointer-events: none;
+    width: clamp(10.3125rem, 13.6vw + 6.9125rem, 18.8125rem);
+    right: calc(clamp(3.4375rem, 7vw + 1.6875rem, 7.8125rem) * -1);
+    top: 10rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .section-prices {
+    &__col {
+      opacity: 0;
+      transform: translateX(-200px);
+      z-index: 2;
+    }
+
+    &__photo {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+
+    &__lines {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+  }
+
+  .delayed-animation-start {
+    .section-prices {
+      &__col,
+      &__photo {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity .6s ease-in-out,
+        transform .6s ease-in-out;
+      }
+
+      &__lines {
+        animation: dash 3s .5s ease-out forwards;
+      }
+    }
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .section-prices {
+    &__flex {
+      display: block;
+      margin: 0;
+    }
+
+    &__body {
+      padding-bottom: 2.375rem;
+    }
+
+    &__title {
+      margin-left: 0;
+    }
+
+    &__photo {
+      display: none;
+    }
+
+    &__button-wrap {
+      text-align: center;
+    }
+  }
+}

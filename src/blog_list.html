@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Postmypost</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+@@include('./_header.html')
+
+<section class="section section--above section--narrow">
+  <div class="content-layout">
+    <div class="blog-list">
+      <div class="blog-list-header">
+        <div class="blog-list-header__title text-22">Обновление</div>
+      </div>
+      <div class="blog-list__items">
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- SUBSCRIBE -->
+        @@include('./_subscribe.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+        <!-- BLOG ITEM -->
+        @@include('./_blog-item.html')
+
+      </div>
+
+      <p align="center">
+        <br>
+        <a href="blog_list.html" class="button button--bordered button--small">
+          Ещё
+        </a>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+@@include('./_support.html')
+
+<!-- FOOTER -->
+@@include('./_footer.html')
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

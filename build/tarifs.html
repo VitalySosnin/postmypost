@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Postmypost</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="content-layout">
+        <div class="header__flex">
+            <a class="header__logo" href="main.html" title="Postmypost">
+                <picture>
+                    <img src="img/logo_color.svg" alt="Postmypost">
+                </picture>
+            </a>
+
+            <div class="header-menu">
+                <div class="header-menu__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+                <nav class="header-menu__nav">
+                    <ul>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="tools">
+                                Инструменты
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-submenu">
+                                <a href="autopost.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#autopost"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Автопостинг</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет планировать публикацию постов по&nbsp;расписанию во&nbsp;все
+                                            социальные сети, экономя ваше время.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="analytics.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#analytics"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Аналитика</div>
+                                        <div class="header-submenu__text">
+                                            Предоставляет подробную аналитику постов, что помогает оптимизировать ваш
+                                            контент и&nbsp;увеличить вовлеченность аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="monitoring.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#message"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">CRM</div>
+                                        <div class="header-submenu__text">
+                                            Увеличивайте продажи и&nbsp;быстро регируйте на&nbsp;комментарии
+                                            пользователй в&nbsp;социальных сетях
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="reposter.html" class="header-submenu__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#rss"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Репостер</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет автоматически публиковать новости с&nbsp;вашего сайта в&nbsp;социальные
+                                            сети через RSS, увеличивая охват аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="ai.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#hexagon"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Postmypost AI</div>
+                                        <div class="header-submenu__text">
+                                            Нейросеть, который помогает маркетологам справиться с&nbsp;рутинными
+                                            задачами от&nbsp;генерации идей и&nbsp;сотсавление конткнт плана до&nbsp;напсиия
+                                            тесстов и&nbsp;аналиаза данных.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="channels">
+                                Каналы
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-channels">
+
+                                <!-- INSTAGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#inst"/>
+                                    </svg>
+                                    <div class="header-channels__title">Instagram</div>
+                                </a>
+
+                                <!-- FACEBOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#fb"/>
+                                    </svg>
+                                    <div class="header-channels__title">Facebook</div>
+                                </a>
+
+                                <!-- TWITTER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tw"/>
+                                    </svg>
+                                    <div class="header-channels__title">Twitter</div>
+                                </a>
+
+                                <!-- LINKEDIN -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#linkedin"/>
+                                    </svg>
+                                    <div class="header-channels__title">Linkedin</div>
+                                </a>
+
+                                <!-- PINTEREST -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#pinterest"/>
+                                    </svg>
+                                    <div class="header-channels__title">Pinterest</div>
+                                </a>
+
+                                <!-- YOUTUBE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#yt"/>
+                                    </svg>
+                                    <div class="header-channels__title">YouTube</div>
+                                </a>
+
+                                <!-- TIKTOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tt"/>
+                                    </svg>
+                                    <div class="header-channels__title">TikTok</div>
+                                </a>
+
+                                <!-- DISCORD -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#discord"/>
+                                    </svg>
+                                    <div class="header-channels__title">Discord</div>
+                                </a>
+
+                                <!-- REDDIT -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#reddit"/>
+                                    </svg>
+                                    <div class="header-channels__title">Reddit</div>
+                                </a>
+
+                                <!-- MASTODON -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#mastodon"/>
+                                    </svg>
+                                    <div class="header-channels__title">Mastodon</div>
+                                </a>
+
+
+                                <!-- VKONTAKTE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#vk"/>
+                                    </svg>
+                                    <div class="header-channels__title">VKontakte</div>
+                                </a>
+
+                                <!-- TELEGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tg"/>
+                                    </svg>
+                                    <div class="header-channels__title">Telegram</div>
+                                </a>
+
+                                <!-- VIBER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#viber"/>
+                                    </svg>
+                                    <div class="header-channels__title">Viber</div>
+                                </a>
+
+                                <!-- ODNOKLASSNIKI -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#ok"/>
+                                    </svg>
+                                    <div class="header-channels__title">Odnoklassniki</div>
+                                </a>
+
+
+                                <!-- BITRIX -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#bitrix"/>
+                                    </svg>
+                                    <div class="header-channels__title">Bitrix</div>
+                                </a>
+
+                                <!-- SNAPCHAT -->
+                                <a href="channel.html" class="header-channels__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#snapchat"/>
+                                    </svg>
+                                    <div class="header-channels__title">Snapchat</div>
+                                </a>
+
+
+                                <!-- MEDIUM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#medium"/>
+                                    </svg>
+                                    <div class="header-channels__title">Medium</div>
+                                </a>
+
+                                <!-- TUMBLR -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tumblr"/>
+                                    </svg>
+                                    <div class="header-channels__title">Tumblr</div>
+                                </a>
+
+                                <!-- WEBHOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#webhook"/>
+                                    </svg>
+                                    <div class="header-channels__title">Webhook</div>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tarifs.html" data-main_menu_hide>Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" data-main_menu_hide>Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-menu__buttons">
+                    <a href="#" class="button button--filled button--small">Регистрация</a>
+                    <a href="#" class="button button--small button--no-padding">Вход</a>
+                </div>
+
+                <!--
+                <a href="#" class="header-menu__gp">
+                  <img src="img/logo_google_play.svg" alt="Google Play" width="178">
+                </a>
+                -->
+            </div>
+
+            <div class="header__language">
+                <a href="#"><b>RU</b></a>
+                <a href="#">EN</a>
+            </div>
+
+            <div class="header__buttons">
+                <a href="#" class="button button--bordered button--small">Вход</a>
+                <a href="#" class="button button--filled button--small">Регистрация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-toggler" data-main_menu_toggle data-main_submenu_hide>
+        <svg class="header-toggler__burger">
+            <use href="img/icons.svg#burger"/>
+        </svg>
+        <svg class="header-toggler__cross">
+            <use href="img/icons.svg#cross"/>
+        </svg>
+        <svg class="header-toggler__arrow">
+            <use href="img/icons.svg#arrow"/>
+        </svg>
+    </div>
+</header>
+
+
+<section class="section section--narrow section-tarifs-intro">
+  <div class="content-layout">
+    <div class="section-tarifs-intro__wrap">
+      <div class="section-tarifs-intro__lines-wrap">
+        <svg class="section-tarifs-intro__lines section-tarifs-intro__lines--1 mobile-hide" viewBox="0 0 401 339" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M398.413 230.519C339.505 157.964 272.391 143.899 245.396 193.662C228.674 224.487 239.137 276.404 193.574 308.447C169.246 325.555 139.829 320.689 123.99 311.505C107.404 301.888 88.2594 274.971 97.2576 239.253C110.98 184.781 206.907 127.823 150.126 40.4773C105.379 -28.3549 -0.0497246 4.92081 -46.2819 50.8132C-80.0973 84.38 -108.059 115.532 -135.08 143.719" stroke="#E8EDF3" stroke-width="1.5" />
+          <path d="M394.427 228.377C333.454 164.167 269.025 155.81 247.179 204.799C233.647 235.144 247.343 283.417 206.657 317.03C184.934 334.977 156.789 332.541 141.152 325.029C124.779 317.163 104.719 293.142 110.595 258.742C119.558 206.281 205.988 145.433 145.938 67.0958C98.6152 5.36254 0.185238 43.8083 -43.1509 87.7545C-65.7274 110.649 -88.9635 131.788 -113.004 151.056" stroke="#52D3C1" stroke-width="16" />
+        </svg>
+        <svg class="section-tarifs-intro__lines section-tarifs-intro__lines--2 mobile-hide" viewBox="0 0 424 369" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M268.786 151.156C213.214 121.594 147.796 109.331 86.007 129.393C50.5613 140.902 24.0467 158.371 0.5 178.981M268.786 151.156C316.452 176.511 357.653 215.191 374.283 250.341C392.559 288.972 387.793 339.342 353.16 359.032C313.395 381.639 277.863 356.262 260.989 316.644C244.115 277.025 245.861 222.417 268.786 151.156ZM268.786 151.156C281.134 112.773 304.813 77.7567 337.528 49.9689C423.456 -23.0161 578.797 -22.4724 763.191 112.77" stroke="#E8EDF3" stroke-width="1.5" />
+          <path d="M278.215 147.87C229.468 124.679 172.95 116.69 120.781 136.261C75.6751 153.182 48.4712 180.923 21.3066 212M278.215 147.87C320.027 167.761 356.812 199.318 372.408 228.797C389.55 261.196 387.4 304.54 358.483 322.746C325.282 343.649 293.865 323.272 277.887 289.974C261.909 256.675 261.31 209.815 278.215 147.87ZM278.215 147.87C287.321 114.505 306.264 83.5883 333.227 58.5175C410.25 -13.1 551.562 -2.15652 739.379 143.945" stroke="#52D3C1" stroke-width="16" />
+        </svg>
+      </div>
+      <h1 class="h1  section-tarifs-intro__title">
+        Выберите тариф который подходит под ваши задачи
+      </h1>
+      <div class="text-22 section-tarifs-intro__text">
+        Выбирайте только&nbsp;то, что вам нужно&nbsp;&mdash; количество учетных записей и&nbsp;модулей.
+      </div>
+    </div>
+    <div class="section-tarifs-intro__flex">
+      <div class="section-tarifs-intro__counter">
+        Каналы
+        <div class="counter">
+          <button class="counter__button" disabled>
+            <svg class="counter__icon">
+              <use href="img/icons.svg#minus" />
+            </svg>
+          </button>
+          <input class="counter__value" type="text" value="5" readonly>
+          <button class="counter__button">
+            <svg class="counter__icon">
+              <use href="img/icons.svg#plus" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="section-tarifs-intro__tabs tabs">
+        <div class="tabs__item tabs__item--active">
+          1 <span class="mobile-hide">месяц</span><span class="desktop-hide">мес.</span>
+        </div>
+        <div class="tabs__item">
+          6 <span class="mobile-hide">месяцев</span><span class="desktop-hide">мес.</span> <sup>8.5%</sup>
+        </div>
+        <div class="tabs__item">
+          <span class="mobile-hide">12 месяцев</span><span class="desktop-hide">1 год</span> <sup>17%</sup>
+        </div>
+        <div class="tabs__item">
+          Навсегда
+        </div>
+      </div>
+    </div>
+    <div class="section-tarifs-intro__tarifs">
+      <div class="tarif-item">
+        <div class="tarif-item__header">
+          <div class="tarif-item__title">Стандартный</div>
+          <div class="tarif-item__text">Для среднего бизнеса<br>или профессионалов</div>
+        </div>
+        <div class="tarif-item__body">
+          <div>
+            <div class="tarif-item__price">799 ₽</div>
+            <div class="tarif-item__price-text">Оплата за&nbsp;месяц</div>
+          </div>
+          <a href="#" class="button button--filled button--small">Приобрести</a>
+        </div>
+        <div class="tarif-item-footer">
+          <ul class="tarif-item-checklist">
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">
+                <strong>Все что в&nbsp;тарифе стандартный, а&nbsp;также:</strong>
+              </div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Работа с&nbsp;сообщениями</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Базовая аналитика</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Добавление пользователей</div>
+            </li>
+          </ul>
+          <div class="tarif-item-footer__text">+ 20&nbsp;функций</div>
+        </div>
+      </div>
+      <div class="tarif-item">
+        <div class="tarif-item__header">
+          <div class="tarif-item__title">Премиальный</div>
+          <div class="tarif-item__text">Для среднего бизнеса<br>или профессионалов</div>
+        </div>
+        <div class="tarif-item__body">
+          <div>
+            <div class="tarif-item__discount">5 200 ₽</div>
+            <div class="tarif-item__discount-text">Скидка 402 ₽ = <span>2 недели</span></div>
+          </div>
+          <div>
+            <div class="tarif-item__price">4 730 ₽</div>
+            <div class="tarif-item__price-text">Оплата за&nbsp;год</div>
+          </div>
+          <a href="#" class="button button--filled button--small">Приобрести</a>
+        </div>
+        <div class="tarif-item-footer">
+          <ul class="tarif-item-checklist">
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">
+                <strong>Все что в&nbsp;тарифе стандартный, а&nbsp;также:</strong>
+              </div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Интеграция с&nbsp;Яндекс.Диском</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Лиды (leads)</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Уведомления</div>
+            </li>
+          </ul>
+          <div class="tarif-item-footer__text">+ 150&nbsp;функций</div>
+        </div>
+      </div>
+      <div class="tarif-item">
+        <div class="tarif-item-label mobile-hide">
+          <svg class="tarif-item-label__bg" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.63501 23.7556C3.09958 11.7583 12.7155 2.47888 24.6176 1.32232C42.9372 -0.45785 58.1522 -0.440607 77.1301 1.37405C89.1512 2.52349 98.8699 11.8944 100.331 24.0122C102.603 42.8649 102.555 58.4015 100.187 77.8112C98.7483 89.6066 89.5378 98.9194 77.8647 100.326C59.1771 102.578 43.7635 102.558 24.4 100.265C12.6007 98.8685 3.27561 89.4711 1.84244 77.5483C-0.54294 57.7041 -0.612082 42.1632 1.63501 23.7556Z" fill="#E5094B" />
+          </svg>
+          <svg class="tarif-item-label__icon">
+            <use href="img/icons.svg#hexagon" />
+          </svg>
+          с&nbsp;поддержкой Postmypost&nbsp;AI
+        </div>
+        <div class="tarif-item__header">
+          <div class="tarif-item__title">Продвинутый</div>
+          <div class="tarif-item__text">Для среднего бизнеса<br>или профессионалов</div>
+        </div>
+        <div class="tarif-item__body">
+          <div>
+            <div class="tarif-item__discount">5 700 ₽</div>
+            <div class="tarif-item__discount-text">Скидка 402 ₽ = <span>2 недели</span></div>
+          </div>
+          <div>
+            <div class="tarif-item__price">5 200 ₽</div>
+            <div class="tarif-item__price-text">Оплата за&nbsp;год</div>
+          </div>
+          <a href="#" class="button button--filled button--small">Приобрести</a>
+        </div>
+        <div class="tarif-item-footer">
+          <ul class="tarif-item-checklist">
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">
+                <strong>Все что в&nbsp;тарифе стандартный, а&nbsp;также:</strong>
+              </div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Интеграция с&nbsp;Яндекс.Диском</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Лиды (leads)</div>
+            </li>
+            <li>
+              <svg class="tarif-item-checklist__icon">
+                <use href="img/icons.svg#check" />
+              </svg>
+              <div class="tarif-item-checklist__text">Уведомления</div>
+            </li>
+          </ul>
+          <div class="tarif-item-footer__text">+ 20&nbsp;функций</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-tarifs-intro__subtext">
+      <span class="mobile-hide">Бесплатный тестовый период&nbsp;&mdash; 7&nbsp;дней&nbsp;/</span>
+      <strong class="mobile-hide">Без банковской карты</strong>
+      <span class="desktop-hide">7&nbsp;дней бесплатно</span>
+      <strong class="desktop-hide">Не&nbsp;нужно кредитной карты</strong>
+    </div>
+  </div>
+</section>
+
+<section class="section section--narrow section-numbers">
+  <div class="section-numbers__wrap">
+    <div class="section-numbers__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <div class="content-layout">
+      <div class="section-numbers__flex">
+        <div class="section-numbers__col">
+          <h2 class="h2 text-70-38 section-numbers__title">Postmypost<br>в цифрах</h2>
+        </div>
+        <div class="section-numbers__col">
+          <div class="section-numbers-items">
+            <div class="section-numbers-items__item section-numbers-items__item--1">
+              <div class="section-numbers-items__num text-46-28">10 000</div>
+              <div class="section-numbers-items__text">клиентов</div>
+            </div>
+            <div class="section-numbers-items__item section-numbers-items__item--2">
+              <div class="section-numbers-items__num text-46-28">2 647 612</div>
+              <div class="section-numbers-items__text">опубликованых постов</div>
+            </div>
+            <div class="section-numbers-items__item section-numbers-items__item--3">
+              <div class="section-numbers-items__num text-46-28">11 72 000</div>
+              <div class="section-numbers-items__text">подключенных аккаунтов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--narrow section-tarifs">
+  <div class="content-layout">
+    <div class="section-tarifs__wrap">
+      <h3 class="h3  section-tarifs__title">Сравните наши планы и&nbsp;возможности</h3>
+      <div class="text-16 section-tarifs__text">
+        Выбирайте только&nbsp;то, что вам нужно&nbsp;&mdash; количество учетных записей и&nbsp;модулей.
+      </div>
+    </div>
+    <div class="section-tarifs-intro__flex">
+      <div class="section-tarifs-intro__counter">
+        Каналы
+        <div class="counter">
+          <button class="counter__button" disabled>
+            <svg class="counter__icon">
+              <use href="img/icons.svg#minus" />
+            </svg>
+          </button>
+          <input class="counter__value" type="text" value="5" readonly>
+          <button class="counter__button">
+            <svg class="counter__icon">
+              <use href="img/icons.svg#plus" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="section-tarifs-intro__tabs tabs">
+        <div class="tabs__item tabs__item--active">
+          1 <span class="mobile-hide">месяц</span><span class="desktop-hide">мес.</span>
+        </div>
+        <div class="tabs__item">
+          6 <span class="mobile-hide">месяцев</span><span class="desktop-hide">мес.</span> <sup>8.5%</sup>
+        </div>
+        <div class="tabs__item">
+          <span class="mobile-hide">12 месяцев</span><span class="desktop-hide">1 год</span> <sup>17%</sup>
+        </div>
+        <div class="tabs__item">
+          Навсегда
+        </div>
+      </div>
+    </div>
+    <input class="section-tarifs__radio" type="radio" id="r-tarif-1" name="tarifs-radio" checked>
+    <input class="section-tarifs__radio" type="radio" id="r-tarif-2" name="tarifs-radio">
+    <input class="section-tarifs__radio" type="radio" id="r-tarif-3" name="tarifs-radio">
+    <div class="section-tarifs__sticky">
+      <div class="section-tarifs-choice">
+        <div class="section-tarifs-choice__col">
+          <div class="section-tarifs-choice__body">
+            <div class="counter">
+              <button class="counter__button" disabled>
+                <svg class="counter__icon">
+                  <use href="img/icons.svg#minus" />
+                </svg>
+              </button>
+              <input class="counter__value" type="text" value="5" readonly>
+              <button class="counter__button">
+                <svg class="counter__icon">
+                  <use href="img/icons.svg#plus" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-tarifs-choice__counter-text">Аккаунты&nbsp;/ группы&nbsp;/ страницы</div>
+          </div>
+        </div>
+        <div class="section-tarifs-choice__col">
+          <div class="section-tarifs-choice__body" data-tarif="1">
+            <label class="section-tarifs-choice__label" for="r-tarif-1"></label>
+            <div class="section-tarifs-choice__title">Стандартный</div>
+            <div class="section-tarifs-choice__price">
+              <div class="tarif-item__price">799 ₽</div>
+              <div class="tarif-item__price-text">
+                <span class="mobile-hide">Оплата за&nbsp;месяц</span>
+                <span class="desktop-hide">1 мес.</span>
+              </div>
+            </div>
+            <a href="#" class="button button--filled button--small">Приобрести</a>
+          </div>
+        </div>
+        <div class="section-tarifs-choice__col">
+          <div class="section-tarifs-choice__body" data-tarif="2">
+            <label class="section-tarifs-choice__label" for="r-tarif-2"></label>
+            <div class="section-tarifs-choice__title">Премиальный</div>
+            <div class="section-tarifs-choice__discount">
+              <div class="tarif-item__discount">5 200 ₽</div>
+              <div class="tarif-item__discount-text">Скидка 402 ₽ = <span>2 нед.</span></div>
+            </div>
+            <div class="section-tarifs-choice__price">
+              <div class="tarif-item__price">4 730 ₽</div>
+              <div class="tarif-item__price-text">
+                <span class="mobile-hide">Оплата за&nbsp;год</span>
+                <span class="desktop-hide">1 год</span>
+              </div>
+            </div>
+            <a href="#" class="button button--filled button--small">Приобрести</a>
+          </div>
+        </div>
+        <div class="section-tarifs-choice__col">
+          <div class="section-tarifs-choice__body" data-tarif="3">
+            <label class="section-tarifs-choice__label" for="r-tarif-3"></label>
+            <div class="section-tarifs-choice__title">Продвинутый</div>
+            <div class="section-tarifs-choice__discount">
+              <div class="tarif-item__discount">5 700 ₽</div>
+              <div class="tarif-item__discount-text">Скидка 402 ₽ = <span>2 нед.</span></div>
+            </div>
+            <div class="section-tarifs-choice__price">
+              <div class="tarif-item__price">5 200 ₽</div>
+              <div class="tarif-item__price-text">
+                <span class="mobile-hide">Оплата за&nbsp;год</span>
+                <span class="desktop-hide">1 год</span>
+              </div>
+            </div>
+            <a href="#" class="button button--filled button--small">Приобрести</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-tarifs-options">
+      <label class="section-tarifs-options__title">
+        <span class="input-checkbox">
+          <input type="checkbox" checked>
+          <span class="input-checkbox-check">
+            <svg class="input-checkbox-check__icon">
+                <use href="img/icons.svg#check2" />
+              </svg>
+          </span>
+        </span>
+        Публикации
+      </label>
+      <div class="section-tarifs-options-list">
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Посты и&nbsp;истории</div>
+              <div class="section-tarifs-options-list__text">
+                Создание и&nbsp;публикация постов и&nbsp;историй.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Разные версии поста</div>
+              <div class="section-tarifs-options-list__text">
+                Позволяет создавать разные варианты одного поста для публикации в&nbsp;разные соцсети.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Первый комментарий</div>
+              <div class="section-tarifs-options-list__text">
+                Возможность создавать и&nbsp;размещать первый комментарий к&nbsp;публикации.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Рубрики</div>
+              <div class="section-tarifs-options-list__text">
+                Метки для постов для классификации материала и&nbsp;составления контент-плана.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Контент-план</div>
+              <div class="section-tarifs-options-list__text">
+                Создание и&nbsp;настройка будущего расписания публикаций в&nbsp;виде пустых слотов в&nbsp;календаре.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Подписи</div>
+              <div class="section-tarifs-options-list__text">
+                Шаблоны текста, которые можно быстро вставлять в&nbsp;публикации.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Поделиться публикацией</div>
+              <div class="section-tarifs-options-list__text">
+                Возможность создавать ссылку на&nbsp;публикацию для отправки и&nbsp;просмотра любому пользователю.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Типограф</div>
+              <div class="section-tarifs-options-list__text">
+                Автоматическая проверка постов на&nbsp;ошибки и&nbsp;орфографии.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Автоматические геопозиции</div>
+              <div class="section-tarifs-options-list__text">
+                Автоматическое добавление геопозиций в&nbsp;публикации при заданных условиях.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <label class="section-tarifs-options__title">
+        <span class="input-checkbox">
+          <input type="checkbox" checked>
+          <span class="input-checkbox-check">
+            <svg class="input-checkbox-check__icon">
+              <use href="img/icons.svg#check2" />
+            </svg>
+          </span>
+        </span>
+        Комментарии
+      </label>
+      <div class="section-tarifs-options-list">
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Комментарии под каждым постом</div>
+              <div class="section-tarifs-options-list__text">
+                Работа с&nbsp;комментариями только в&nbsp;постах, которые созданы в&nbsp;Postmypost.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Единый раздел комментарии</div>
+              <div class="section-tarifs-options-list__text">
+                Работа с&nbsp;комментариями во&nbsp;всех постах.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Быстрые ответы</div>
+              <div class="section-tarifs-options-list__text">
+                Создание и&nbsp;использование шаблонов текстов при ответе на&nbsp;комментарий.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Уведомления</div>
+              <div class="section-tarifs-options-list__text">
+                Уведомления о&nbsp;новых комментариях в&nbsp;Telegram и&nbsp;email.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-tarifs-options-list__row">
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__body">
+            <div class="section-tarifs-options-list__body-wrap">
+              <div class="section-tarifs-options-list__name">Ответы на&nbsp;комментарии в&nbsp;Telegram</div>
+              <div class="section-tarifs-options-list__text">
+                Возможность отвечать на&nbsp;комментарии прямо в&nbsp;Telegram, не&nbsp;заходя в&nbsp;Postmypost или соцсеть.
+              </div>
+            </div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="1">
+            <div class="section-tarifs-options-list__dash"></div>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="2">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="section-tarifs-options-list__col section-tarifs-options-list__val" data-tarif="3">
+            <svg class="section-tarifs-options-list__icon">
+              <use href="img/icons.svg#check" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-faq">
+  <div class="content-layout">
+    <div class="section-faq__flex">
+      <h3 class="h3  section-faq__title">Вопросы и ответы</h3>
+      <div class="accordion section-faq__accordion">
+        <div class="accordion-item">
+          <input type="radio" id="a-faq-1" name="accordion-faq" checked>
+          <label class="accordion-item__label" for="a-faq-1">
+            <span class="accordion-item__title text-20">С&nbsp;какими соцсетями можно работать через Postmypost?</span>
+            <svg class="accordion-item__icon">
+              <use href="img/icons.svg#chevron" />
+            </svg>
+          </label>
+          <div class="accordion-item__body text-16">
+            Instagram, TikTok, Linkedin, Telegram, ВКонтакте, Facebook, Одноклассники, Pinterest, Twitter, Discord, Reddit.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <input type="radio" id="a-faq-2" name="accordion-faq">
+          <label class="accordion-item__label" for="a-faq-2">
+            <span class="accordion-item__title text-20">Какие способы оплаты доступны?</span>
+            <svg class="accordion-item__icon">
+              <use href="img/icons.svg#chevron" />
+            </svg>
+          </label>
+          <div class="accordion-item__body text-16">
+            Мы используем Postmypost для планирования и автоматической публикации наших постов. Так, мы можем заранее запланировать публикации на всю неделю вперед, и они будут автоматически опубликованы в заданное время, что намного упрощает процесс и позволяет сосредоточиться на создании качественного контента.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <input type="radio" id="a-faq-3" name="accordion-faq">
+          <label class="accordion-item__label" for="a-faq-3">
+            <span class="accordion-item__title text-20">Безопасно&nbsp;ли подключать мои социальные сети в&nbsp;Postmypost?</span>
+            <svg class="accordion-item__icon">
+              <use href="img/icons.svg#chevron" />
+            </svg>
+          </label>
+          <div class="accordion-item__body text-16">
+            <p>Instagram, TikTok, Linkedin, Telegram, ВКонтакте, Facebook, Одноклассники, Pinterest, Twitter, Discord, Reddit.</p>
+            <p>Instagram, TikTok, Linkedin, Telegram, ВКонтакте, Facebook, Одноклассники, Pinterest, Twitter, Discord, Reddit.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <input type="radio" id="a-faq-4" name="accordion-faq">
+          <label class="accordion-item__label" for="a-faq-4">
+            <span class="accordion-item__title text-20">Как связаться со&nbsp;службой поддержки Postmypost?</span>
+            <svg class="accordion-item__icon">
+              <use href="img/icons.svg#chevron" />
+            </svg>
+          </label>
+          <div class="accordion-item__body text-16">
+            Instagram, TikTok, Linkedin, Telegram, ВКонтакте, Facebook, Одноклассники, Pinterest, Twitter, Discord, Reddit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <div class="content-layout">
+        <a class="footer__logo" href="main.html">
+            <img src="img/logo_symbol_white.svg" alt="Postmypost">
+        </a>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <div class="footer__col footer__col--60">
+                <div class="footer__title">Нам доверяют</div>
+                <div class="footer__text footer__text--big">
+                    <span>Postmypost</span>&nbsp;&mdash; профессиональный сервис позволяющий организовать совместную работу в&nbsp;социальных сетях.
+                </div>
+            </div>
+            <div class="footer__col footer__col--40 mobile-hide">
+                <div class="footer__flex footer__stats">
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">2 647 612</div>
+                        <div class="footer__text footer__text--big">сделано постов</div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">74 026</div>
+                        <div class="footer__text footer__text--big">подключенных аккаунтов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="footer__flex footer__flex--no-gap footer__menu mobile-hide">
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Возможности</div>
+                <ul>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Сервис</div>
+                <ul>
+                    <li>
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="#">Обновления</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерская программа</a>
+                    </li>
+                    <li>
+                        <a href="#">Программа лояльности</a>
+                    </li>
+                    <li>
+                        <a href="#">Статус</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Центр помощи</div>
+                <ul>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Аккаунты социальных сетей</a>
+                    </li>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Модули и интеграции</a>
+                    </li>
+                    <li>
+                        <a href="#">White Label</a>
+                    </li>
+                    <li>
+                        <a href="#">Тарифы и оплата</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--40">
+                <div class="footer__title">Документы</div>
+                <ul>
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация о работе с юр. лицами</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="footer__menu-mobile">
+            <ul>
+                <li>
+                    <span data-main_submenu_show="tools">Инструменты</span>
+                </li>
+                <li>
+                    <span data-main_submenu_show="channels">Каналы</span>
+                </li>
+                <li>
+                    <a href="tarifs.html">Тарифы</a>
+                </li>
+                <li>
+                    <span data-main_submenu_show="blog">Блог</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <nav class="footer__col footer__col--20 footer__links">
+                <ul>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Русский</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-hide footer__col footer__col--40">
+                <div class="footer__title">Техническая поддержка</div>
+                <div class="footer__text">
+                    Мы&nbsp;всегда рады ответить вам в&nbsp;чате поддержки 7&nbsp;дней в&nbsp;неделю с&nbsp;07:00&nbsp;&mdash; 18:30 по&nbsp;МСК.
+                </div>
+            </div>
+            <nav class="mobile-hide footer__links footer__col footer__col--40">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__flex footer__bottom">
+            <div class="footer__col footer__info">
+                <div class="footer__copyright">
+                    ИП&nbsp;Никифоров Александр Викторович, ОГРНИП: 319420500019953, ИНН: 421709879080
+                </div>
+                <div class="footer__email">
+                    Для рекламы и&nbsp;предложений <a href="mailto:marketing@postmypost.io">marketing@postmypost.io</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

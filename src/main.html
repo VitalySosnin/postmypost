@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Postmypost</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+@@include('./_header.html')
+
+<!-- INTRO -->
+<section class="section section-intro section-main-intro">
+  <div class="content-layout">
+    <div class="section-intro__wrap">
+      <svg class="section-intro__lines mobile-hide" width="2581" height="668" viewBox="0 0 2581 668" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2041.86 229.279C2090.81 227.059 2137.67 242.646 2172.77 272.105C2252.99 339.438 2220.86 430.868 2157 437.484C2132.21 440.052 2101.45 433.25 2074 404.484C2045.81 374.937 2024.94 317.436 2041.86 229.279ZM2041.86 229.279C1970.14 232.53 1893.92 274.019 1843.63 366.12C1759.01 521.071 1679 547.484 1596 537.957C1498.03 526.713 1445.2 460.584 1350 470.984C1231 483.984 1112 627.984 860 655.984C688.251 675.067 534.002 642.182 370 532.41C153.5 387.5 20.5 405.5 -1.4779e-07 405.5M2041.86 229.279C2043.88 218.771 2046.39 207.841 2049.44 196.488C2079.81 83.4074 2127.86 35.214 2224.5 10.5048C2379 -29.0001 2540 63.5 2570 90.5" stroke="#E8EDF3" stroke-width="1.5" />
+        <path d="M2057 250.353C2001.81 247.158 1945.12 261.38 1903.18 300.066C1840.86 357.561 1836.01 434.374 1797.98 510.647C1774.98 556.758 1712.71 669.294 1596 659.353C1497.6 650.972 1449.55 529.331 1393.5 516.483C1243 481.983 1079.12 669.268 795 651.984C563 637.87 489.017 561.619 322.5 449.483C201.5 368 114.5 342 4 342M2057 250.353C2104.33 253.094 2151.4 268.841 2177.56 290.788C2206.32 314.909 2225.46 357.483 2205.5 385.277C2182.07 417.911 2139.5 410.7 2111.5 385.277C2083.5 359.853 2064.86 315.634 2057 250.353ZM2057 250.353C2052.77 215.192 2058.81 178.559 2074.72 144.377C2099.09 91.9995 2156.93 50.9647 2228.5 42.2025C2320 31 2436.5 50.5 2575 197.5" stroke="#52D3C1" stroke-width="16" />
+      </svg>
+      <h1 class="h1  section-intro__title">
+        Сервис для управления социальными сетями
+      </h1>
+      <img class="section-intro__img" src="img/img_section_intro.jpg" alt="">
+      <div class="h1-description section-intro__text">
+        Простые и&nbsp;понятные инструменты для решения ежедневных задач в&nbsp;социальных сетях для команд и&nbsp;специалистов.
+      </div>
+      <div class="section-intro__badges">
+        <div class="text-14 section-intro__badge">Автопостинг</div>
+        <div class="text-14 section-intro__badge">Аналитика</div>
+        <div class="text-14 section-intro__badge">CRM</div>
+        <div class="text-14 section-intro__badge">Репостер</div>
+        <div class="text-14 section-intro__badge">Postmypost AI</div>
+      </div>
+      <a href="#" class="button button--filled button--small">Попробовать бесплатно</a>
+      <div class="text-16 section-intro__subtext">
+        <span>7&nbsp;дней бесплатно</span>Не&nbsp;нужно кредитной карты
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI -->
+<section class="section section-ai section-ai--v2">
+  <div class="content-layout swiper swiper-common">
+    <div class="section-ai__flex">
+      <div class="section-ai__col">
+        <div class="post-form post-form--extended">
+          <div class="post-form__body">
+            <div class="post-form__wrap">
+              <div class="post-form-tabs">
+                <div class="post-form-tabs__tab post-form-tabs__tab--active">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#post" />
+                  </svg>
+                  Пост
+                </div>
+                <div class="post-form-tabs__tab">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#stories" />
+                  </svg>
+                  История
+                </div>
+                <div class="post-form-tabs__tab">
+                  <svg class="post-form-tabs__icon">
+                    <use href="img/icons.svg#reels" />
+                  </svg>
+                  Reels
+                </div>
+              </div>
+              <div class="post-form__question">Что нового?</div>
+              <div class="post-form-ai-chat">
+                <svg class="post-form-ai-chat__icon">
+                  <use href="img/icons.svg#ai-chat" />
+                </svg>
+                <div class="post-form-ai-chat__text">Привет! как я могу помочь вам сегодня?</div>
+                <div class="arc"></div>
+              </div>
+              <div class="post-form-tools">
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#hexagon" />
+                </svg>
+                <div class="post-form-menu">
+                  <div class="post-form-menu__item">Напиши пост...</div>
+                  <div class="post-form-menu__item">Напиши креативную историю...</div>
+                  <div class="post-form-menu__item">Предложи идеи...</div>
+                  <div class="post-form-menu__item">Составь контент-план...</div>
+                </div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#letter" />
+                </svg>
+                <div class="post-form-tools__text">0</div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#hashtag" />
+                </svg>
+                <div class="post-form-tools__text">0</div>
+                <svg class="post-form-tools__icon">
+                  <use href="img/icons.svg#smile" />
+                </svg>
+              </div>
+              <div class="post-form-user-chat">
+                <div class="post-form-user-chat__text">Привет! Напиши пост на тему...</div>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#slash" />
+                </svg>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#mic" />
+                </svg>
+                <svg class="post-form-user-chat__icon">
+                  <use href="img/icons.svg#arrow-up" />
+                </svg>
+              </div>
+            </div>
+            <div class="post-form-badges">
+              <div class="post-form-badges__item">Версия поста</div>
+              <div class="post-form-badges__item">Выбрать рубрику</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-ai__body">
+        <h3 class="h3 section-ai__title">Создавайте больше контента с&nbsp;помощью Postmypost&nbsp;AI</h3>
+        <div class="h3-description section-ai__text">
+          Желаете улучшить свои посты до&nbsp;нового уровня? С&nbsp;помощью AI&nbsp;Assistant от&nbsp;Postmypost это можно сделать всего одним кликом мыши. Он&nbsp;способен генерировать новые идеи, переписывать текст в&nbsp;желаемом вами стиле и&nbsp;даже переводить ваш контент.
+        </div>
+        <a href="#" class="button button--filled button--small mobile-hide">Попробовать бесплатно</a>
+      </div>
+    </div>
+    <div class="section-ai__items swiper-wrapper">
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#idea" />
+          </svg>
+        </div>
+        <h5 class="h5">Придумывать идеи</h5>
+        <div class="h5-description">Используйте возможность нейросети, чтобы генерировать идеи на&nbsp;любые темы.</div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#pen" />
+          </svg>
+        </div>
+        <h5 class="h5">Пишите быстрее</h5>
+        <div class="h5-description">Генерируйте потрясающий контент с&nbsp;помощью нейросети, способной выполнять это быстро и&nbsp;с&nbsp;высоким качеством.</div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#plan" />
+          </svg>
+        </div>
+        <h5 class="h5">Составляйте контент-план</h5>
+        <div class="h5-description">Получите потрясающий результат с&nbsp;помощью нейросети, которая предложит вам рабочие идеи для вашего бизнеса.</div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#click" />
+          </svg>
+        </div>
+        <h5 class="h5">Формируйте стратегию</h5>
+        <div class="h5-description">Формируйте стратегию. Воспользуйтесь всеми преимуществами нейросети, чтобы разработать готовую стратегию развития вашего бизнеса в&nbsp;социальных сетях.</div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- MAIN PUBLICATION -->
+<section class="section section-main-publication">
+  <div class="content-layout">
+    <div class="section-main-publication__flex">
+      <img class="section-main-publication__lines mobile-hide" src="img/lines_section_main_publication.svg" alt="">
+      <div class="section-main-publication-img">
+        <img class="section-main-publication-img__bg" src="img/img_section_main_publication.jpg" alt="">
+        <img class="section-main-publication-img__icons" src="img/icons_section_publication.svg" alt="">
+      </div>
+      <div class="section-main-publication__body section-main-publication__body--1">
+        <h4 class="h4 section-main-publication__title">
+          Публикуйте во&nbsp;все социальные сети из&nbsp;единого окна
+        </h4>
+        <div class="h4-description section-main-publication__text">
+          Публикуйте посты во&nbsp;всех социальных сетях из&nbsp;единого окна. Это позволит вам значительно сократить время, затрачиваемое на&nbsp;ручное размещение контента, и&nbsp;сфокусироваться на&nbsp;других важных задачах.
+        </div>
+        <a class="section-main-publication__link" href="#">Подробнее</a>
+      </div>
+    </div>
+    <div class="section-main-publication__body section-main-publication__body--2">
+      <div class="section-main-publication-img">
+        <img class="section-main-publication-img__bg" src="img/img_analytics.jpg" alt="">
+        <img class="section-main-publication-img__atop" src="img/img_analytics_line.svg" alt="">
+      </div>
+      <h4 class="h4 section-main-publication__title">
+        Одна панель для вашего аналитика и&nbsp;отчетность в&nbsp;социальных сетях
+      </h4>
+      <div class="h4-description section-main-publication__text">
+        Отслеживайте эффективность и&nbsp;создавайте отчеты для Instagram, Facebook, Twitter и&nbsp;LinkedIn&nbsp;&mdash; и&nbsp;все это с&nbsp;помощью одной интуитивно понятной аналитической панели.
+      </div>
+      <a class="section-main-publication__link" href="#">Подробнее</a>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+@@include('./_numbers.html')
+
+<!-- TEAMWORK -->
+<section class="section section-teamwork section-ai section-ai--v2">
+  <div class="content-layout swiper swiper-common">
+    <div class="section-ai__flex">
+      <div class="section-ai__col">
+        <svg class="section-teamwork__lines" viewBox="0 0 621 393" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M445.855,327.631C422.855,308.631 363.355,268.131 301.355,269.631C239.355,271.131 205.355,305.631 154.855,327.631C104.355,349.631 62.8385,348.84 40,334.5C18.4997,321 -19.5003,263 15.3555,207.631C70.4997,120.033 195,161 267.5,165.5C340,170 367.855,165.131 445.855,72.1309C502.76,4.28323 562.856,30.9642 582.856,46.1309" stroke="#D4DEEB" stroke-width="1.5" stroke-linecap="square" />
+          <path d="M447.006,389.709C416.249,342.957 365.806,287.593 282.965,281.851C184.081,274.998 135.053,341.999 64.0003,303C7.5001,271.989 0.487364,213.245 30.5003,176C64.5391,133.759 123.21,139.783 198.483,169.893C264.1,196.139 324.5,201.217 369,176C413.5,150.783 417,115.862 451,61C485,6.1381 556.5,-7.49989 618,22.0001" stroke="#52D3C1" stroke-width="12" stroke-linejoin="round" />
+        </svg>
+        <img class="section-teamwork__avatar section-teamwork__avatar--1" src="img/avatar_1.jpg" alt="">
+        <img class="section-teamwork__avatar section-teamwork__avatar--2" src="img/avatar_4.jpg" alt="">
+        <img class="section-teamwork__avatar section-teamwork__avatar--3" src="img/avatar_7.jpg" alt="">
+        <img class="section-teamwork__avatar section-teamwork__avatar--4" src="img/avatar_3.jpg" alt="">
+      </div>
+      <div class="section-ai__body">
+        <h3 class="h3 section-ai__title">Работайте в&nbsp;команде</h3>
+        <div class="h3-description section-ai__text">
+          Предоставьте доступ коллегам и&nbsp;клиентам к&nbsp;вашим проектам без доступа к&nbsp;соцсетям. Создавайте публикации совместно. Согласовывайте посты с&nbsp;клиентами. Командная работа позволяет объединить членов команды и&nbsp;клиентов для плодотворной работы.
+        </div>
+        <a href="#" class="button button--filled button--small mobile-hide">Попробовать бесплатно</a>
+      </div>
+    </div>
+    <div class="section-ai__items swiper-wrapper">
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#discuss" />
+          </svg>
+        </div>
+        <h5 class="h5">Обсуждение постов</h5>
+        <div class="h5-description">
+          Вы&nbsp;можете обсуждать посты с&nbsp;коллегами или со&nbsp;своими клиентами во&nbsp;внутренней переписке. Все внутренние комментарии видны только внутри Postmypost.
+        </div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#pair" />
+          </svg>
+        </div>
+        <h5 class="h5">Совместная работа над постами</h5>
+        <div class="h5-description">
+          Совместная работа над постами организована с&nbsp;помощью этапов/шагов создания публикаций. Назначайте сотрудников, ответственных за&nbsp;каждый этап и&nbsp;настройте взаимосвязи между ними.
+        </div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#message-check" />
+          </svg>
+        </div>
+        <h5 class="h5">Согласование поста</h5>
+        <div class="h5-description">
+          Для менеджеров или клиентов предусмотрено финальное согласование публикаций. Контролируйте выход публикаций либо согласовывайте их&nbsp;с&nbsp;клиентами.
+        </div>
+      </div>
+      <div class="section-ai__item swiper-slide">
+        <div class="section-ai__icon square-icon">
+          <svg class="square-icon__icon">
+            <use href="img/icons.svg#key" />
+          </svg>
+        </div>
+        <h5 class="h5">Совместный доступ к&nbsp;комментариям и&nbsp;сообщениям</h5>
+        <div class="h5-description">
+          Не&nbsp;нужно давать пароль от&nbsp;аккаунта сотрудникам, работа происходит в&nbsp;Postmypost. Кроме того, можно отвечать на&nbsp;компьютере, а&nbsp;не&nbsp;с&nbsp;мобильных устройств. Настраивайте правила работы и&nbsp;ограничения для сотрудников в&nbsp;работе с&nbsp;сообщениями Instagram, VK, Facebook. Например, запретить удаление диалогов и&nbsp;возможность только отвечать.
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+@@include('./_reviews.html')
+
+<!-- TOOLS -->
+@@include('./_tools.html')
+
+<!-- REVIEWS -->
+@@include('./_faq.html')
+
+<section class="section section-rating">
+  <div class="content-layout swiper swiper-rating">
+    <div class="section-rating__title">Мы&nbsp;в&nbsp;рейтинге</div>
+    <div class="text-16 section-rating__text">
+      Данные обновляются раз в&nbsp;сутки. Оценки актуальны на&nbsp;21.12.2023
+    </div>
+    <div class="section-rating__items swiper-wrapper">
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">5&nbsp;&mdash; 134 отзыва</div>
+        <a class="section-rating__link" href="#">startpack.ru</a>
+      </div>
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use href="img/icons.svg#star" />
+            <use class="section-rating__star--active" href="img/icons.svg#star" clip-path="inset(0 10% 0 0)" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">4.9&nbsp;&mdash; 158 отзывов</div>
+        <a class="section-rating__link" href="#">otzivmarketing.ru</a>
+      </div>
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use href="img/icons.svg#star" />
+            <use class="section-rating__star--active" href="img/icons.svg#star" clip-path="inset(0 10% 0 0)" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">4.9&nbsp;&mdash; 26 отзывов</div>
+        <a class="section-rating__link" href="#">eto-razvod.ru</a>
+      </div>
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use href="img/icons.svg#star" />
+            <use class="section-rating__star--active" href="img/icons.svg#star" clip-path="inset(0 20% 0 0)" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">4.8&nbsp;&mdash; 21 отзывов</div>
+        <a class="section-rating__link" href="#">crmindex.ru</a>
+      </div>
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use href="img/icons.svg#star" />
+            <use class="section-rating__star--active" href="img/icons.svg#star" clip-path="inset(0 30% 0 0)" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">4.7&nbsp;&mdash; 22 отзывов</div>
+        <a class="section-rating__link" href="#">101poisk.ru</a>
+      </div>
+      <div class="section-rating__item swiper-slide">
+        <div class="section-rating__stars">
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use class="section-rating__star--active" href="img/icons.svg#star" />
+          </svg>
+          <svg class="section-rating__star">
+            <use href="img/icons.svg#star" />
+            <use class="section-rating__star--active" href="img/icons.svg#star" clip-path="inset(0 30% 0 0)" />
+          </svg>
+        </div>
+        <div class="section-rating__grade">4.7&nbsp;&mdash; 47 отзывов</div>
+        <a class="section-rating__link" href="#">in-scale.ru</a>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+@@include('./_footer.html')
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

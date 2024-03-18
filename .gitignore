@@ -7,13 +7,13 @@
 /.pnp
 .pnp.js
 .eslintcache
-package-lock.json
+#package-lock.json
 
 # testing
 /coverage
 
 # production
-/build
+#/build
 
 # misc
 .DS_Store

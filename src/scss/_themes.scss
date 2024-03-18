@@ -1,0 +1,85 @@
+@mixin dark-theme {
+  --color-secondary-swap: var(--color-secondary-dark);
+  --text-color: var(--text-color-dark);
+  --background-color: var(--background-color-dark);
+  --background-color-rgb: var(--background-color-rgb-dark);
+
+  --header-submenu-shadow-color: var(--background-color-dark);
+  --header-submenu-item-color: var(--color-secondary-dark);
+  --header-submenu-item-title-color: #fff;
+
+  --footer-background-color: var(--color-secondary-dark);
+  --footer-border-color: var(--footer-border-color-dark);
+  --footer-logo-filter: none;
+  --footer-pattern-opacity: .02;
+
+  --logo-gp-filter: var(--logo-gp-filter-dark);
+
+  --post-form-background-color: rgba(23, 23, 30, .4);
+  --post-form-box-shadow-color: var(--post-form-box-shadow-color-dark);
+  --post-form-box-shadow: var(--post-form-box-shadow-inset), var(--post-form-box-shadow-outset);
+  --post-form-backdrop-filter: saturate(1) blur(18px);
+  --post-form-tab-color: var(--post-form-tab-color-dark);
+  --post-form-ai-chat-background-color: var(--post-form-ai-chat-background-color-dark);
+  --post-form-ai-chat-shadow-color: var(--post-form-ai-chat-shadow-color-dark);
+  --post-form-ai-chat-text-background-color: var(--post-form-ai-chat-text-background-color-dark);
+  --post-form-user-chat-shadow-color: var(--post-form-user-chat-shadow-color-dark);
+  --post-form-wrap-background-color: var(--color-secondary-dark);
+  --post-form-wrap-shadow-color-rgb: var(--post-form-wrap-shadow-color-rgb-dark);
+  --post-form-menu-item-color: #16161d;
+
+  --section-advantages-col-background-color: var(--color-secondary-dark);
+
+  --section-how-num-background-color: var(--color-secondary-dark);
+  --section-how-num-background-color-mobile: var(--color-secondary-dark);
+
+  --swiper-bullet-color: var(--color-secondary-dark);
+
+  --section-intro-img-shadow-color: var(--section-intro-img-shadow-color-dark);
+  --section-intro-img-shadow-color-mobile: var(--section-intro-img-shadow-color-dark);
+
+  --section-numbers-pattern-opacity: .1;
+
+  --section-reviews-body-background-color: var(--color-secondary-dark);
+  --section-reviews-body-border-color: transparent;
+
+  --accordion-border-color: var(--color-secondary-dark);
+
+  --section-rating-background-color: var(--section-rating-background-color-dark);
+  --section-rating-border-color: var(--section-rating-border-color-dark);
+
+  --section-tarifs-intro-counter-border-color: var(--section-tarifs-intro-counter-border-color-dark);
+
+  --tarif-item-background-color: var(--tarif-item-background-color-dark);
+  --tarif-item-border-color: var(--tarif-item-border-color-dark);
+  --tarif-item-body-background-color: var(--tarif-item-body-background-color-dark);
+  --tarif-item-price-text-color: var(--tarif-item-price-text-color-dark);
+
+  --section-tarifs-options-title-background-color: var(--section-tarifs-options-title-background-color-dark);
+  --section-tarifs-options-list-val-background-color: var(--section-tarifs-options-list-val-background-color-dark);
+  --section-tarifs-options-list-val-color: var(--section-tarifs-options-list-val-color-dark);
+  --section-tarifs-options-list-val-border-color: var(--section-tarifs-options-list-val-border-color-dark);
+  --section-tarifs-options-list-val-border-color2: var(--section-tarifs-options-list-val-border-color2-dark);
+}
+
+/*.dark-theme {
+  @include dark-theme;
+}
+
+.light-theme {
+  body {
+    background-image: none !important;
+  }
+}*/
+
+/*@media (prefers-color-scheme: light) {
+  body {
+    background-image: none !important;
+  }
+}*/
+
+/*@media (prefers-color-scheme: dark) {
+  :root:not(.dark-theme, .light-theme) {
+    @include dark-theme;
+  }
+}*/

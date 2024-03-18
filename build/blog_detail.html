@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Postmypost</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="content-layout">
+        <div class="header__flex">
+            <a class="header__logo" href="main.html" title="Postmypost">
+                <picture>
+                    <img src="img/logo_color.svg" alt="Postmypost">
+                </picture>
+            </a>
+
+            <div class="header-menu">
+                <div class="header-menu__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+                <nav class="header-menu__nav">
+                    <ul>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="tools">
+                                Инструменты
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-submenu">
+                                <a href="autopost.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#autopost"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Автопостинг</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет планировать публикацию постов по&nbsp;расписанию во&nbsp;все
+                                            социальные сети, экономя ваше время.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="analytics.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#analytics"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Аналитика</div>
+                                        <div class="header-submenu__text">
+                                            Предоставляет подробную аналитику постов, что помогает оптимизировать ваш
+                                            контент и&nbsp;увеличить вовлеченность аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="monitoring.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#message"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">CRM</div>
+                                        <div class="header-submenu__text">
+                                            Увеличивайте продажи и&nbsp;быстро регируйте на&nbsp;комментарии
+                                            пользователй в&nbsp;социальных сетях
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="reposter.html" class="header-submenu__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#rss"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Репостер</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет автоматически публиковать новости с&nbsp;вашего сайта в&nbsp;социальные
+                                            сети через RSS, увеличивая охват аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="ai.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#hexagon"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Postmypost AI</div>
+                                        <div class="header-submenu__text">
+                                            Нейросеть, который помогает маркетологам справиться с&nbsp;рутинными
+                                            задачами от&nbsp;генерации идей и&nbsp;сотсавление конткнт плана до&nbsp;напсиия
+                                            тесстов и&nbsp;аналиаза данных.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="channels">
+                                Каналы
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-channels">
+
+                                <!-- INSTAGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#inst"/>
+                                    </svg>
+                                    <div class="header-channels__title">Instagram</div>
+                                </a>
+
+                                <!-- FACEBOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#fb"/>
+                                    </svg>
+                                    <div class="header-channels__title">Facebook</div>
+                                </a>
+
+                                <!-- TWITTER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tw"/>
+                                    </svg>
+                                    <div class="header-channels__title">Twitter</div>
+                                </a>
+
+                                <!-- LINKEDIN -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#linkedin"/>
+                                    </svg>
+                                    <div class="header-channels__title">Linkedin</div>
+                                </a>
+
+                                <!-- PINTEREST -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#pinterest"/>
+                                    </svg>
+                                    <div class="header-channels__title">Pinterest</div>
+                                </a>
+
+                                <!-- YOUTUBE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#yt"/>
+                                    </svg>
+                                    <div class="header-channels__title">YouTube</div>
+                                </a>
+
+                                <!-- TIKTOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tt"/>
+                                    </svg>
+                                    <div class="header-channels__title">TikTok</div>
+                                </a>
+
+                                <!-- DISCORD -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#discord"/>
+                                    </svg>
+                                    <div class="header-channels__title">Discord</div>
+                                </a>
+
+                                <!-- REDDIT -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#reddit"/>
+                                    </svg>
+                                    <div class="header-channels__title">Reddit</div>
+                                </a>
+
+                                <!-- MASTODON -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#mastodon"/>
+                                    </svg>
+                                    <div class="header-channels__title">Mastodon</div>
+                                </a>
+
+
+                                <!-- VKONTAKTE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#vk"/>
+                                    </svg>
+                                    <div class="header-channels__title">VKontakte</div>
+                                </a>
+
+                                <!-- TELEGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tg"/>
+                                    </svg>
+                                    <div class="header-channels__title">Telegram</div>
+                                </a>
+
+                                <!-- VIBER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#viber"/>
+                                    </svg>
+                                    <div class="header-channels__title">Viber</div>
+                                </a>
+
+                                <!-- ODNOKLASSNIKI -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#ok"/>
+                                    </svg>
+                                    <div class="header-channels__title">Odnoklassniki</div>
+                                </a>
+
+
+                                <!-- BITRIX -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#bitrix"/>
+                                    </svg>
+                                    <div class="header-channels__title">Bitrix</div>
+                                </a>
+
+                                <!-- SNAPCHAT -->
+                                <a href="channel.html" class="header-channels__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#snapchat"/>
+                                    </svg>
+                                    <div class="header-channels__title">Snapchat</div>
+                                </a>
+
+
+                                <!-- MEDIUM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#medium"/>
+                                    </svg>
+                                    <div class="header-channels__title">Medium</div>
+                                </a>
+
+                                <!-- TUMBLR -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tumblr"/>
+                                    </svg>
+                                    <div class="header-channels__title">Tumblr</div>
+                                </a>
+
+                                <!-- WEBHOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#webhook"/>
+                                    </svg>
+                                    <div class="header-channels__title">Webhook</div>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tarifs.html" data-main_menu_hide>Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" data-main_menu_hide>Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-menu__buttons">
+                    <a href="#" class="button button--filled button--small">Регистрация</a>
+                    <a href="#" class="button button--small button--no-padding">Вход</a>
+                </div>
+
+                <!--
+                <a href="#" class="header-menu__gp">
+                  <img src="img/logo_google_play.svg" alt="Google Play" width="178">
+                </a>
+                -->
+            </div>
+
+            <div class="header__language">
+                <a href="#"><b>RU</b></a>
+                <a href="#">EN</a>
+            </div>
+
+            <div class="header__buttons">
+                <a href="#" class="button button--bordered button--small">Вход</a>
+                <a href="#" class="button button--filled button--small">Регистрация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-toggler" data-main_menu_toggle data-main_submenu_hide>
+        <svg class="header-toggler__burger">
+            <use href="img/icons.svg#burger"/>
+        </svg>
+        <svg class="header-toggler__cross">
+            <use href="img/icons.svg#cross"/>
+        </svg>
+        <svg class="header-toggler__arrow">
+            <use href="img/icons.svg#arrow"/>
+        </svg>
+    </div>
+</header>
+
+
+<section class="section section--above section--narrow">
+    <div class="content-layout">
+        <div class="blog-item blog-item--wide2">
+            <div class="blog-item__img-wrap">
+                <div class="blog-item__img" style="background-image: url(img/img_blog.jpg)">
+                    <a href="blog_detail.html"></a>
+                </div>
+            </div>
+            <div class="blog-item__body">
+
+                <h3 class="h1 blog-item__title">
+                    <a href="blog_detail.html">Идеи для поздравлений с&nbsp;Новым годом</a>
+                </h3>
+
+                <div class="blog-item__stats">
+                    <div class="blog-item__date">08 Марта, 2023</div>
+                    <div class="blog-item-duration">
+                        <svg class="blog-item-duration__icon">
+                            <use href="img/icons.svg#clock"/>
+                        </svg>
+                        <div class="blog-item-duration__text">
+                            <span class="mobile-hide">Читать </span>6 мин.
+                        </div>
+                    </div>
+                    <a href="#" class="blog-item__badge blog-item__badge--blog">Блог</a>
+                </div>
+
+                <div class="blog-item-avatar">
+                    <div class="blog-item-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+                    <div class="blog-item-avatar__body">
+                        <div class="blog-item-avatar__name">Девушка Аватарка</div>
+                        <div class="blog-item-avatar__text">друг клиентов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section section--narrow blog-content">
+    <div class="content-layout">
+        <div class="blog-content__wrap">
+            <a href="#" class="button button--back mobile-hide">
+                <svg class="button__icon">
+                    <use href="img/icons.svg#chevron"/>
+                </svg>
+                Назад
+            </a>
+            <div class="blog-content__body">
+                <p>
+                    Большинству из&nbsp;нас знакома проблема: идеи для рилсов закончились, в&nbsp;дружественных или
+                    конкурирующих аккаунтах контент как под копирку. Что&nbsp;ж теперь, неделями искать новые идеи? Нет!
+                    Я&nbsp;покажу вам, как с&nbsp;помощью одного инструмента открыть неиссякаемый источник вдохновения и&nbsp;сэкономить
+                    время на&nbsp;сценариях для рилсов.
+                </p>
+                <h1>Проблема: нет идей, нет вдохновения.</h1>
+                <p>
+                    Где-то в&nbsp;параллельной вселенной существуют люди, которые генерируют идеи для рилсов и&nbsp;постов
+                    по&nbsp;три штуки в&nbsp;час. И&nbsp;успевают сразу писать сценарии с&nbsp;четким таймингом. Но&nbsp;в&nbsp;нашей
+                    вселенной обычные люди не&nbsp;могут креативить по&nbsp;24&nbsp;часа в&nbsp;сутки. В&nbsp;поисках
+                    вдохновения мы&nbsp;заходим в&nbsp;соцсети, а&nbsp;там&nbsp;&mdash; множество повторений одного и&nbsp;того&nbsp;же
+                    тренда, снятые по&nbsp;типичным скучным сценариям рилсы. И&nbsp;остатки вдохновения попросту
+                    испаряются. Значит, надо искать Музу в&nbsp;другом месте.
+                </p>
+                <h1>Источники вдохновения.</h1>
+                <p>
+                    Итак, приступим к&nbsp;поискам музы, а&nbsp;точнее&nbsp;&mdash; источников вдохновения. Вот
+                    несколько самый простых, но&nbsp;не&nbsp;самых быстрых вариантов.
+                </p>
+                <h2>Посмотрите у&nbsp;конкурентов.</h2>
+                <p>
+                    Пройдитесь по&nbsp;сетям конкурентов, проанализируйте, какие публикации вызвали наибольший отклик.
+                    Возможно, именно эти темы привлекут и&nbsp;ваших подписчиков.
+                </p>
+                <h2>Спросите у подписчиков.</h2>
+                <p>
+                    Самый простой способ получить обратную связь. Можно, кстати, в&nbsp;сторис отставить окошко для
+                    ответов, которые в&nbsp;будущем можно использовать в&nbsp;качестве тем для новых постов.
+                </p>
+                <h2>Следите за&nbsp;инфоповодами.</h2>
+                <p>
+                    Старайтесь быть в&nbsp;курсе новостей в&nbsp;своей нише, выбирайте инфоповоды, которые вписываются в&nbsp;вашу
+                    тематику, стиль и&nbsp;направление.
+                </p>
+
+                <!-- INCUT BLOCK -->
+                <div class="incut-block">
+    <div class="incut-block__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <img class="incut-block__img" src="img/img_section_intro.jpg" alt="">
+    <div class="incut-block__body">
+        <div class="incut-block__title">
+            Postmypost&nbsp;&mdash; Первый сервис для ведения СММ-проектов с&nbsp;искуственным интеллектом!
+        </div>
+        <div class="incut-block__text">
+            Составляй контент-план с&nbsp;помощью&nbsp;ИИ, планируй посты на&nbsp;месяц вперед&nbsp;&mdash; попробуй 7&nbsp;дней свободы бесплатно!
+        </div>
+        <a href="#" class="button button--filled button--small">Попробовать бесплатно</a>
+    </div>
+</div>
+
+                <h2>Ищите по&nbsp;поисковым запросам.</h2>
+                <p>
+                    Подберите несколько ключевых слов, которые связаны с&nbsp;бизнесом и&nbsp;вводите их&nbsp;в&nbsp;поисковую
+                    строку в&nbsp;сервисе Wordstat. Сервис выдаст две колонки: в&nbsp;одной будут представлены запросы,
+                    совпадающие с&nbsp;вашим, в&nbsp;другой&nbsp;&mdash; похожие запросы.
+                </p>
+                <p>
+                    <img src="img/img_blog.jpg" alt="">
+                </p>
+                <h1>Решение проблемы: волшебный инструмент.</h1>
+                <p>
+                    Немного волшебства и&nbsp;магии никогда не&nbsp;повредит. В&nbsp;поисках вдохновения можно
+                    обратиться к&nbsp;<a href="#">искусственному интеллекту</a>. Он&nbsp;никогда не&nbsp;устает, в&nbsp;считанные
+                    минуты может предложить множество идей для публикаций любого формата: посты, рилсы, истории,
+                    лонгриды, даже контент-план может за&nbsp;вас составить!<br>
+                    Но&nbsp;не&nbsp;станем пока углубляться в&nbsp;контент-план, а&nbsp;попросим искусственный интеллект
+                    предложить 10&nbsp;идей для рилсов об&nbsp;авторском шоколаде ручной работы. Запрос должен содержать
+                    как можно больше деталей. Например, можно указать виды начинок или форму готовых шоколадных
+                    лакомств. Вот что выдал&nbsp;ИИ:
+                </p>
+                <img src="img/img_blog.jpg" alt="">
+                <p>
+                    На&nbsp;генерацию идей у&nbsp;искусственного интеллекта ушло не&nbsp;больше 30&nbsp;секунд. Делаем
+                    второй запрос и&nbsp;просим написать подробный сценарий для Reels. Через полминуты получаем
+                    подробный сценарий с&nbsp;действиями и&nbsp;прямой речью ведущего.
+                </p>
+                <figure>
+                    <img src="img/img_blog.jpg" alt="">
+                    <figcaption>&mdash;&nbsp;Пусть будет где то&nbsp;здесь эта подпись</figcaption>
+                </figure>
+                <p>
+                    На&nbsp;генерацию идей у&nbsp;искусственного интеллекта ушло не&nbsp;больше 30&nbsp;секунд. Делаем
+                    второй запрос и&nbsp;просим написать подробный сценарий для Reels. Через полминуты получаем
+                    подробный сценарий с&nbsp;действиями и&nbsp;прямой речью ведущего.
+                </p>
+                <h1>Что имеем?</h1>
+                <p>
+                    А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи лишь
+                    полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов, постов и
+                    прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и заказчиков.
+                    И да пребудет с вами Муза!
+                </p>
+
+                <ul>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                </ul>
+                <ol>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                    <li>А имеем мы прекрасную возможность экономить время, тратя вместо 2-3 часов на выполнение задачи
+                        лишь полчаса. Еще — неиссякаемый источник вдохновения и генератор идей для множества рилсов,
+                        постов и прочего. Теперь вам остается лишь воплотить все это в жизнь и получить новых клиентов и
+                        заказчиков. И да пребудет с вами Муза!
+                    </li>
+                </ol>
+
+
+            </div>
+        </div>
+        <div class="blog-content__footer">
+            <a href="#" class="button button--back">
+                <svg class="button__icon">
+                    <use href="img/icons.svg#chevron"/>
+                </svg>
+                Назад
+            </a>
+            <div class="blog-content__line"></div>
+            <div class="blog-content__stats text-16">
+                <div><strong>247</strong> понравилась статья</div>
+                <div><strong>328</strong> прочитали</div>
+            </div>
+            <div class="blog-content__rate text-18">
+                <div class="rate">
+                    <div class="rate__button">
+                        <svg class="rate__icon">
+                            <use href="img/icons.svg#like"/>
+                        </svg>
+                    </div>
+                    <div class="rate__button">
+                        <svg class="rate__icon">
+                            <use href="img/icons.svg#like"/>
+                        </svg>
+                    </div>
+                </div>
+                Понравилась статья?
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--narrow mobile-hide">
+    <div class="content-layout">
+        <div class="blog-list swiper swiper-blog">
+            <div class="blog-list-header">
+                <div class="blog-list-header__title text-22">Похожие статьи</div>
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="blog-list__items swiper-wrapper">
+                <div class="blog-item swiper-slide">
+                    <div class="blog-item__img-wrap">
+                        <div class="blog-item__img" style="background-image: url(img/img_blog.jpg)">
+                            <a href="blog_detail.html"></a>
+                        </div>
+                    </div>
+                    <div class="blog-item__body">
+                        <div class="blog-item__stats">
+                            <div class="blog-item__date">08 Марта, 2023</div>
+                            <a href="#" class="blog-item__badge">Обновление</a>
+                            <div class="blog-item-duration">
+                                <svg class="blog-item-duration__icon">
+                                    <use href="img/icons.svg#clock"/>
+                                </svg>
+                                <div class="blog-item-duration__text">
+                                    <span class="mobile-hide">Читать </span>6 мин.
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="h3 blog-item__title">
+                            <a href="blog_detail.html">Обновление: Работайте с&nbsp;AI ассистентом в&nbsp;режиме
+                                диалога!</a>
+                        </h3>
+                        <div class="blog-item__text">
+                            Одной из&nbsp;главных преимуществ новой функции является возможность работы с&nbsp;AI-ассистентом
+                            в&nbsp;формате диалога. Теперь вы&nbsp;можете попросить ассистента...
+                        </div>
+                        <div class="blog-item-avatar">
+                            <div class="blog-item-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+                            <div class="blog-item-avatar__body">
+                                <div class="blog-item-avatar__name">Девушка Аватарка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item swiper-slide">
+                    <div class="blog-item__img-wrap">
+                        <div class="blog-item__img" style="background-image: url(img/img_blog.jpg)">
+                            <a href="blog_detail.html"></a>
+                        </div>
+                    </div>
+                    <div class="blog-item__body">
+                        <div class="blog-item__stats">
+                            <div class="blog-item__date">08 Марта, 2023</div>
+                            <a href="#" class="blog-item__badge">Обновление</a>
+                            <div class="blog-item-duration">
+                                <svg class="blog-item-duration__icon">
+                                    <use href="img/icons.svg#clock"/>
+                                </svg>
+                                <div class="blog-item-duration__text">
+                                    <span class="mobile-hide">Читать </span>6 мин.
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="h3 blog-item__title">
+                            <a href="blog_detail.html">Запущена нейросеть Postmypost&nbsp;AI</a>
+                        </h3>
+                        <div class="blog-item__text">
+                            Рады представить вам Postmypost AI&nbsp;&mdash; невероятно мощную нейросеть. Она может
+                            писать тексты, придумывать идеи постов, подбирать хештеги, менять тональность&nbsp;и...
+                        </div>
+                        <div class="blog-item-avatar">
+                            <div class="blog-item-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+                            <div class="blog-item-avatar__body">
+                                <div class="blog-item-avatar__name">Девушка Аватарка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item swiper-slide">
+                    <div class="blog-item__img-wrap">
+                        <div class="blog-item__img" style="background-image: url(img/img_blog.jpg)">
+                            <a href="blog_detail.html"></a>
+                        </div>
+                    </div>
+                    <div class="blog-item__body">
+                        <div class="blog-item__stats">
+                            <div class="blog-item__date">08 Марта, 2023</div>
+                            <a href="#" class="blog-item__badge">Обновление</a>
+                            <div class="blog-item-duration">
+                                <svg class="blog-item-duration__icon">
+                                    <use href="img/icons.svg#clock"/>
+                                </svg>
+                                <div class="blog-item-duration__text">
+                                    <span class="mobile-hide">Читать </span>6 мин.
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="h3 blog-item__title">
+                            <a href="blog_detail.html">В&nbsp;редакторе фото и&nbsp;видео мы&nbsp;добавили новый раздел
+                                &laquo;Дизайн&raquo;</a>
+                        </h3>
+                        <div class="blog-item__text">
+                            Дорогие коллеги, сегодня мы&nbsp;расскажем о&nbsp;разделе &laquo;Дизайн&raquo; в&nbsp;редакторе
+                            фото и&nbsp;видео в&nbsp;сервисе Postmypost. Этот раздел будет полезен тем, кто хочет быстро
+                            и&nbsp;легко...
+                        </div>
+                        <div class="blog-item-avatar">
+                            <div class="blog-item-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+                            <div class="blog-item-avatar__body">
+                                <div class="blog-item-avatar__name">Девушка Аватарка</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="blog-list__button">
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="section section--narrow section-subscribe">
+    <div class="content-layout">
+        <form class="section-subscribe__flex">
+            <div class="arc"></div>
+            <img class="section-subscribe__lines mobile-hide" src="img/lines_section_subscribe.svg" alt="">
+            <div class="section-subscribe__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+            <div class="section-subscribe__body">
+                <div class="section-subscribe__title h4">Подпишитесь на&nbsp;обновление</div>
+                <div class="section-subscribe__text h4-description">
+                    Получай эксклюзивную информацию о&nbsp;новых функциях и&nbsp;возможностях нашего сервиса. Будь в&nbsp;курсе
+                    самых актуальных трендов и&nbsp;стань мастером социальных медиа!
+                </div>
+            </div>
+            <input class="input-text section-subscribe__input" type="email" placeholder="example@example.com" required>
+            <button class="button button--filled button--small section-subscribe__button">Подписаться</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <div class="content-layout">
+        <a class="footer__logo" href="main.html">
+            <img src="img/logo_symbol_white.svg" alt="Postmypost">
+        </a>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <div class="footer__col footer__col--60">
+                <div class="footer__title">Нам доверяют</div>
+                <div class="footer__text footer__text--big">
+                    <span>Postmypost</span>&nbsp;&mdash; профессиональный сервис позволяющий организовать совместную работу в&nbsp;социальных сетях.
+                </div>
+            </div>
+            <div class="footer__col footer__col--40 mobile-hide">
+                <div class="footer__flex footer__stats">
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">2 647 612</div>
+                        <div class="footer__text footer__text--big">сделано постов</div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">74 026</div>
+                        <div class="footer__text footer__text--big">подключенных аккаунтов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="footer__flex footer__flex--no-gap footer__menu mobile-hide">
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Возможности</div>
+                <ul>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Сервис</div>
+                <ul>
+                    <li>
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="#">Обновления</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерская программа</a>
+                    </li>
+                    <li>
+                        <a href="#">Программа лояльности</a>
+                    </li>
+                    <li>
+                        <a href="#">Статус</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Центр помощи</div>
+                <ul>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Аккаунты социальных сетей</a>
+                    </li>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Модули и интеграции</a>
+                    </li>
+                    <li>
+                        <a href="#">White Label</a>
+                    </li>
+                    <li>
+                        <a href="#">Тарифы и оплата</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--40">
+                <div class="footer__title">Документы</div>
+                <ul>
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация о работе с юр. лицами</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="footer__menu-mobile">
+            <ul>
+                <li>
+                    <span data-main_submenu_show="tools">Инструменты</span>
+                </li>
+                <li>
+                    <span data-main_submenu_show="channels">Каналы</span>
+                </li>
+                <li>
+                    <a href="tarifs.html">Тарифы</a>
+                </li>
+                <li>
+                    <span data-main_submenu_show="blog">Блог</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <nav class="footer__col footer__col--20 footer__links">
+                <ul>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Русский</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-hide footer__col footer__col--40">
+                <div class="footer__title">Техническая поддержка</div>
+                <div class="footer__text">
+                    Мы&nbsp;всегда рады ответить вам в&nbsp;чате поддержки 7&nbsp;дней в&nbsp;неделю с&nbsp;07:00&nbsp;&mdash; 18:30 по&nbsp;МСК.
+                </div>
+            </div>
+            <nav class="mobile-hide footer__links footer__col footer__col--40">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__flex footer__bottom">
+            <div class="footer__col footer__info">
+                <div class="footer__copyright">
+                    ИП&nbsp;Никифоров Александр Викторович, ОГРНИП: 319420500019953, ИНН: 421709879080
+                </div>
+                <div class="footer__email">
+                    Для рекламы и&nbsp;предложений <a href="mailto:marketing@postmypost.io">marketing@postmypost.io</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

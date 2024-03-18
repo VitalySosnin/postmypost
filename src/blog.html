@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Postmypost</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+@@include('./_header.html')
+
+<section class="section section--above section--narrow">
+    <div class="content-layout">
+        <div class="blog-item blog-item--wide">
+            <div class="blog-item__img-wrap">
+                <div class="blog-item__img" style="background-image: url(img/img_blog.jpg)">
+                    <a href="blog_detail.html"></a>
+                </div>
+            </div>
+            <div class="blog-item__body">
+
+                <h3 class="h1 blog-item__title">
+                    <a href="blog_detail.html">Идеи для поздравлений с&nbsp;Новым годом</a>
+                </h3>
+
+                <div class="blog-item__stats">
+                    <div class="blog-item__date">08 Марта, 2023</div>
+                    <div class="blog-item-duration">
+                        <svg class="blog-item-duration__icon">
+                            <use href="img/icons.svg#clock"/>
+                        </svg>
+                        <div class="blog-item-duration__text">
+                            <span class="mobile-hide">Читать </span>6 мин.
+                        </div>
+                    </div>
+                    <a href="#" class="blog-item__badge blog-item__badge--blog">Блог</a>
+                </div>
+
+                <div class="h1-description blog-item__text">
+                    В&nbsp;предновогодней суете, когда нужно успеть сделать слишком много всего, есть вероятность что-то
+                    пропустить. Мы&nbsp;знаем, как создать уникальное, не&nbsp;похожее&nbsp;на...
+                </div>
+
+                <div class="blog-item-avatar">
+                    <div class="blog-item-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+                    <div class="blog-item-avatar__body">
+                        <div class="blog-item-avatar__name">Девушка Аватарка</div>
+                        <div class="blog-item-avatar__text">друг клиентов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--narrow">
+    <div class="content-layout">
+        <div class="blog-list swiper swiper-blog">
+            <div class="blog-list-header">
+                <div class="blog-list-header__title text-22">Лучшие статьи</div>
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="blog-list__items swiper-wrapper">
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+            </div>
+
+
+            <div class="swiper-pagination"></div>
+            <div class="blog-list__button">
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUBSCRIBE -->
+@@include('./_subscribe.html')
+
+<section class="section section--narrow section-education">
+    <div class="content-layout">
+        <div class="section-education__wrap">
+            <div class="section-education__img-wrap">
+                <div class="arc mobile-hide"></div>
+                <img class="section-education__img" src="img/img_section_education.jpg" alt="">
+                <h3 class="h3  section-education__title">Обучение</h3>
+            </div>
+            <div class="section-education__body">
+                <div class="section-education__flex">
+                    <div class="section-education__col">
+                        <div class="section-education__name h5">
+                            <a href="#">Кто должен оплачивать сервисы SMM-специалиста?</a>
+                        </div>
+                        <div class="section-education__text h5-description">
+                            Принято считать, что фрилансер должен сам позаботиться об&nbsp;инструментах, которые
+                            необходимы ему для работы.
+                        </div>
+                    </div>
+                    <div class="section-education__col">
+                        <div class="section-education__name h5">
+                            <a href="#">Как создать эффективную контент-стратегию: с&nbsp;чего начать</a>
+                        </div>
+                        <div class="section-education__text h5-description">
+                            Сегодня контент&nbsp;&mdash; один из&nbsp;самых главных инструментов интернет-маркетинга, с&nbsp;помощью
+                            которого можно добиться абсолютно любых целей...
+                        </div>
+                    </div>
+                </div>
+                <div class="section-education__link">
+                    <a href="#">Все статьи</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--narrow">
+    <div class="content-layout">
+        <div class="blog-list swiper swiper-blog">
+            <div class="blog-list-header">
+                <div class="blog-list-header__title text-22">Обновления</div>
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="blog-list__items swiper-wrapper">
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="blog-list__button">
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUPPORT -->
+@@include('./_support.html')
+
+<section class="section section--narrow">
+    <div class="content-layout">
+        <div class="blog-list swiper swiper-blog">
+            <div class="blog-list-header">
+                <div class="blog-list-header__title text-22">Блог</div>
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="blog-list__items swiper-wrapper">
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+                <!-- BLOG ITEM SWIPER -->
+                @@include('./_blog-item-swiper.html')
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="blog-list__button">
+                <a href="blog_list.html" class="button button--view-all">
+                    Все статьи
+                    <svg class="button__icon">
+                        <use href="img/icons.svg#chevron"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+@@include('./_footer.html')
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+// https://clamp.font-size.app/
+
+h1, h2, h3, h4, h5, h6, blockquote, .h1, .h2, .h3, .h4, .h5, .h6 {
+  //noinspection CssInvalidPropertyValue
+  text-wrap: balance;
+}
+
+.h1 { // 46-26
+  font-size: clamp(1.625rem, 1.205vw + 1.384rem, 2.875rem);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.h2 { // 40-24
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.h3 { // 34-22
+  font-size: clamp(1.375rem, 1.225rem + 0.75vw, 2.125rem);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.h4 { // 27-20
+  font-size: clamp(1.25rem, 1.1625rem + 0.4375vw, 1.6875rem);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.h5 { // 18-16
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.h1-description { // 22-16
+  font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+  line-height: 1.6;
+}
+
+.h2-description { // 20-16
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.h3-description { // 18-16
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  line-height: 1.6;
+}
+
+.h4-description,
+.h5-description,
+.text-16 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.text-14 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+[class*="text-"] {
+  p {
+    margin: 0;
+
+    & + p {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.text-68-28 { // ai h1
+  font-size: clamp(1.75rem, 4vw + 0.75rem, 4.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.text-54-28 { // ai h2
+  font-size: clamp(1.75rem, 2.6vw + 1.1rem, 3.375rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.text-24-14 { // ai h2 description
+  font-size: clamp(0.875rem, 1vw + 0.625rem, 1.5rem);
+  line-height: 1.4;
+}
+
+.text-70-38 { // Numbers
+  font-size: clamp(2.375rem, 3.2vw + 1.575rem, 4.375rem);
+  line-height: 1.1;
+}
+
+.text-54-64 { // Numbers
+  font-size: clamp(1.75rem, 2.6vw + 1.1rem, 3.375rem);
+  line-height: 1.1;
+}
+
+.text-46-28 { // Numbers
+  font-size: clamp(1.75rem, 1.8vw + 1.3rem, 2.875rem);
+  line-height: 1.1;
+}
+
+

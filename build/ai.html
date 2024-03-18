@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Postmypost AI – искусственный интеллект специально для маркетологов</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="content-layout">
+        <div class="header__flex">
+            <a class="header__logo" href="main.html" title="Postmypost">
+                <picture>
+                    <img src="img/logo_color.svg" alt="Postmypost">
+                </picture>
+            </a>
+
+            <div class="header-menu">
+                <div class="header-menu__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+                <nav class="header-menu__nav">
+                    <ul>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="tools">
+                                Инструменты
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-submenu">
+                                <a href="autopost.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#autopost"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Автопостинг</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет планировать публикацию постов по&nbsp;расписанию во&nbsp;все
+                                            социальные сети, экономя ваше время.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="analytics.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#analytics"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Аналитика</div>
+                                        <div class="header-submenu__text">
+                                            Предоставляет подробную аналитику постов, что помогает оптимизировать ваш
+                                            контент и&nbsp;увеличить вовлеченность аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="monitoring.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#message"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">CRM</div>
+                                        <div class="header-submenu__text">
+                                            Увеличивайте продажи и&nbsp;быстро регируйте на&nbsp;комментарии
+                                            пользователй в&nbsp;социальных сетях
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="reposter.html" class="header-submenu__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#rss"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Репостер</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет автоматически публиковать новости с&nbsp;вашего сайта в&nbsp;социальные
+                                            сети через RSS, увеличивая охват аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="ai.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#hexagon"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Postmypost AI</div>
+                                        <div class="header-submenu__text">
+                                            Нейросеть, который помогает маркетологам справиться с&nbsp;рутинными
+                                            задачами от&nbsp;генерации идей и&nbsp;сотсавление конткнт плана до&nbsp;напсиия
+                                            тесстов и&nbsp;аналиаза данных.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="channels">
+                                Каналы
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-channels">
+
+                                <!-- INSTAGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#inst"/>
+                                    </svg>
+                                    <div class="header-channels__title">Instagram</div>
+                                </a>
+
+                                <!-- FACEBOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#fb"/>
+                                    </svg>
+                                    <div class="header-channels__title">Facebook</div>
+                                </a>
+
+                                <!-- TWITTER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tw"/>
+                                    </svg>
+                                    <div class="header-channels__title">Twitter</div>
+                                </a>
+
+                                <!-- LINKEDIN -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#linkedin"/>
+                                    </svg>
+                                    <div class="header-channels__title">Linkedin</div>
+                                </a>
+
+                                <!-- PINTEREST -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#pinterest"/>
+                                    </svg>
+                                    <div class="header-channels__title">Pinterest</div>
+                                </a>
+
+                                <!-- YOUTUBE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#yt"/>
+                                    </svg>
+                                    <div class="header-channels__title">YouTube</div>
+                                </a>
+
+                                <!-- TIKTOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tt"/>
+                                    </svg>
+                                    <div class="header-channels__title">TikTok</div>
+                                </a>
+
+                                <!-- DISCORD -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#discord"/>
+                                    </svg>
+                                    <div class="header-channels__title">Discord</div>
+                                </a>
+
+                                <!-- REDDIT -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#reddit"/>
+                                    </svg>
+                                    <div class="header-channels__title">Reddit</div>
+                                </a>
+
+                                <!-- MASTODON -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#mastodon"/>
+                                    </svg>
+                                    <div class="header-channels__title">Mastodon</div>
+                                </a>
+
+
+                                <!-- VKONTAKTE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#vk"/>
+                                    </svg>
+                                    <div class="header-channels__title">VKontakte</div>
+                                </a>
+
+                                <!-- TELEGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tg"/>
+                                    </svg>
+                                    <div class="header-channels__title">Telegram</div>
+                                </a>
+
+                                <!-- VIBER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#viber"/>
+                                    </svg>
+                                    <div class="header-channels__title">Viber</div>
+                                </a>
+
+                                <!-- ODNOKLASSNIKI -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#ok"/>
+                                    </svg>
+                                    <div class="header-channels__title">Odnoklassniki</div>
+                                </a>
+
+
+                                <!-- BITRIX -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#bitrix"/>
+                                    </svg>
+                                    <div class="header-channels__title">Bitrix</div>
+                                </a>
+
+                                <!-- SNAPCHAT -->
+                                <a href="channel.html" class="header-channels__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#snapchat"/>
+                                    </svg>
+                                    <div class="header-channels__title">Snapchat</div>
+                                </a>
+
+
+                                <!-- MEDIUM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#medium"/>
+                                    </svg>
+                                    <div class="header-channels__title">Medium</div>
+                                </a>
+
+                                <!-- TUMBLR -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tumblr"/>
+                                    </svg>
+                                    <div class="header-channels__title">Tumblr</div>
+                                </a>
+
+                                <!-- WEBHOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#webhook"/>
+                                    </svg>
+                                    <div class="header-channels__title">Webhook</div>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tarifs.html" data-main_menu_hide>Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" data-main_menu_hide>Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-menu__buttons">
+                    <a href="#" class="button button--filled button--small">Регистрация</a>
+                    <a href="#" class="button button--small button--no-padding">Вход</a>
+                </div>
+
+                <!--
+                <a href="#" class="header-menu__gp">
+                  <img src="img/logo_google_play.svg" alt="Google Play" width="178">
+                </a>
+                -->
+            </div>
+
+            <div class="header__language">
+                <a href="#"><b>RU</b></a>
+                <a href="#">EN</a>
+            </div>
+
+            <div class="header__buttons">
+                <a href="#" class="button button--bordered button--small">Вход</a>
+                <a href="#" class="button button--filled button--small">Регистрация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-toggler" data-main_menu_toggle data-main_submenu_hide>
+        <svg class="header-toggler__burger">
+            <use href="img/icons.svg#burger"/>
+        </svg>
+        <svg class="header-toggler__cross">
+            <use href="img/icons.svg#cross"/>
+        </svg>
+        <svg class="header-toggler__arrow">
+            <use href="img/icons.svg#arrow"/>
+        </svg>
+    </div>
+</header>
+
+
+<!-- INTRO -->
+<section class="section section-ai-intro">
+  <div class="content-layout">
+    <h1 class="h1 text-68-28 section-ai-intro__title">Postmypost AI&nbsp;&mdash; искусственный интеллект специально для маркетологов</h1>
+    <div class="h1-description section-ai-intro__text">
+      Postmypost AI&nbsp;&mdash; это инструмент, который обеспечивает вам свободу для решения любых задач, с&nbsp;любого устройства, в&nbsp;любое время.
+    </div>
+    <div class="post-form">
+      <svg class="section-ai-intro__lines mobile-hide" width="2636" height="692" viewBox="0 0 2636 692" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2635.5 32.5C2351.5 -33 2118.42 16.5798 2062.15 225.986C2058.54 239.414 2055.56 252.343 2053.18 264.772M2053.18 264.772C2111.12 262.147 2166.58 280.584 2208.13 315.43C2303.1 395.076 2259.68 502.618 2184.08 510.443C2154.74 513.48 2120.22 507.191 2087.73 473.165C2054.36 438.215 2033.14 369.052 2053.18 264.772ZM2053.18 264.772C1968.27 268.619 1878.04 317.694 1818.51 426.637C1718.35 609.924 1668 612.422 1525.38 629.898C1280.59 659.893 762.6 677.995 649 510.443C559.324 378.176 558.186 268.818 470.288 181.502C427.449 138.946 271.5 40.0017 129 208.002C94.5 248.675 48 261 0.5 254" stroke="#E8EDF3" stroke-width="1.5" />
+        <path d="M2104 296C2048.82 292.804 1992.12 307.026 1950.18 345.713C1887.86 403.208 1883.01 480.02 1844.98 556.294C1821.98 602.404 1793.21 674.941 1676.5 665C1578.1 656.619 1526 563 1400 541C1212.13 517.144 942 639.373 859 665C776 690.627 678.448 699.491 645 621C616.85 554.941 642 494 710 449C778 404 778 343 746 308C714 273 663.5 275 635 308C606.5 341 592 417 535 433C489.176 445.863 431.757 428.475 371.764 251.5C316 87 160.5 15.5 14.5 8.5M2104 296C2151.33 298.741 2198.4 314.487 2224.56 336.434C2253.32 360.556 2268 402.5 2247.59 430.923C2224.16 463.558 2186.5 456.347 2158.5 430.923C2130.5 405.5 2111.86 361.281 2104 296ZM2104 296C2099.77 260.839 2105.81 224.205 2121.72 190.024C2167.16 92.3806 2330.5 27 2618 144.5" stroke="#52D3C1" stroke-width="16" />
+      </svg>
+      <div class="post-form__body">
+        <div class="post-form-tabs">
+          <div class="post-form-tabs__tab post-form-tabs__tab--active">
+            <svg class="post-form-tabs__icon">
+              <use href="img/icons.svg#post" />
+            </svg>
+            Пост
+          </div>
+          <div class="post-form-tabs__tab">
+            <svg class="post-form-tabs__icon">
+              <use href="img/icons.svg#stories" />
+            </svg>
+            История
+          </div>
+          <div class="post-form-tabs__tab">
+            <svg class="post-form-tabs__icon">
+              <use href="img/icons.svg#reels" />
+            </svg>
+            Reels
+          </div>
+        </div>
+
+        <div class="post-form-ai-chat">
+          <svg class="post-form-ai-chat__icon">
+            <use href="img/icons.svg#ai-chat" />
+          </svg>
+          <div class="post-form-ai-chat__text">Привет! как я могу помочь вам сегодня?</div>
+          <div class="arc"></div>
+        </div>
+
+        <div class="post-form-user-chat">
+          <div class="post-form-user-chat__text">Привет! Напиши пост на тему...</div>
+          <svg class="post-form-user-chat__icon">
+            <use href="img/icons.svg#slash" />
+          </svg>
+          <svg class="post-form-user-chat__icon">
+            <use href="img/icons.svg#mic" />
+          </svg>
+          <svg class="post-form-user-chat__icon">
+            <use href="img/icons.svg#arrow-up" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="section-ai-intro__button">
+      <a href="#" class="button button--filled">Попробовать бесплатно</a>
+    </div>
+  </div>
+</section>
+
+<!-- POSSIBILITIES -->
+<section class="section section-possibilities delayed-animation delayed-animation-start">
+  <div class="content-layout swiper swiper-common">
+    <div class="section-possibilities__name">
+      <div class="section-possibilities__title-wrap">
+        <div class="arc"></div>
+        <h2 class="h2 section-possibilities__title">Что умеет Postmypost AI?</h2>
+      </div>
+      <div class="h2-description section-possibilities__text">
+        Postmypost AI&nbsp;&mdash; инструмент, который помогает маркетологам справиться с&nbsp;рутинными задачами и&nbsp;сэкономит их&nbsp;время. Теперь у&nbsp;вас будет больше времени для занятий, которые действительно важны для вашей работы.
+      </div>
+    </div>
+
+    <div class="section-possibilities__grid swiper-wrapper">
+      <div class="section-possibilities__name mobile-hide">
+        <div class="section-possibilities__title-wrap">
+          <div class="arc"></div>
+          <h2 class="h2 text-54-28 section-possibilities__title">Что умеет Postmypost AI?</h2>
+          <div class="section-possibilities__title-line"></div>
+        </div>
+        <div class="text-24-14 section-possibilities__text">
+          Postmypost AI&nbsp;&mdash; инструмент, который помогает маркетологам справиться с&nbsp;рутинными задачами и&nbsp;сэкономит их&nbsp;время. Теперь у&nbsp;вас будет больше времени для занятий, которые действительно важны для вашей работы.
+        </div>
+      </div>
+      <div class="possibilities-item possibilities-item--1 swiper-slide">
+        <div class="possibilities-item-icon__wrap">
+          <div class="possibilities-item-icon square-icon">
+            <svg class="square-icon__icon">
+              <use href="img/icons.svg#pen" />
+            </svg>
+          </div>
+        </div>
+        <h4 class="h4 possibilities-item__title">
+          Писать тексты на&nbsp;любую тему для любой аудитории с&nbsp;заданой тональностью
+        </h4>
+        <div class="h4-description">
+          С&nbsp;Postmypost&nbsp;AI, создание контента никогда не&nbsp;было таким простым. Наша нейросеть умеет писать тексты на&nbsp;любую тему для любой аудитории с&nbsp;заданной тональностью.
+          <br>От&nbsp;профессиональных материалов до&nbsp;легкихи
+          веселых статей&nbsp;&mdash; с&nbsp;Postmypost AI&nbsp;ваш контент всегда будет в&nbsp;точку.
+        </div>
+      </div>
+      <div class="possibilities-item possibilities-item--2 swiper-slide">
+        <div class="possibilities-item-icon__wrap">
+          <div class="possibilities-item__line"></div>
+          <div class="possibilities-item-icon square-icon">
+            <svg class="square-icon__icon">
+              <use href="img/icons.svg#masonry" />
+            </svg>
+          </div>
+        </div>
+        <h4 class="h4 possibilities-item__title">
+          Составлять стратегию развития компании или социальных сетей
+        </h4>
+        <div class="h4-description">
+          С&nbsp;Postmypost AI&nbsp;вы&nbsp;не&nbsp;только создаете контент, но&nbsp;и&nbsp;строите будущее своего бренда.
+          <br>Наш инструмент поможет составить стратегию развития вашей компании или социальных сетей, чтобы вы&nbsp;могли достичь своих целей быстрее и&nbsp;эффективнее.
+        </div>
+      </div>
+      <div class="possibilities-item possibilities-item--3 swiper-slide">
+        <div class="possibilities-item-icon__wrap">
+          <div class="possibilities-item__line possibilities-item__line--short"></div>
+          <div class="possibilities-item-icon square-icon">
+            <svg class="square-icon__icon">
+              <use href="img/icons.svg#document" />
+            </svg>
+          </div>
+        </div>
+        <h4 class="h4 possibilities-item__title">
+          Составлять контент план
+        </h4>
+        <div class="h4-description">
+          Создавать контент&nbsp;&mdash; это полдела, важно еще и&nbsp;правильно распланировать его публикацию.
+          <br>Postmypost AI&nbsp;поможет вам составить эффективный контент-план, который обеспечит максимальное вовлечение вашей аудитории.
+        </div>
+      </div>
+      <div class="possibilities-item possibilities-item--4 swiper-slide">
+        <div class="possibilities-item-icon__wrap">
+          <div class="arc"></div>
+          <div class="possibilities-item-icon square-icon">
+            <svg class="square-icon__icon">
+              <use href="img/icons.svg#video" />
+            </svg>
+          </div>
+        </div>
+        <h4 class="h4 possibilities-item__title">
+          Придумывать идеи постов и&nbsp;видео
+        </h4>
+        <div class="h4-description">
+          Застряли в&nbsp;процессе создания контента? Позвольте Postmypost AI&nbsp;вдохнуть в&nbsp;вас новый виток креативности! Это инновационное решение для маркетологов придумает захватывающие идеи для ваших постов и&nbsp;видео, которые гарантированно привлекут внимание вашей аудитории.
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section section-mission delayed-animation delayed-animation-start">
+  <div class="content-layout">
+    <div class="section-mission__wrap">
+      <h2 class="h2 section-mission__title">Для любой задачи есть решение</h2>
+      <div class="h2-description">Postmypost AI может стать вашим персональным помощником в решении задач. Не тратьте больше свое время на рутину — вы берем ее на себя. Присоединяйтесь к Postmypost AI и открывайте для себя простоту и удобство решения задач с помощью искусственного интеллекта!</div>
+
+      <a href="#" class="button button--filled">Узнать больше в центре помощи</a>
+
+      <div class="user-review user-review--1">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Анализировать эффективность моих текущих публикаций.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_1.jpg)"></div>
+      </div>
+      <div class="user-review user-review--2 mobile-hide">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Определить наиболее активные дни<br>и часы моих подписчиков.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_2.jpg)"></div>
+      </div>
+      <div class="user-review user-review--3">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Помочь мне определить,<br>какие посты стоит продвигать<br>с помощью рекламы.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_3.jpg)"></div>
+      </div>
+      <div class="user-review user-review--4">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Предложить стратегию для увеличения<br>количества моих подписчиков.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_4.jpg)"></div>
+      </div>
+      <div class="user-review user-review--5 mobile-hide">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Подбери оптимальное время для публикации поста в Instagram.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_5.jpg)"></div>
+      </div>
+      <div class="user-review user-review--6">
+        <div class="user-review__message">
+          <div class="user-review__message-border"></div>
+          Помочь составить<br>план контента<br>на следующий месяц.
+        </div>
+        <div class="user-review__avatar" style="background-image: url(img/avatar_6.jpg)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="section section-how delayed-animation delayed-animation-start">
+  <div class="content-layout">
+    <div class="section-how__title-wrap">
+      <h2 class="h3 section-how__title">Как это работает?</h2>
+      <div class="h3-description">Postmypost AI&nbsp;&mdash; мощные алгоритмы машинного обучения, имитирующие работу человеческого мозга, могут помочь вам обрабатывать и&nbsp;анализировать данные с&nbsp;несравненной точностью.</div>
+    </div>
+    <div class="section-how__flex-wrap swiper swiper-common">
+      <img class="section-how__flex-line mobile-hide" src="img/lines_section_how.svg" alt="">
+      <div class="section-how__flex swiper-wrapper" style="background-image: url(img/line_gray_section_how.svg)">
+        <div class="section-how__col section-how__col--1 swiper-slide">
+          <div class="section-how__num-wrap">
+            <div class="section-how__num text-54-64">1</div>
+            <img class="section-how__num-line" src="img/line_green_section_how.svg" alt="">
+          </div>
+          <div class="h5-description">
+            С&nbsp;нейронными сетями вы&nbsp;сможете повысить эффективность своего бизнеса, принимать информированные решения и&nbsp;стать лидером в&nbsp;своей отрасли!
+          </div>
+        </div>
+        <div class="section-how__col section-how__col--2 swiper-slide">
+          <div class="section-how__num-wrap">
+            <div class="section-how__num text-54-64">2</div>
+            <img class="section-how__num-line section-how__num-line--reflect" src="img/line_green_section_how.svg" alt="">
+          </div>
+          <div class="h5-description">
+            С&nbsp;нейронными сетями вы&nbsp;сможете повысить эффективность своего бизнеса, принимать информированные решения и&nbsp;стать лидером в&nbsp;своей отрасли!
+          </div>
+        </div>
+        <div class="section-how__col section-how__col--3 swiper-slide">
+          <div class="section-how__num-wrap">
+            <div class="section-how__num text-54-64">3</div>
+            <img class="section-how__num-line" src="img/line_green_section_how.svg" alt="">
+          </div>
+          <div class="h5-description">
+            Что более важно, нейронные сети постоянно учатся и&nbsp;улучшаются, улучшая свою производительность с&nbsp;течением времени.
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section section-advantages delayed-animation delayed-animation-start">
+  <svg class="section-advantages__lines mobile-hide" viewBox="0 0 2036 925" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 156.009C213.825 30.8061 502.796 46.7412 468.335 382.489C440.765 651.087 496.083 845.198 720.155 906.161C786.364 924.174 911.836 927.01 1020.3 866.086C1128.77 805.162 1241 668.5 1437.5 627C1595.88 593.551 1717.6 667 1852 627" stroke="#CDD9E8" stroke-width="1.5" stroke-linecap="square" />
+    <path d="M204 50.9998C400 -45.0002 646 8.99982 578 337C523.6 599.4 548.815 798.983 734 889C788.719 915.598 896 935 996 889C1096 843 1129.56 751.349 1214 681.5C1309.5 602.5 1420.8 568.5 1586 610.5C1792.5 663 1900.5 712.5 2024.5 655" stroke="#52D3C1" stroke-width="16" stroke-linecap="square" />
+  </svg>
+  <div class="content-layout">
+    <div class="section-advantages__flex">
+      <div class="section-advantages__col section-advantages__col--1 section-advantages__col--wide">
+        <img src="img/bg_section_advantages.jpg" alt="">
+        <h2 class="h2 section-advantages__title">Преимущества использования Postmypost&nbsp;AI</h2>
+        <div class="arc"></div>
+      </div>
+      <div class="section-advantages__col section-advantages__col--2">
+        <div class="section-advantages-item">
+          <h3 class="h4 section-advantages-item__title">Экономия времени и&nbsp;ресурсов</h3>
+          <div class="h4-description">
+            Наш инновационный искусственный интеллект с&nbsp;легкостью создает, планирует и&nbsp;публикует посты за&nbsp;вас, экономя вам драгоценное время и&nbsp;ресурсы. Больше не&nbsp;нужно тратить часы на&nbsp;создание идеального контента&nbsp;&mdash; Postmypost AI&nbsp;сделает это за&nbsp;вас!
+          </div>
+        </div>
+      </div>
+      <div class="section-advantages__col section-advantages__col--3 section-advantages__col--stretch">
+        <div class="section-advantages-item">
+          <h3 class="h4 section-advantages-item__title">Улучшение качества контента</h3>
+          <div class="h4-description">
+            Postmypost AI&nbsp;позволит создать привлекательный контент, который точно понравится вашей аудитории. Благодаря нашей продвинутой технологии, вы&nbsp;можете быть уверены, что ваш контент будет всегда на&nbsp;высшем уровне.
+          </div>
+        </div>
+      </div>
+      <div class="section-advantages__col section-advantages__col--4 section-advantages__col--wide section-advantages__col--stretch">
+        <div class="section-advantages-item">
+          <h3 class="h4 section-advantages-item__title">Адаптация к&nbsp;требованиям рынка</h3>
+          <div class="h4-description">
+            Искусственный интеллект обучается на&nbsp;самых актуальных трендах и&nbsp;постоянно адаптируется к&nbsp;новым требованиям аудитории и&nbsp;рынка. С&nbsp;Postmypost AI&nbsp;вы&nbsp;всегда будете в&nbsp;курсе последних тенденций и&nbsp;сможете быстро реагировать на&nbsp;изменения, создавая актуальный и&nbsp;привлекательный контент.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="section section-prices delayed-animation delayed-animation-start">
+  <div class="content-layout">
+    <div class="section-prices__flex">
+      <div class="section-prices__col">
+        <h2 class="text-54-28 section-prices__title">Стоимость использования Postmypost&nbsp;AI</h2>
+        <div class="section-prices__body">
+          <svg class="section-prices__lines" viewBox="0 0 301 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.5 136.506C29.393 140.168 65.564 138.394 102.118 115.573M102.118 115.573C119.358 104.81 134.24 89.0771 143.5 66.4341C158.59 29.5315 140.397 5.24098 117.6 2.33308C100.131 0.104962 81.5879 5.93433 70.5694 29.8372C59.8676 53.0533 72.6156 90.2934 102.118 115.573ZM102.118 115.573C107.51 120.193 113.461 124.414 119.931 128.077C153.308 146.97 225.488 158.146 278.011 82.78" stroke="#CDD9E8" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M10.6208 124.126C27.1203 128.682 81.1756 133.962 120.958 108.974M120.958 108.974C136.128 99.4453 149.223 85.5148 157.369 65.4641C170.643 32.7864 154.629 11.2726 134.566 8.69406C119.193 6.71831 102.874 11.8779 93.181 33.0441C83.7663 53.602 94.9906 86.5827 120.958 108.974ZM120.958 108.974C178.572 158.655 253.968 103.307 289 52.7172" stroke="#52D3C1" stroke-width="16" stroke-linecap="square" />
+          </svg>
+          <div class="h2-description">
+            С&nbsp;нами вы&nbsp;сможете сосредоточиться на&nbsp;том, что действительно важно для вас. И&nbsp;всего за&nbsp;стоимость трех чашек кофе в&nbsp;месяц. Не&nbsp;упустите эту возможность, начните сегодня!
+          </div>
+          <div class="section-prices__price"><span>940</span> рублей</div>
+          <div class="section-prices__button-wrap">
+            <a href="#" class="button button--filled">Попробовать бесплатно</a>
+          </div>
+        </div>
+      </div>
+      <img class="section-prices__photo" src="img/bg_section_prices.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <div class="content-layout">
+        <a class="footer__logo" href="main.html">
+            <img src="img/logo_symbol_white.svg" alt="Postmypost">
+        </a>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <div class="footer__col footer__col--60">
+                <div class="footer__title">Нам доверяют</div>
+                <div class="footer__text footer__text--big">
+                    <span>Postmypost</span>&nbsp;&mdash; профессиональный сервис позволяющий организовать совместную работу в&nbsp;социальных сетях.
+                </div>
+            </div>
+            <div class="footer__col footer__col--40 mobile-hide">
+                <div class="footer__flex footer__stats">
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">2 647 612</div>
+                        <div class="footer__text footer__text--big">сделано постов</div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">74 026</div>
+                        <div class="footer__text footer__text--big">подключенных аккаунтов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="footer__flex footer__flex--no-gap footer__menu mobile-hide">
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Возможности</div>
+                <ul>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Сервис</div>
+                <ul>
+                    <li>
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="#">Обновления</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерская программа</a>
+                    </li>
+                    <li>
+                        <a href="#">Программа лояльности</a>
+                    </li>
+                    <li>
+                        <a href="#">Статус</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Центр помощи</div>
+                <ul>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Аккаунты социальных сетей</a>
+                    </li>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Модули и интеграции</a>
+                    </li>
+                    <li>
+                        <a href="#">White Label</a>
+                    </li>
+                    <li>
+                        <a href="#">Тарифы и оплата</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--40">
+                <div class="footer__title">Документы</div>
+                <ul>
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация о работе с юр. лицами</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="footer__menu-mobile">
+            <ul>
+                <li>
+                    <span data-main_submenu_show="tools">Инструменты</span>
+                </li>
+                <li>
+                    <span data-main_submenu_show="channels">Каналы</span>
+                </li>
+                <li>
+                    <a href="tarifs.html">Тарифы</a>
+                </li>
+                <li>
+                    <span data-main_submenu_show="blog">Блог</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <nav class="footer__col footer__col--20 footer__links">
+                <ul>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Русский</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-hide footer__col footer__col--40">
+                <div class="footer__title">Техническая поддержка</div>
+                <div class="footer__text">
+                    Мы&nbsp;всегда рады ответить вам в&nbsp;чате поддержки 7&nbsp;дней в&nbsp;неделю с&nbsp;07:00&nbsp;&mdash; 18:30 по&nbsp;МСК.
+                </div>
+            </div>
+            <nav class="mobile-hide footer__links footer__col footer__col--40">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__flex footer__bottom">
+            <div class="footer__col footer__info">
+                <div class="footer__copyright">
+                    ИП&nbsp;Никифоров Александр Викторович, ОГРНИП: 319420500019953, ИНН: 421709879080
+                </div>
+                <div class="footer__email">
+                    Для рекламы и&nbsp;предложений <a href="mailto:marketing@postmypost.io">marketing@postmypost.io</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Postmypost</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+@@include('./_header.html')
+
+<!-- INTRO -->
+<section class="section section-intro">
+    <div class="content-layout">
+        <div class="section-intro__wrap">
+            <svg class="section-intro__lines mobile-hide" width="2584" height="520" viewBox="0 0 2584 520" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.5 422C128 240.5 345.985 249.058 398.5 256.328C537 275.5 672.371 402.405 859 454.5C1206.5 551.5 1569.7 338.592 1673.74 251.746C1777.77 164.9 2053.7 -62.5251 2371.5 18.8508C2458 41 2536.5 84.5 2583 115.5"
+                      stroke="#D4DEEB" stroke-width="1.5"/>
+                <path d="M795.5 473.5C1197 601.5 1506.2 357.592 1610.24 270.746C1714.27 183.9 1995.88 -63.1479 2308 37.8508C2404.5 69.0773 2500.5 137.5 2571.5 190"
+                      stroke="#52D3C1" stroke-width="20"/>
+                <path d="M529 331.5C472 299.5 384.5 259.478 269.5 274.5C169.5 287.563 83.5 331.5 7 402.5"
+                      stroke="#52D3C1" stroke-width="20"/>
+            </svg>
+            <h1 class="h1 section-intro__title">
+                Увеличивайте трафик на&nbsp;сайт, автоматически публикуя посты из&nbsp;RSS в&nbsp;социальных сетях
+            </h1>
+            <img class="section-intro__img" src="img/img_section_intro_4.jpg" alt="">
+            <div class="h1-description section-intro__text">
+                Репостер автоматизирует процесс публикации контента, освобождая время для других задач.
+            </div>
+            <a href="#" class="button button--filled button--small">Попробовать бесплатно</a>
+        </div>
+    </div>
+</section>
+
+<!-- PUBLICATION -->
+<section class="section section-publication">
+    <div class="content-layout">
+        <div class="section-publication__flex">
+            <div class="section-publication-img section-publication-img--v4">
+                <img class="section-publication-img__bg section-publication-img__bg--v2"
+                     src="img/img_section_publication_4.jpg" alt="">
+                <img class="section-publication-img__icons" src="img/icons_section_publication.svg" alt="">
+            </div>
+            <div class="section-publication__body">
+                <h2 class="h2 section-publication__title">
+                    Один RSS, множество шаблонов
+                </h2>
+                <div class="h2-description section-publication__text">
+                    Репостер предоставляет возможность индивидуально настроить дизайн публикаций для каждой социальной
+                    сети, учитывая их&nbsp;специфику и&nbsp;особенности.
+                </div>
+                <a href="#" class="button button--filled button--small">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PUBLICATION  -->
+<section class="section section-main-publication section-main-publication--v2">
+    <div class="content-layout">
+        <div class="section-main-publication__flex">
+            <img class="section-main-publication__lines mobile-hide" src="img/lines_section_main_publication.svg"
+                 alt="">
+            <img class="section-main-publication-img__bg" src="img/img_section_main_publication_2.jpg" alt="">
+            <div class="section-main-publication__body section-main-publication__body--1">
+                <h4 class="h4  section-main-publication__title">
+                    Автоматически сокращайте длинные ссылки
+                </h4>
+                <div class="h3-description section-main-publication__text">
+                    Сокращение ссылок поможет улучшить их&nbsp;визуальное восприятие и&nbsp;скрыть длинные UTM-метки,
+                    что значительно увеличит конверсию.
+                </div>
+            </div>
+        </div>
+        <div class="section-main-publication__body section-main-publication__body--2">
+            <h4 class="h4 section-main-publication__title">
+                Узнайте, из&nbsp;какой социальной сети больше трафика
+            </h4>
+            <div class="h4-description section-main-publication__text">
+                Репостер позволяет добавить UTM-метки к&nbsp;каждой ссылке. Это поможет точно определить, с&nbsp;какой
+                социальной сети приходит больше трафика.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NUMBERS -->
+@@include('./_numbers.html')
+
+<!-- REVIEWS -->
+@@include('./_reviews.html')
+
+<!-- TOOLS -->
+@@include('./_tools.html')
+
+<!-- REVIEWS -->
+@@include('./_faq.html')
+
+<!-- FOOTER -->
+@@include('./_footer.html')
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>
