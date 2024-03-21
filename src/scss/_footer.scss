@@ -162,6 +162,10 @@
 
 @media (min-width: 64rem) {
   .footer {
+    .content-layout {
+      overflow: hidden;
+    }
+
     &__flex--no-gap {
       --padding: calc(var(--gap) / 2);
 

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Postmypost</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo_symbol_color.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="content-layout">
+        <div class="header__flex">
+            <a class="header__logo" href="main.html" title="Postmypost">
+                <picture>
+                    <img src="img/logo_color.svg" alt="Postmypost">
+                </picture>
+            </a>
+
+            <div class="header-menu">
+                <div class="header-menu__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+                <nav class="header-menu__nav">
+                    <ul>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="tools">
+                                Инструменты
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-submenu">
+                                <a href="autopost.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#autopost"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Автопостинг</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет планировать публикацию постов по&nbsp;расписанию во&nbsp;все
+                                            социальные сети, экономя ваше время.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="analytics.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#analytics"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Аналитика</div>
+                                        <div class="header-submenu__text">
+                                            Предоставляет подробную аналитику постов, что помогает оптимизировать ваш
+                                            контент и&nbsp;увеличить вовлеченность аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="monitoring.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#message"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">CRM</div>
+                                        <div class="header-submenu__text">
+                                            Увеличивайте продажи и&nbsp;быстро регируйте на&nbsp;комментарии
+                                            пользователй в&nbsp;социальных сетях
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="reposter.html" class="header-submenu__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#rss"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Репостер</div>
+                                        <div class="header-submenu__text">
+                                            Позволяет автоматически публиковать новости с&nbsp;вашего сайта в&nbsp;социальные
+                                            сети через RSS, увеличивая охват аудитории.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="ai.html" class="header-submenu__item" data-main_menu_hide>
+                                    <svg class="header-submenu__icon">
+                                        <use href="img/icons.svg#hexagon"/>
+                                    </svg>
+                                    <div class="header-submenu__body">
+                                        <div class="header-submenu__title">Postmypost AI</div>
+                                        <div class="header-submenu__text">
+                                            Нейросеть, который помогает маркетологам справиться с&nbsp;рутинными
+                                            задачами от&nbsp;генерации идей и&nbsp;сотсавление конткнт плана до&nbsp;напсиия
+                                            тесстов и&nbsp;аналиаза данных.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header-menu__sub">
+                              <span class="header-menu__sub-toggler" data-main_submenu_show="channels">
+                                Каналы
+                                <svg class="header-menu__chevron">
+                                  <use href="img/icons.svg#chevron"/>
+                                </svg>
+                              </span>
+                            <div class="header-popover header-channels">
+
+                                <!-- INSTAGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#inst"/>
+                                    </svg>
+                                    <div class="header-channels__title">Instagram</div>
+                                </a>
+
+                                <!-- FACEBOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#fb"/>
+                                    </svg>
+                                    <div class="header-channels__title">Facebook</div>
+                                </a>
+
+                                <!-- TWITTER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tw"/>
+                                    </svg>
+                                    <div class="header-channels__title">Twitter</div>
+                                </a>
+
+                                <!-- LINKEDIN -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#linkedin"/>
+                                    </svg>
+                                    <div class="header-channels__title">Linkedin</div>
+                                </a>
+
+                                <!-- PINTEREST -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#pinterest"/>
+                                    </svg>
+                                    <div class="header-channels__title">Pinterest</div>
+                                </a>
+
+                                <!-- YOUTUBE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#yt"/>
+                                    </svg>
+                                    <div class="header-channels__title">YouTube</div>
+                                </a>
+
+                                <!-- TIKTOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tt"/>
+                                    </svg>
+                                    <div class="header-channels__title">TikTok</div>
+                                </a>
+
+                                <!-- DISCORD -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#discord"/>
+                                    </svg>
+                                    <div class="header-channels__title">Discord</div>
+                                </a>
+
+                                <!-- REDDIT -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#reddit"/>
+                                    </svg>
+                                    <div class="header-channels__title">Reddit</div>
+                                </a>
+
+                                <!-- MASTODON -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#mastodon"/>
+                                    </svg>
+                                    <div class="header-channels__title">Mastodon</div>
+                                </a>
+
+
+                                <!-- VKONTAKTE -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#vk"/>
+                                    </svg>
+                                    <div class="header-channels__title">VKontakte</div>
+                                </a>
+
+                                <!-- TELEGRAM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tg"/>
+                                    </svg>
+                                    <div class="header-channels__title">Telegram</div>
+                                </a>
+
+                                <!-- VIBER -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#viber"/>
+                                    </svg>
+                                    <div class="header-channels__title">Viber</div>
+                                </a>
+
+                                <!-- ODNOKLASSNIKI -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#ok"/>
+                                    </svg>
+                                    <div class="header-channels__title">Odnoklassniki</div>
+                                </a>
+
+
+                                <!-- BITRIX -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#bitrix"/>
+                                    </svg>
+                                    <div class="header-channels__title">Bitrix</div>
+                                </a>
+
+                                <!-- SNAPCHAT -->
+                                <a href="channel.html" class="header-channels__item header__item-active"
+                                   data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#snapchat"/>
+                                    </svg>
+                                    <div class="header-channels__title">Snapchat</div>
+                                </a>
+
+
+                                <!-- MEDIUM -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#medium"/>
+                                    </svg>
+                                    <div class="header-channels__title">Medium</div>
+                                </a>
+
+                                <!-- TUMBLR -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#tumblr"/>
+                                    </svg>
+                                    <div class="header-channels__title">Tumblr</div>
+                                </a>
+
+                                <!-- WEBHOOK -->
+                                <a href="channel.html" class="header-channels__item" data-main_menu_hide>
+                                    <svg class="header-channels__icon">
+                                        <use href="img/icons.svg#webhook"/>
+                                    </svg>
+                                    <div class="header-channels__title">Webhook</div>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="tarifs.html" data-main_menu_hide>Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" data-main_menu_hide>Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-menu__buttons">
+                    <a href="#" class="button button--filled button--small">Регистрация</a>
+                    <a href="#" class="button button--small button--no-padding">Вход</a>
+                </div>
+
+                <!--
+                <a href="#" class="header-menu__gp">
+                  <img src="img/logo_google_play.svg" alt="Google Play" width="178">
+                </a>
+                -->
+            </div>
+
+            <div class="header__language">
+                <a href="#"><b>RU</b></a>
+                <a href="#">EN</a>
+            </div>
+
+            <div class="header__buttons">
+                <a href="#" class="button button--bordered button--small">Вход</a>
+                <a href="#" class="button button--filled button--small">Регистрация</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-toggler" data-main_menu_toggle data-main_submenu_hide>
+        <svg class="header-toggler__burger">
+            <use href="img/icons.svg#burger"/>
+        </svg>
+        <svg class="header-toggler__cross">
+            <use href="img/icons.svg#cross"/>
+        </svg>
+        <svg class="header-toggler__arrow">
+            <use href="img/icons.svg#arrow"/>
+        </svg>
+    </div>
+</header>
+
+
+<section class="section section--above blog-video">
+  <div class="content-layout">
+    <label for="c-menu-checkbox" class="blog-video-menu__toggler desktop-hide">
+      <svg class="blog-video-menu__toggler-icon">
+        <use href="img/icons.svg#paragraph" />
+      </svg>
+    </label>
+
+    <div class="blog-video-header">
+      <div class="blog-video-header__wrap">
+        <div class="h1-description">Бесплатный курс от&nbsp;обучающей платформы&nbsp;VK для бизнеса</div>
+        <h1 class="h1 blog-video-header__title">Как создать и&nbsp;настроить сообщество ВКонтакте</h1>
+      </div>
+      <div class="blog-video-header__lines-wrap mobile-hide">
+        <svg class="blog-video-header__lines" width="2660" height="229" viewBox="0 0 2660 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M695.94 185.198C429 217.554 159.012 136.172 1.02393 69" stroke="#D4DEEB" stroke-width="1.5" />
+          <path d="M699 197.725C445.367 248.581 228.557 206.123 77.0005 154.166" stroke="#52D3C1" stroke-width="16" />
+          <path d="M1589 67.0827C1667.03 25.6966 1906.12 -43.1307 2096.76 40.5225C2287.4 124.176 2371.91 246.684 2659 216.248" stroke="#D4DEEB" stroke-width="1.5" stroke-linecap="square" />
+          <path d="M1589 72.192C1661.35 42.7285 1884.5 0.57386 2061.25 60.1282C2237.99 119.682 2314.84 200.054 2581 178.386" stroke="#52D3C1" stroke-width="16" stroke-linecap="square" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="blog-video__content">
+      <input class="blog-video-menu__checkbox" type="checkbox" id="c-menu-checkbox">
+      <nav class="blog-video-menu">
+        <label for="c-menu-checkbox" class="blog-video-menu__cross desktop-hide">
+          <svg class="blog-video-menu__cross-icon">
+            <use href="img/icons.svg#cross" />
+          </svg>
+        </label>
+        <div class="blog-video-menu__wrap" onclick="event?.target?.nodeName === 'A' && window['c-menu-checkbox'] && (window['c-menu-checkbox'].checked = false)">
+          <ol>
+            <li>
+              Создание и&nbsp;настройка сообщества ВКонтакте
+              <ul>
+                <li><a href="#c-1">Создание и&nbsp;настройка сообщества ВКонтакте</a></li>
+                <li><a href="#c-2">Оформление сообщества ВКонтакте</a></li>
+                <li><a href="#c-3">Подключение инструментов для бизнеса</a></li>
+              </ul>
+            </li>
+            <li>
+              Управление сообществом ВКонтакте
+              <ul>
+                <li>Безопасность сообщества: двухфакторная аутентификация и&nbsp;верификация</li>
+                <li>Статистика: метрики, анализ, отчёты</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <div class="blog-video__body">
+        <div class="blog-content__body">
+          <h2>О&nbsp;курсе</h2>
+          <p>ВКонтакте общаются, покупают товары и&nbsp;обмениваются контентом миллионы пользователей. Поэтому грамотно выстроенная работа с&nbsp;сообществом&nbsp;&mdash; это прекрасная возможность повысить лояльность аудитории и&nbsp;увеличить конверсию в&nbsp;продажи.</p>
+          <h3>Курс будет полезен:</h3>
+          <ul>
+            <li>всем, кто развивает сообщество ВКонтакте;</li>
+            <li>владельцам малого и&nbsp;среднего бизнеса;</li>
+            <li>SMM-менеджерам.</li>
+          </ul>
+          <h3>На&nbsp;курсе вы&nbsp;узнаете:</h3>
+          <ul>
+            <li>как создать и&nbsp;настроить сообщество так, чтобы оно закрывало максимум вопросов ваших клиентов;</li>
+            <li>как работать с&nbsp;автоответами, приложениями, чат-ботами и&nbsp;другими инструментами;</li>
+            <li>как управлять сообществом и&nbsp;защитить его от&nbsp;внешних угроз;</li>
+            <li>как подключить полноценный онлайн-магазин к&nbsp;своему сообществу и&nbsp;начать продавать товары и&nbsp;услуги аудитории ВКонтакте;</li>
+            <li>какие основные форматы контента существуют и&nbsp;как эффективно их&nbsp;использовать;</li>
+            <li>когда публиковать посты, где искать темы и&nbsp;как оформлять публикации, чтобы привлечь дополнительный трафик в&nbsp;сообщество;</li>
+            <li>как продвигать своё сообщество с&nbsp;помощью бесплатных и&nbsp;платных инструментов.</li>
+          </ul>
+        </div>
+
+        <div class="blog-video__info">
+          <div class="blog-video-avatar">
+            <div class="blog-video-avatar__img" style="background-image: url(img/avatar_3.jpg)"></div>
+            <div class="blog-video-avatar__body">
+              <div class="blog-video-avatar__name">Александра Черкас</div>
+              <div class="blog-video-avatar__text">Эксперт VK.<br>Спикер ключевых отраслевых конференций</div>
+            </div>
+          </div>
+          <div class="blog-video-stats">
+            <div class="blog-video-stats__item">
+              <svg class="blog-video-stats__icon">
+                <use href="img/icons.svg#videos" />
+              </svg>
+              <div class="blog-video-stats__text">Количество видео: 4&nbsp;ролика</div>
+            </div>
+            <div class="blog-video-stats__item">
+              <svg class="blog-video-stats__icon">
+                <use href="img/icons.svg#clock" />
+              </svg>
+              <div class="blog-video-stats__text">Продолжительность видео: 44&nbsp;минуты</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-list">
+          <div class="course-list__title">1. Создание и&nbsp;настройка сообщества ВКонтакте</div>
+          <div class="course" id="c-1">
+            <div class="course__title">1.1 Создание и&nbsp;настройка сообщества ВКонтакте</div>
+            <div class="course__text">Вы&nbsp;узнаете, как создать сообщество и&nbsp;настроить его базовые функции.</div>
+            <div class="course__video" style="background-image: url(img/bg_course.jpg)">
+              <div class="course__play">
+                <svg class="course__play-icon">
+                  <use href="img/icons.svg#play" />
+                </svg>
+              </div>
+            </div>
+            <div class="course-useful">
+              <div class="course-useful__title">Полезные материалы</div>
+              <ol>
+                <li>Статья &laquo;<a href="#">Как создать и&nbsp;настроить сообщество ВКонтакте</a>&raquo;.</li>
+                <li>Статья &laquo;<a href="#">Основные правила информационной безопасности</a>&raquo;.</li>
+                <li>Видеокурс &laquo;<a href="#">Безопасность сообщества ВКонтакте</a>&raquo;.</li>
+              </ol>
+            </div>
+            <div class="course__like-share">
+              <div class="course-like">
+                <div class="course-like__button">
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-bordered" fill="#fff" />
+                  </svg>
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-filled" />
+                  </svg>
+                </div>
+                <div class="course-like__text">247</div>
+              </div>
+              <div class="course-share">
+                <div class="course-share__button">
+                  Поделиться
+                  <svg class="course-share__button-icon">
+                    <use href="img/icons.svg#share-bordered" fill="#fff" />
+                  </svg>
+                </div>
+                <div class="course-share__menu">
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#copy" />
+                    </svg>
+                    Скопировать ссылку
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#vk" />
+                    </svg>
+                    VKontakte
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#tg" />
+                    </svg>
+                    Telegram
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#ok" />
+                    </svg>
+                    Odnoklassniki
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course" id="c-2">
+            <div class="course__title">1.2 Оформление сообщества ВКонтакте</div>
+            <div class="course__text">
+              Вы&nbsp;узнаете, как оформить сообщество ВКонтакте: какими должны быть аватар, обложка и&nbsp;ссылка на&nbsp;сообщество, чтобы привлечь вашу аудиторию.
+            </div>
+            <div class="course__video" style="background-image: url(img/bg_course.jpg)">
+              <div class="course__play">
+                <svg class="course__play-icon">
+                  <use href="img/icons.svg#play" />
+                </svg>
+              </div>
+            </div>
+            <div class="course__like-share">
+              <div class="course-like course-like--liked">
+                <div class="course-like__button">
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-bordered" fill="#fff" />
+                  </svg>
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-filled" />
+                  </svg>
+                </div>
+                <div class="course-like__text">247</div>
+              </div>
+              <div class="course-share">
+                <div class="course-share__button">
+                  Поделиться
+                  <svg class="course-share__button-icon">
+                    <use href="img/icons.svg#share-bordered" fill="#fff" />
+                  </svg>
+                </div>
+                <div class="course-share__menu">
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#copy" />
+                    </svg>
+                    Скопировать ссылку
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#vk" />
+                    </svg>
+                    VKontakte
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#tg" />
+                    </svg>
+                    Telegram
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#ok" />
+                    </svg>
+                    Odnoklassniki
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course" id="c-3">
+            <div class="course__title">1.3 Подключение инструментов для бизнеса</div>
+            <div class="course__text">
+              В&nbsp;этом видео вы&nbsp;познакомитесь с&nbsp;инструментами сообщества, такими как чат-бот, приложения, быстрые кнопки, меню и&nbsp;сообщения. Узнаете, как с&nbsp;их&nbsp;помощью сделать ваше сообщество удобным и&nbsp;автоматизировать рутинные задачи.
+            </div>
+            <div class="course__video" style="background-image: url(img/bg_course.jpg)">
+              <div class="course__play">
+                <svg class="course__play-icon">
+                  <use href="img/icons.svg#play" />
+                </svg>
+              </div>
+            </div>
+            <div class="course-useful">
+              <div class="course-useful__title">Полезные материалы</div>
+              Статья &laquo;<a href="#">Как начать вести бизнес ВКонтакте</a>&raquo;.
+            </div>
+            <div class="course__like-share">
+              <div class="course-like">
+                <div class="course-like__button">
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-bordered" fill="#fff" />
+                  </svg>
+                  <svg class="course-like__button-icon">
+                    <use href="img/icons.svg#heart-filled" />
+                  </svg>
+                </div>
+                <div class="course-like__text">247</div>
+              </div>
+              <div class="course-share">
+                <div class="course-share__button">
+                  Поделиться
+                  <svg class="course-share__button-icon">
+                    <use href="img/icons.svg#share-bordered" fill="#fff" />
+                  </svg>
+                </div>
+                <div class="course-share__menu">
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#copy" />
+                    </svg>
+                    Скопировать ссылку
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#vk" />
+                    </svg>
+                    VKontakte
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#tg" />
+                    </svg>
+                    Telegram
+                  </div>
+                  <div class="course-share__item">
+                    <svg class="course-share__item-icon">
+                      <use href="img/icons.svg#ok" />
+                    </svg>
+                    Odnoklassniki
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__pattern" style="background-image: url(img/pattern_arcs.png)"></div>
+    <div class="content-layout">
+        <a class="footer__logo" href="main.html">
+            <img src="img/logo_symbol_white.svg" alt="Postmypost">
+        </a>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <div class="footer__col footer__col--60">
+                <div class="footer__title">Нам доверяют</div>
+                <div class="footer__text footer__text--big">
+                    <span>Postmypost</span>&nbsp;&mdash; профессиональный сервис позволяющий организовать совместную работу в&nbsp;социальных сетях.
+                </div>
+            </div>
+            <div class="footer__col footer__col--40 mobile-hide">
+                <div class="footer__flex footer__stats">
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">2 647 612</div>
+                        <div class="footer__text footer__text--big">сделано постов</div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__text footer__text--large">74 026</div>
+                        <div class="footer__text footer__text--big">подключенных аккаунтов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="footer__flex footer__flex--no-gap footer__menu mobile-hide">
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Возможности</div>
+                <ul>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Сервис</div>
+                <ul>
+                    <li>
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="#">Обновления</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнерская программа</a>
+                    </li>
+                    <li>
+                        <a href="#">Программа лояльности</a>
+                    </li>
+                    <li>
+                        <a href="#">Статус</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--20">
+                <div class="footer__title">Центр помощи</div>
+                <ul>
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Аккаунты социальных сетей</a>
+                    </li>
+                    <li>
+                        <a href="#">Публикации</a>
+                    </li>
+                    <li>
+                        <a href="#">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="#">Сообщения</a>
+                    </li>
+                    <li>
+                        <a href="#">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="#">Модули и интеграции</a>
+                    </li>
+                    <li>
+                        <a href="#">White Label</a>
+                    </li>
+                    <li>
+                        <a href="#">Тарифы и оплата</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--40">
+                <div class="footer__title">Документы</div>
+                <ul>
+                    <li>
+                        <a href="#">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация о работе с юр. лицами</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="footer__menu-mobile">
+            <ul>
+                <li>
+                    <span data-main_submenu_show="tools">Инструменты</span>
+                </li>
+                <li>
+                    <span data-main_submenu_show="channels">Каналы</span>
+                </li>
+                <li>
+                    <a href="tarifs.html">Тарифы</a>
+                </li>
+                <li>
+                    <span data-main_submenu_show="blog">Блог</span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer__flex footer__flex--no-gap">
+            <nav class="footer__col footer__col--20 footer__links">
+                <ul>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Русский</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-hide footer__col footer__col--40">
+                <div class="footer__title">Техническая поддержка</div>
+                <div class="footer__text">
+                    Мы&nbsp;всегда рады ответить вам в&nbsp;чате поддержки 7&nbsp;дней в&nbsp;неделю с&nbsp;07:00&nbsp;&mdash; 18:30 по&nbsp;МСК.
+                </div>
+            </div>
+            <nav class="mobile-hide footer__links footer__col footer__col--40">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <a href="#">Telegram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__flex footer__bottom">
+            <div class="footer__col footer__info">
+                <div class="footer__copyright">
+                    ИП&nbsp;Никифоров Александр Викторович, ОГРНИП: 319420500019953, ИНН: 421709879080
+                </div>
+                <div class="footer__email">
+                    Для рекламы и&nbsp;предложений <a href="mailto:marketing@postmypost.io">marketing@postmypost.io</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</body>
+</html>

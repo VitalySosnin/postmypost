@@ -11,6 +11,8 @@
   }
 
   &__body {
+    --margin-top: clamp(2.125rem, 1.4vw + 1.775rem, 3rem);
+
     max-width: 940px;
     margin: 0 auto;
     font-size: clamp(1rem, 0.8vw + 0.675rem, 1.125rem);
@@ -21,8 +23,19 @@
 
       & + p,
       & + h1,
-      & + h2 {
-        margin-top: clamp(2.125rem, 1.4vw + 1.775rem, 3rem);
+      & + h2,
+      & + h3 {
+        margin-top: var(--margin-top);
+      }
+    }
+
+    ul, ol {
+      padding-left: 26px;
+
+      & + h1,
+      & + h2,
+      & + h3 {
+        margin-top: var(--margin-top);
       }
     }
 
@@ -37,11 +50,11 @@
     }
 
     > img {
-      margin: clamp(2.125rem, 1.4vw + 1.775rem, 3rem) 0;
+      margin: var(--margin-top) 0;
     }
 
     figure {
-      margin: clamp(2.125rem, 1.4vw + 1.775rem, 3rem) 0;
+      margin: var(--margin-top) 0;
 
       figcaption {
         margin-top: clamp(0.5rem, 0.4vw + 0.4rem, 0.75rem);
@@ -60,11 +73,18 @@
     h2 {
       font-size: clamp(1.125rem, 1.6vw + 0.725rem, 2.125rem);
       line-height: 1.2;
-      margin: 0 0 clamp(0.25rem, 1vw + 0rem, 0.875rem);
+      margin: 0 0 clamp(0.25rem, 1vw, 0.875rem);
       font-weight: 800;
     }
 
-    p, h1, h2 {
+    h3 {
+      font-size: clamp(1.125rem, 0.6vw + 0.975rem, 1.5rem);
+      line-height: 1.2;
+      margin: 0 0 clamp(0.25rem, 1vw, 0.875rem);
+      font-weight: 800;
+    }
+
+    p, h1, h2, h3 {
       a {
         color: var(--color-primary);
         text-decoration: underline;
